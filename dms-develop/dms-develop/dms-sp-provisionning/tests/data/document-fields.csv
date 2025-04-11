@@ -1,0 +1,95 @@
+﻿Field,Title,Order,FieldType,Required,SiteColHidden,FieldLinkHidden,Editable at creation,Editable in draft,Properties page Tab
+Title,Title,1,Text,Yes,,,Yes,Yes,Main
+ProjectReference,Reference,2,Text,Yes,,,Yes,No,Main
+ProjectRevision,Revision,3,Text,Yes,,,Yes,No,Main
+PLOwnership,PL Ownership,4,TaxonomyFieldType,Yes,,,Yes,No,Main
+DocumentType,Document Type,5,Choice,Yes,,,Yes,Yes,Main
+DocumentLanguage,Document Language,6,Choice,Yes,,,Yes,Yes,Main
+ABS,ABS,7,TaxonomyFieldType,Yes,,,Yes,Yes,Main
+PBS,PBS,8,TaxonomyFieldType,Yes,,,Yes,Yes,Main
+SubmissionCategory,Submission Category,9,Choice,No,,,Yes,Yes,Main
+PlannedSubmissionDate,Planned Submission Date,10,DateTime,No,,,Yes,Yes,Main
+IssuingEntity,OBS,11,Choice,Yes,,,Yes,Yes,Main
+ConfidentialityLevel,Confidentiality level,12,Choice,Yes,,,Yes,Yes,Main
+GRMilestone,GR Milestone,13,Choice,No,,,Yes,Yes,Main
+Authors,Author(s),14,UserMulti,No,,,NA,NA,Main
+_Comments,Comments,15,Note,No,,,Yes,Yes,Additional Properties
+WBS,WBS,16,Choice,No,,,Yes,Yes,Additional Properties
+DBS,DBS,17,Choice,No,,,Yes,Yes,Additional Properties
+FBS,FBS,18,Choice,No,,,Yes,Yes,Additional Properties
+SBS,SBS,19,Choice,No,,,Yes,Yes,Additional Properties
+LinkedtoRequirementsDB,Linked to Requirements DB,20,Boolean,No,,,Yes,Yes,Additional Properties
+RequirementID,Requirement ID,21,Text,No,,,Yes,Yes,Additional Properties
+ChangeRequestID,Change Request ID,22,Text,No,,,Yes,Yes,Additional Properties
+SupplierName,Supplier name,23,Choice,No,,,Yes,Yes,Additional Properties
+SupplierReference,Supplier Reference,24,Text,No,,,Yes,Yes,Additional Properties
+SupplierRevision,Supplier Revision,25,Text,No,,,Yes,Yes,Additional Properties
+OtherReference,Other Reference,26,Text,No,,,Yes,Yes,Additional Properties
+OtherRevision,Other Revision,27,Text,No,,,Yes,Yes,Additional Properties
+CustomerRevision,Customer Revision,28,Text,No,,,Yes,Yes,Additional Properties
+Keywords,Keywords,29,Note,No,,,Yes,Yes,Additional Properties
+FolioNumber,Folio number,30,Text,No,,,Yes,Yes,Additional Properties
+AlstomPartNumbers,Alstom Part Numbers,31,Note,No,,,Yes,Yes,Additional Properties
+ExternalURL,External URL,32,URL,No,,,Yes,Yes,Additional Properties
+Projectattr1,Project attr 1,33,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr2,Project attr 2,34,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr3,Project attr 3,35,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr4,Project attr 4,36,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr5,Project attr 5,37,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr6,Project attr 6,38,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr7,Project attr 7,39,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr8,Project attr 8,40,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr9,Project attr 9,41,Choice,No,Yes,,Yes,Yes,Project properties
+Projectattr10,Project attr 10,42,Choice,No,Yes,,Yes,Yes,Project properties
+LineNumber,Line Number,43,Text,No,,,Yes,Yes,Additional SER
+MoCStatus,MoC Status,44,Choice,No,,,Yes,Yes,Additional SER
+AlstomAssetID,Asset/Equipment ID,45,Text,No,,,Yes,Yes,Additional SER
+MaterialID,Item/Material ID,46,Text,No,,,Yes,Yes,Additional SER
+LocationID,Location ID,47,Text,No,,,Yes,Yes,Additional SER
+JobPlanID,Job Plan/Tasklist ID,48,Text,No,,,Yes,Yes,Additional SER
+InspectionID,Inspection ID,49,Text,No,,,Yes,Yes,Additional SER
+FailureID,Failure ID,50,Text,No,,,Yes,Yes,Additional SER
+MaintenancePlanID,Maintenance Plan ID,51,Text,No,,,Yes,Yes,Additional SER
+HazardID,Hazard ID,52,Text,No,,,Yes,Yes,Additional SER
+PermitToWorkID,Permit to Work ID,53,Text,No,,,Yes,Yes,Additional SER
+MoCID,MoC ID,54,Text,No,,,Yes,Yes,Additional SER
+IncidentID,Incident ID,55,Text,No,,,Yes,Yes,Additional SER
+HandoverDocumentClassification,Handover - Document classification,56,Text,No,,,Yes,Yes,Additional SER
+HandoverDocumentTitle,Handover - Document title,57,Text,No,,,Yes,Yes,Additional SER
+HandoverDocumentCode,Handover - Document code,58,Text,No,,,Yes,Yes,Additional SER
+HandoverDocumentFilename,Handover – Document File name,59,Text,No,,,Yes,Yes,Additional SER
+HandoverPBSLevelCode,Handover - PBS Level Code,60,Text,No,,,Yes,Yes,Additional SER
+HandoverDocumentStatus,Handover - Document Status,61,Choice,No,,,Yes,Yes,Additional SER
+HandoverDocumentRevision,Handover - Document Revision,62,Text,No,,,Yes,Yes,Additional SER
+CustomerResponseExpectedDate,Customer Response expected Date,63,DateTime,No,,,No,No,Follow up
+CustomerResponseReference,Customer Response Reference,64,Text,No,,,Yes,Yes,Follow up
+CustomerResponseDate,Customer Response Date,65,DateTime,No,,,No,No,Follow up
+CustomerResponseStatus,Customer Response Status,66,Choice,No,,,Yes,Yes,Follow up
+ReforecastSubmissionDate,Reforecast Submission Date,67,DateTime,No,,,Yes,Yes,Follow up
+ActualSubmissionDate,Actual Submission Date,68,DateTime,No,,,No,No,Follow up
+TransmittalReference,Transmittal Reference,69,Text,No,,,No,No,Follow up
+TransmittalDate,Transmittal Date,70,DateTime,No,,,No,No,Follow up
+ApprovalCycleLaunchDate,Approval cycle launch Date,71,DateTime,No,,,No,No,Follow up
+Verifiedby,Verified by,72,User,No,,,No,No,Follow up
+VerificationDate,Verification Date,73,DateTime,No,,,No,No,Follow up
+Validatedby,Validated by,74,User,No,,,No,No,Follow up
+ValidationDate,Validation Date,75,DateTime,No,,,No,No,Follow up
+Approvedby,Approved by,76,User,No,,,No,No,Follow up
+ApprovalDate,Approval Date,77,DateTime,No,,,No,No,Follow up
+CustomerMilestone,Customer Milestone,78,Choice,No,,,Yes,Yes,Follow up
+CustomerComments,Customer Comments,79,Note,No,,,Yes,Yes,Follow up
+EffectiveDate,Effective date,80,DateTime,No,,,Yes,Yes,Applicability
+ExpiryDate,Expiry Date,81,DateTime,No,,,Yes,Yes,Applicability
+ChangeFromNumber,Change From No,82,Text,No,,,Yes,Yes,Applicability
+ChangeToNumber,Change To No,83,Text,No,,,Yes,Yes,Applicability
+SafetyCriticity,Safety criticity,84,Boolean,No,,,Yes,Yes,Applicability
+ReplacementFor,Replacement for,85,Text,No,,,Yes,Yes,Applicability
+ReplacedBy,Replaced by,86,Text,No,,,Yes,Yes,Applicability
+AlstomReference,Alstom Reference,87,Text,No,,,No,No,Main
+DocumentStatus,Document Status,88,Choice,No,,,No,No,Main
+WorkflowStatus,Workflow Status,89,Choice,No,,,No,No,Main
+ScopeCountry,Scope Geography,107,Text,,,Yes,,,
+CustomernameDirect,Customer name (direct),106,Text,,,Yes,,,
+CustomernameFinal,Customer name (final),97,Text,,,Yes,,,
+ProductName,Product name,103,Text,,,Yes,,,
+ProjectAlias1,Prj Alias,92,Text,,,Yes,,,

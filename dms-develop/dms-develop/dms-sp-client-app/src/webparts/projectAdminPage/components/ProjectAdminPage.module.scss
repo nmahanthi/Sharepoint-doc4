@@ -1,0 +1,59 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.projectAdminPage {
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+  max-width: 1024px;
+  > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding-left: 8px;
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      .fieldWrapper {
+        display: flex;
+        flex-basis: 33%;
+        flex-grow: 1;
+        flex-direction: column;
+        gap: 5px;
+        min-height: 62px;
+        padding: 2px 0px;
+        justify-content: center;
+      }
+      .fieldWrapper.noLabel {
+        > div{
+          padding-top: 28px;
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem;
+  }
+  label:global(.ms-Label[class*="root-"]),
+  input:global(.ms-TextField-field[class*="field-"]),
+  input:global(.ms-ComboBox-Input[class*="css-"]),
+  div:global(.ms-ComboBox[class*="css-"]) {
+    color: inherit;
+  }
+}
+.AdminPageTitle {
+  padding-left: 8px;
+  margin: 0;
+}

@@ -1,0 +1,191 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/Draft/Forms/AllItems.aspx",
+      "customActions": {
+        "19241a9e-c454-4819-85c8-b8349f131ec0": {
+          "location": "ClientSideExtension.ListViewCommandSet",
+          "properties": {}
+        },
+        "5f663675-dcc7-4fb2-92bb-6001829a8dec": {
+          "location": "ClientSideExtension.ListViewCommandSet.ContextMenu",
+          "properties": {
+            "ApplicableListTitle": "Applicable Documents",
+            "DraftListTitle": "Draft",
+            "PermissionListTitle": "PermissionsConfigurations",
+            "ContentTypeName": "Technical Document"
+          }
+        },
+        "7ea2e91f-e60f-44b9-a5db-33d581b6538a": {
+          "location": "ClientSideExtension.ListViewCommandSet.ContextMenu",
+          "properties": {}
+        },
+        "fe8dd354-d51c-4eb3-a8da-8a7024204e33": {
+          "location": "ClientSideExtension.ListViewCommandSet.ContextMenu",
+          "properties": {}
+        }
+        
+      }
+    },
+    "dmsDocumentForm_NewForm": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "6b7ba0ae-02e8-49a0-8761-eca276b8c3fb",
+        "PageType": 8,
+        "RootFolder": "/sites/DOC4A-INT/TestHK",
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "dmsDocumentForm_EditForm": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "6b7ba0ae-02e8-49a0-8761-eca276b8c3fb",
+        "PageType": 6,
+        "RootFolder": "/sites/DOC4A-INT/TestHK",
+        "ID": 1,
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "dmsDocumentForm_ViewForm": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "6b7ba0ae-02e8-49a0-8761-eca276b8c3fb",
+        "PageType": 4,
+        "RootFolder": "/sites/DOC4A-INT/TestHK",
+        "ID": 1,
+        "properties": {
+          "sampleText": "Value"
+        }
+      }
+    },
+    "createRevision": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/ApplicableDocuments/Forms/AllItems.aspx",
+      "customActions": {
+        "6b73759a-ebeb-482a-97cd-8e2f52b0eca5": {
+          "location": "ClientSideExtension.ListViewCommandSet.ContextMenu",
+          "properties": {
+            "ApplicableListTitle": "Applicable Documents",
+            "DraftListTitle": "Draft",
+            "PermissionListTitle": "PermissionsConfigurations",
+            "ContentTypeName": "Technical Document"
+          }
+        }
+      }
+    },
+    "dmsContexualMenuCommandSet": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/Draft/Forms/AllItems.aspx",
+      "customActions": {
+        "fe8dd354-d51c-4eb3-a8da-8a7024204e33": {
+          "location": "ClientSideExtension.ListViewCommandSet.ContextMenu",
+          "properties": {}
+        }
+      }
+    },
+    "baselineForms_NewForm": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "d71b7328-47d9-4cf3-ab95-3c3f4ae7641d",
+        "PageType": 8,
+        "ContentTypeID": "0x0100D79EC4A042FB3244AB8D74D65B429906003696C4A4C34B594E9410C55023F838F0",
+        "RootFolder": "/sites/DOC4A-INT/Lists/Baselines",
+        "properties": {
+          "TechnicalFields": "_dlc_DocId,AlstomPartNoReference,AlstomReference,ProjectReference",
+          "BaseLineFields": "BaselineComments,Label,BaselineVersion"
+        }
+      }
+    },
+    "baselineForms_EditForm": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "d71b7328-47d9-4cf3-ab95-3c3f4ae7641d",
+        "PageType": 6,
+        "ContentTypeID": "0x0100D79EC4A042FB3244AB8D74D65B429906003696C4A4C34B594E9410C55023F838F0",
+        "RootFolder": "/sites/DOC4A-INT/Lists/Baselines",
+        "ID": 1,
+        "properties": {
+          "TechnicalFields": "_dlc_DocId,AlstomPartNoReference,AlstomReference,ProjectReference",
+          "BaseLineFields": "BaselineComments,Label,BaselineVersion"
+        }
+      }
+    },
+    "baselineForms_ViewForm": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/_layouts/15/SPListForm.aspx",
+      "formCustomizer": {
+        "componentId": "d71b7328-47d9-4cf3-ab95-3c3f4ae7641d",
+        "PageType": 4,
+        "ContentTypeID": "0x0100D79EC4A042FB3244AB8D74D65B429906003696C4A4C34B594E9410C55023F838F0",
+        "RootFolder": "/sites/DOC4A-INT/Lists/Baselines",
+        "ID": 1,
+        "properties": {
+          "TechnicalFields": "_dlc_DocId,AlstomPartNoReference,AlstomReference,ProjectReference",
+          "BaseLineFields": "BaselineComments,Label,BaselineVersion"
+        }
+      }
+    },
+    "dmlCustomUiChanges": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/Draft/Forms/AllItems.aspx",
+      "customActions": {
+        "52b65bd3-bcfb-4ff1-8fff-4b30436f24e5": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message 34"
+          }
+        }
+      }
+    },
+    "massImportStatus": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/Batch%20Import/Forms/AllItems.aspx",
+      "fieldCustomizers": {
+        "Status": {
+          "id": "b194bad4-c92d-4e76-bd17-7c638ee558aa",
+          "properties": {
+            "massImportEndpointUrl": "Value"
+          }
+        }
+      },
+      "customActions": {
+        "f5273e19-9824-4667-8d2f-6b83a02a2654": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {}
+        }
+      }
+    },
+    "notificationsContainer": {
+      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "customActions": {
+        "f5273e19-9824-4667-8d2f-6b83a02a2654": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {}
+        }
+      }
+    },
+    "dmsApplicationActions": {
+      "pageUrl": "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/Draft/Forms/AllItems.aspx",
+      "fieldCustomizers": {
+        "Title": {
+          "id": "d5e5f0a9-b38e-45d7-bc0a-6b292bee7341",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "createNewVersionMenu": {
+      "pageUrl":  "https://alstomgrouppp.sharepoint.com/sites/DOC4A-INT/Lists/Baselines/AllItems.aspx",
+      "customActions": {
+        "30be9da6-52d4-4efe-a655-ddc0fc09b0a8": {
+          "location": "ClientSideExtension.ListViewCommandSet.ContextMenu",
+          "properties": {}
+        }
+      }
+    }
+  },
+  "initialPage": "https://{tenantDomain}/_layouts/workbench.aspx"
+}

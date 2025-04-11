@@ -1,0 +1,154 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "dms-document-form-form-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/dmsDocumentForm/DmsDocumentFormFormCustomizer.js",
+          "manifest": "./src/extensions/dmsDocumentForm/DmsDocumentFormFormCustomizer.manifest.json"
+        }
+      ]
+    },
+    "dms-document-set-creation-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/dmsDocumentSetCreation/DmsDocumentSetCreationCommandSet.js",
+          "manifest": "./src/extensions/dmsDocumentSetCreation/DmsDocumentSetCreationCommandSet.manifest.json"
+        }
+      ]
+    },
+    "revision-menu-command-set-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/revisionMenuCommandSet/RevisionMenuCommandSetCommandSet.js",
+          "manifest": "./src/extensions/revisionMenuCommandSet/RevisionMenuCommandSetCommandSet.manifest.json"
+        }
+      ]
+    },
+    "create-revision-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/createRevision/CreateRevisionCommandSet.js",
+          "manifest": "./src/extensions/createRevision/CreateRevisionCommandSet.manifest.json"
+        }
+      ]
+    },
+    "project-admin-page-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/projectAdminPage/ProjectAdminPageWebPart.js",
+          "manifest": "./src/webparts/projectAdminPage/ProjectAdminPageWebPart.manifest.json"
+        }
+      ]
+    },
+    "start-workflow-menu-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/startWorkflowMenu/StartWorkflowMenuCommandSet.js",
+          "manifest": "./src/extensions/startWorkflowMenu/StartWorkflowMenuCommandSet.manifest.json"
+        }
+      ]
+    },
+    "proofreading-workflow-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/proofreadingWorkflow/ProofreadingWorkflowCommandSet.js",
+          "manifest": "./src/extensions/proofreadingWorkflow/ProofreadingWorkflowCommandSet.manifest.json"
+        }
+      ]
+    },
+    "dms-contexual-menu-command-set-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/dmsContexualMenuCommandSet/DmsContexualMenuCommandSetCommandSet.js",
+          "manifest": "./src/extensions/dmsContexualMenuCommandSet/DmsContexualMenuCommandSetCommandSet.manifest.json"
+        }
+      ]
+    },
+    "baseline-forms-form-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/baselineForms/BaselineFormsFormCustomizer.js",
+          "manifest": "./src/extensions/baselineForms/BaselineFormsFormCustomizer.manifest.json"
+        }
+      ]
+    },
+    "dml-custom-ui-changes-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/dmlCustomUiChanges/DmlCustomUiChangesApplicationCustomizer.js",
+          "manifest": "./src/extensions/dmlCustomUiChanges/DmlCustomUiChangesApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "mass-import-status-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/massImportStatus/MassImportStatusFieldCustomizer.js",
+          "manifest": "./src/extensions/massImportStatus/MassImportStatusFieldCustomizer.manifest.json"
+        }
+      ]
+    },
+    "notifications-container-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/notificationsContainer/NotificationsContainerApplicationCustomizer.js",
+          "manifest": "./src/extensions/notificationsContainer/NotificationsContainerApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "advanced-search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/advancedSearch/AdvancedSearchWebPart.js",
+          "manifest": "./src/webparts/advancedSearch/AdvancedSearchWebPart.manifest.json"
+        }
+      ]
+    },
+    "applicable-menu-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/applicableMenu/ApplicableMenuCommandSet.js",
+          "manifest": "./src/extensions/applicableMenu/ApplicableMenuCommandSet.manifest.json"
+        }
+      ]
+    },
+    "dms-application-actions-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/dmsApplicationActions/DmsApplicationActionsFieldCustomizer.js",
+          "manifest": "./src/extensions/dmsApplicationActions/DmsApplicationActionsFieldCustomizer.manifest.json"
+        }
+      ]
+    },
+    "create-new-version-menu-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/createNewVersionMenu/CreateNewVersionMenuCommandSet.js",
+          "manifest": "./src/extensions/createNewVersionMenu/CreateNewVersionMenuCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DmsDocumentFormFormCustomizerStrings": "lib/extensions/dmsDocumentForm/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "DmsDocumentSetCreationCommandSetStrings": "lib/extensions/dmsDocumentSetCreation/loc/{locale}.js",
+    "RevisionMenuCommandSetCommandSetStrings": "lib/extensions/revisionMenuCommandSet/loc/{locale}.js",
+    "StartWorkflowMenuCommandSetStrings": "lib/extensions/startWorkflowMenu/loc/{locale}.js",
+    "CreateRevisionCommandSetStrings": "lib/extensions/createRevision/loc/{locale}.js",
+    "ProjectAdminPageWebPartStrings": "lib/webparts/projectAdminPage/loc/{locale}.js",
+    "ProofreadingWorkflowCommandSetStrings": "lib/extensions/proofreadingWorkflow/loc/{locale}.js",
+    "DmsContexualMenuCommandSetCommandSetStrings": "lib/extensions/dmsContexualMenuCommandSet/loc/{locale}.js",
+    "BaselineFormsFormCustomizerStrings": "lib/extensions/baselineForms/loc/{locale}.js",
+    "DmlCustomUiChangesApplicationCustomizerStrings": "lib/extensions/dmlCustomUiChanges/loc/{locale}.js",
+    "MassImportStatusFieldCustomizerStrings": "lib/extensions/massImportStatus/loc/{locale}.js",
+    "NotificationsContainerApplicationCustomizerStrings": "lib/extensions/notificationsContainer/loc/{locale}.js",
+    "AdvancedSearchWebPartStrings": "lib/webparts/advancedSearch/loc/{locale}.js",
+    "ApplicableMenuCommandSetStrings": "lib/extensions/applicableMenu/loc/{locale}.js",
+    "DmsApplicationActionsFieldCustomizerStrings": "lib/extensions/dmsApplicationActions/loc/{locale}.js",
+    "CreateNewVersionMenuCommandSetStrings": "lib/extensions/createNewVersionMenu/loc/{locale}.js"
+  }
+}

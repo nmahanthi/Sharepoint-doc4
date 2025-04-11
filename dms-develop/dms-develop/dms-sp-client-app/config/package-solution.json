@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "DOC4A client-side components",
+    "id": "b5c07139-9e25-4a5a-b425-308123f10150",
+    "version": "1.2.0.5",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "TermStore.Read.All"
+      },
+      {
+        "resource": "Power Automate",
+        "scope": "User"
+      },
+      {
+        "resource": "dms",
+        "scope": "api://3199c120-c0da-4cfd-9583-84d96e0dc41f/user_impersonation"
+      }
+    ],
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "DOC4A client side components"
+      },
+      "longDescription": {
+        "default": "Deploys client-side components for DOC4A"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "DOC4A Feature",
+        "description": "The feature that activates elements of the dms-sp-client-app solution.",
+        "id": "2f72002c-77cb-4a59-8166-c1867424d998",
+        "version": "1.0.0.1",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "uiElements.xml",
+            "notificationsElements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/dms-sp-client-app.sppkg"
+  }
+}

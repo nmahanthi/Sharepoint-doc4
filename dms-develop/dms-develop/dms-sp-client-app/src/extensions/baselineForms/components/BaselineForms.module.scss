@@ -1,0 +1,492 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.baselineForms {
+  background-color: "[theme:white, default:#ffffff]";
+  color: "[theme:themePrimary, default:#0078d4]";
+  padding: 0.5rem;
+}
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      .fieldWrapper {
+        display: flex;
+        flex-basis: 33%;
+        flex-grow: 1;
+        flex-direction: column;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+.formOuterContainer {
+  position: static;
+}
+.formMidContainer {
+  position: relative;
+}
+.formInnerContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: absolute;
+  width: 100%;
+}
+.formInnerContainer.hidden {
+  visibility: hidden;
+}
+.formWrapper.viewMode {
+  label:global(.ms-Label[class*="root-"]),
+  input:global(.ms-TextField-field[class*="field-"]),
+  input:global(.ms-ComboBox-Input[class*="css-"]),
+  div:global(.ms-ComboBox[class*="css-"]) {
+    color: inherit;
+  }
+}
+.formWrapper.newMode {
+  min-width: none;
+}
+.formWrapper.editMode {
+  min-width: none;
+}
+.titleHeader {
+  width: auto;
+}
+.notificationsContianer {
+  outline: none;
+}
+.invalidSection {
+  color: "[theme: error, default: #a4262c]";
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: "[theme: neutralLight, default: #ededed]";
+  justify-items: center;
+  padding: 1rem;
+  .heading {
+    color: "[theme: neutralPrimary, default: #162134]";
+    font-weight: 600;
+    //font-size: inherit;
+    margin: 0;
+  }
+}
+.header > * {
+  display: flex;
+  align-self: center;
+}
+.dmsDynamicForm {
+  column-gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.urlField {
+  padding: 0em 1em 0.5em 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  > div {
+    flex-grow: 1;
+  }
+  > div:last-child {
+    flex-grow: 3;
+  }
+}
+.loadingField {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+  gap: 5px;
+}
+.validationWrapper {
+  .validationErrorMessage {
+    color: "[theme: error, default: #a4262c]";
+    animation-name: css-0, css-13;
+    animation-duration: 0.367s;
+    animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+    animation-fill-mode: both;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .invalidFieldWrapper {
+    div:global(.ms-BasePicker-text) {
+      border-color: "[theme: error, default: #a4262c]";
+    }
+  }
+}
+.validationWrapper.invalidFieldWrapper {
+  div:global(.ms-BasePicker-text) {
+    border-color: "[theme: error, default: #a4262c]";
+  }
+}
+
+
+
+/** Global Common styles **/
+:global .ms-Label {
+  font-size: 12px;
+  font-weight: bolder;
+  //text-transform: uppercase;
+  color: #595959;
+  padding: 5px 0px;
+  display: block;
+}
+
+.required {
+
+  :global .ms-TextField-fieldGroup,
+  :global .ms-Dropdown-title,
+  :global .react-select__control,
+  :global .ms-BasePicker-text,
+  :global .ms-BasePicker-input {
+    border: 1px solid red !important;
+    background: #fbf3f3;
+  }
+}
+
+/** Global Common styles ends **/
+
+/** General Styles **/
+.noPadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.marginTop30 {
+  margin-top: 30px;
+}
+
+.margin5 {
+  margin: 5px !important;
+}
+
+.marginTop32 {
+  margin-top: 32px;
+}
+
+.marginTop10 {
+  margin-top: 10px;
+}
+
+.marginTop5 {
+  margin-top: 5px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+.marginTop15 {
+  margin-top: 15px;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.borderTopStyle {
+  border-top: 1px solid #dddddd;
+}
+
+.borderBottomStyle {
+  border-bottom: 1px solid #ddd;
+}
+
+.borderWidth2 {
+  border-width: 2px !important;
+}
+
+
+.paddingTop20 {
+  padding-top: 20px !important;
+}
+
+.fontBold {
+  font-weight: 700;
+}
+
+.paddingBottom5 {
+  padding-bottom: 5px !important;
+}
+
+.width100{
+  width:100%;
+}
+
+.wordWrap{
+  word-wrap: break-word;
+}
+.reqLabel {
+  color: red !important;
+  padding-right: 12px;
+}
+
+
+.formFooter {
+  text-align: right;
+  padding-top: 30px;
+ // margin: 30px 0px;
+  border-top: 1px solid #dddddd;
+}
+
+.formFooter button {
+  margin-left: -24px;
+  margin-right: 40px;
+}
+
+
+.body {
+  /* flex: 4 4 auto;
+  padding: 0 24px 24px 24px;
+overflow-y: "hidden";*/
+  padding: 5px 25px;
+}
+
+
+.error {
+  background: #fbf3f3;
+  border: 1px solid red;
+  color: #c90303;
+}
+
+.notice {
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0 15px 10px 15px;
+  padding: 10px;
+  width: 95%;
+}
+
+.notice i {
+  font-size: 14px;
+  vertical-align: bottom;
+  padding-bottom: 2px;
+}
+
+.resultContainer{
+  border: 1px solid #aabbcc;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  height: auto;
+  padding: 10px;
+  min-height: 100px;
+}
+
+/**  Grid Layout **/
+.msGrid {
+  @include ms-Grid;
+}
+
+.msGridrow {
+  @include ms-Grid-row;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.msGridcol {
+  @include ms-Grid-col;
+}
+
+.mssm12 {
+  @include ms-sm12;
+}
+
+.mslg3 {
+  @include ms-lg3;
+}
+
+.msxxl2 {
+  @include ms-xxl2;
+}
+
+.mslg9 {
+  @include ms-lg9;
+}
+
+.msxxl10 {
+  @include ms-xxl10;
+}
+
+.mssm4 {
+  @include ms-sm4;
+}
+
+.mssm5 {
+  @include ms-sm5;
+}
+.mssm8 {
+  @include ms-sm8;
+}
+
+
+.mssm11 {
+  @include ms-sm11;
+}
+
+.mssm10 {
+  @include ms-sm10;
+}
+
+.mssm1 {
+  @include ms-sm1;
+}
+
+.mssm2 {
+  @include ms-sm2;
+}
+
+.mssm3 {
+  @include ms-sm3;
+}
+
+.mssm6 {
+  @include ms-sm6;
+}
+
+/** Grid Layout ends **/
+
+
+.CloseButton {
+  color: "[theme: neutralPrimary, default: #162134]";
+  margin-left: auto;
+  margin-top: 4px;
+  margin-right: 2px;
+
+  :hover {
+    color: "[theme: neutralDark, default: #162134]";
+  }
+}
+
+
+.AdditionalRow {
+  font-size: 12px;
+  font-weight: 400;
+  outline: transparent;
+  position: relative;
+  border-bottom: 1px solid rgb(243, 245, 253);
+  background: rgb(255, 255, 255);
+  display: inline-flex;
+  min-width: 100%;
+  min-height: 42px;
+  white-space: nowrap;
+  padding: 11px;
+  box-sizing: border-box;
+  vertical-align: top;
+  text-align: left;
+}
+
+.DialogContainer {
+  display: "flex";
+  flex-flow: "column nowrap";
+  align-items: "stretch";
+  width: 70%;
+  height: 70%;
+}
+.label {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+  font-weight: 800;
+  margin: 0pc 15px;
+  padding: 5px 0px;
+  border: 1px solid black;
+}
+
+.resultContainer{
+  border: 1px solid #aabbcc;
+  border-radius: 10px;
+  background-color: #e9ecee;
+  height: auto;
+  padding: 10px;
+  min-height: 100px;
+}
+
+:global .ms-Modal-scrollableContent {
+  overflow-y: visible !important;
+}
+
+
+.displayTable {
+  width: 100%;
+  td {
+    padding: 10px 5px;
+  }
+  th {
+    border-bottom: 1px solid #aabbcc;
+    text-align: center;
+  }
+}
+
+.label {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+  font-weight: 800;
+  margin: 0;
+  padding: 5px 0px;
+  border: 1px solid black;
+}
+.searchQueryContainer {
+  border: 1px solid #aabbcc;
+  border-radius: 10px;
+  background-color: #e0e3e5;
+  height: auto;
+  padding: 10px;
+  min-height: 100px;
+}
+
+.spinnerIcon {
+  width: 33px;
+  float: left;
+}
+
+.error {
+  background: #fbf3f3;
+  border: 1px solid red;
+  color: #c90303;
+}
+
+.notice {
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0 15px 10px 15px;
+  padding: 10px;
+  width: 95%;
+}
+
+.notice i {
+  font-size: 14px;
+  vertical-align: bottom;
+  padding-bottom: 2px;
+}
+.agGridContainer{
+  width: 100%;
+}

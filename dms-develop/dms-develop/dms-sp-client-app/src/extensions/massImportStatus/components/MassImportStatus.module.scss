@@ -1,0 +1,84 @@
+.massImportStatus {
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  > div {
+    display: flex;
+  }
+}
+.commandBarMenuButton {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 36px;
+  div:global(.ms-TooltipHost) {
+    pointer-events: initial;
+  }
+}
+.tooltipIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 10px;
+  > * {
+    display: flex;
+  }
+}
+.loadingIcon {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.filterTextField {
+  display: flex;
+  flex-grow: 1;
+  max-width: 150px;
+}
+.callout {
+  visibility: visible;
+}
+.calloutTitle {
+  display: flex;
+  flex-grow: 4;
+}
+.errorIcon {
+  color: red;
+}
+.calloutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px 15px 5px 15px;
+  min-width: 350px;
+}
+.tableContainer {
+  max-height: 350px;
+  overflow-y: auto;
+  width: 100%;
+}
+.calloutHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}

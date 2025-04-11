@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="CreateRevision"
+        RegistrationId="101"
+        RegistrationType="List"
+        Location="ClientSideExtension.ListViewCommandSet.ContextMenu"
+        ClientSideComponentId="6b73759a-ebeb-482a-97cd-8e2f52b0eca5"
+        ClientSideComponentProperties="{&quot;DraftListTitle&quot;:&quot;Draft&quot;,&quot;PermissionListTitle&quot;:&quot;PermissionsConfigurations&quot;,&quot;ContentTypeName&quot;:&quot;Technical Document&quot;,&quot;ApplicableListTitle&quot;:&quot;Applicable Documents&quot;}">
+    </CustomAction>
+</Elements>

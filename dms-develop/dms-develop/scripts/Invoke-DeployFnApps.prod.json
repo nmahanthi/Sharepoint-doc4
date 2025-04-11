@@ -1,0 +1,12 @@
+{
+    "subscriptionId":"c5ea61f3-1975-4b59-9e9c-66128b8989f3",
+    "functions":[
+        { "folder": "dms-az-baseline-export", "appName": "pasdc310373x002" },
+        { "folder": "dms-az-doc-postprocessing", "appName": "pasdc310373x003" },
+        { "folder": "dms-az-event-publishing", "appName": "pasdc310373x006" },
+        { "folder": "dms-az-mass-import", "appName": "pasdc310373x004" },
+        { "folder": "dms-az-update-reference", "appName": "pasdc310373x007" },
+        { "folder": "dms-az-user-api", "appName": "pasdc310373x005" }
+    ],
+    "resourceGroup":"sdc3-10373-prod-rg"
+}

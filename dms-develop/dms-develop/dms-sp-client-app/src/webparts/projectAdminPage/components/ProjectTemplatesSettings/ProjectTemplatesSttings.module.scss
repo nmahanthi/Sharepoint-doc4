@@ -1,0 +1,96 @@
+.container {
+    padding-left: 8px;
+    max-width: 900px;
+  }
+  
+  .flexContainer {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .sidebar {
+    width: 150px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .contentTypes {
+    width: 150px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+  
+    &.active {
+      text-decoration: underline;
+      color: purple;
+      font-weight: bolder;
+    }
+  }
+  
+  .icon {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .deleteButton {
+    color: #77aee2;
+    margin-left: auto;
+  
+    span>i {
+      font-weight: bolder !important;
+    }
+  }
+  .iconButtonStyle{
+    position: absolute;
+    right: 3px;
+    top:1%;
+    // transform: translate(-50%);
+  }
+  .cancelButton{
+    margin-left: 5px;
+  }
+  .fieldContainer{
+    position: relative;
+    flex: 0.5;
+  }
+  .fileInput{
+    display: none;
+  }
+  .newLink {
+    color: #6097eb;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .content {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .saveButton {
+    margin-top: 10px;
+  }
+ 
+  .formRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  
+    .label {
+      margin-right: 10px;
+      width: 150px;
+      font-weight: 600;
+    }
+  
+    .input {
+      flex: 0.5;
+    }
+  }
+
+  .deleteBtn{
+    margin-right: 5px;
+  }

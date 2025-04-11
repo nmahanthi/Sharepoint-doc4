@@ -1,0 +1,3181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: Remove Prj Name, Alias, etc (All fields having a project dependent default value) -->
+<!-- TODO: Change field types for moc status and handover doc status -->
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema ProvisioningSchema-2022-09.xsd">
+  <pnp:Preferences
+    Generator="PnP.Framework, Version=1.16.0.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c">
+    <pnp:Parameters>
+      <pnp:Parameter Key="ProjectType" Required="false" />
+      <pnp:Parameter Key="ProjectAlias" Required="false" />
+      <pnp:Parameter Key="ProjectLanguage" Required="false" />
+      <pnp:Parameter Key="ProjectName" Required="false" />
+      <pnp:Parameter Key="ProjectCode" Required="false" />
+      <pnp:Parameter Key="IsActive" Required="false" />
+      <pnp:Parameter Key="ModifiedByDisplayName" Required="false" />
+      <pnp:Parameter Key="ModifiedByEmail" Required="false" />
+      <pnp:Parameter Key="ModifiedDate" Required="false" />
+      <pnp:Parameter Key="DirectCustomerLabels" Required="false" />
+      <pnp:Parameter Key="DirectCustomerGuids" Required="false" />
+      <pnp:Parameter Key="EndCustomerLabels" Required="false" />
+      <pnp:Parameter Key="EndCustomerGuids" Required="false" />
+      <pnp:Parameter Key="CreatedByDisplayName" Required="false" />
+      <pnp:Parameter Key="CreatedByEmail" Required="false" />
+      <pnp:Parameter Key="CreatedDate" Required="false" />
+      <pnp:Parameter Key="IsMigrated" Required="false" />
+      <pnp:Parameter Key="PLOwnershipLabels" Required="false" />
+      <pnp:Parameter Key="PLOwnershipGuids" Required="false" />
+      <pnp:Parameter Key="ProductLabel" Required="false" />
+      <pnp:Parameter Key="ProductGuid" Required="false" />
+      <pnp:Parameter Key="ProductLineLabel" Required="false" />
+      <pnp:Parameter Key="ProductLineGuid" Required="false" />
+      <pnp:Parameter Key="GeographyLabel" Required="false" />
+      <pnp:Parameter Key="DocumentFormProperties" Required="false" />
+      <pnp:Parameter Key="ProofreadingCustomActionProps" Required="false" />
+      <pnp:Parameter Key="AvvaCustomActionProps" Required="false" />
+      <pnp:Parameter Key="CancelCustomActionProps" Required="false" />
+
+      <pnp:Parameter Key="CreateRevisionCustomActionProps" Required="false" />
+      <pnp:Parameter Key="DraftCustomActionProps" Required="false" />
+      <pnp:Parameter Key="DmlCustomUiChangesAppCustomizerCustomActionProps" Required="false" />
+      <pnp:Parameter Key="MassImportStatusProperties" Required="false" />
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Templates ID="CONTAINER-TEMPLATE-BDA2B7DA8E9640898D18AAE249145B63">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-BDA2B7DA8E9640898D18AAE249145B63" Version="1"
+      BaseSiteTemplate="STS#3" Scope="RootSite">
+      <pnp:SiteFields>
+        <Field DisplayName="Author Reviewed By" Type="User" Required="FALSE" List="UserInfo"
+          ID="{474a2c62-8ebd-45f1-a281-2581086a3203}" SourceID="{{siteid}}"
+          StaticName="AuthorReviewedBy" Name="AuthorReviewedBy" Group="DMS" CustomFormatter=""
+          EnforceUniqueValues="FALSE" UserSelectionMode="PeopleOnly" Indexed="FALSE" />
+        <Field DisplayName="Author Reviewed Date" Type="DateTime" Required="FALSE"
+          ID="{8097810a-5c0f-4c4c-9c1a-acc75ba73694}"
+          SourceID="{1266da58-7df1-4dd8-916c-9ffc8d551850}" StaticName="AuthorReviewedDate"
+          Name="AuthorReviewedDate" Group="DMS" CustomFormatter="" EnforceUniqueValues="FALSE"
+          FriendlyDisplayFormat="Disabled" Format="DateOnly" Indexed="FALSE" CalType="0"></Field>
+        <Field Type="Note" DisplayName="DirectCustomer_0"
+          StaticName="jbd7b1bd2d1c4be0a34e7bd99d047db9" Name="jbd7b1bd2d1c4be0a34e7bd99d047db9"
+          ID="{cd33c426-6bdc-4014-9429-7218aa7d0b9a}" ShowInViewForms="FALSE" Required="FALSE"
+          Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" />
+        <Field Type="Note" DisplayName="PLOwnership_0" StaticName="l522119e42874dc78b23656c0391ab96"
+          Name="l522119e42874dc78b23656c0391ab96" ID="{20b681e0-9e5b-4d17-9209-786e9755ba60}"
+          ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="ABS_0" StaticName="n5a1eb9573fb4634a4f840f34bb0574e"
+          Name="n5a1eb9573fb4634a4f840f34bb0574e" ID="{7c856ad7-914c-40b1-b17f-3dcaf6e67d54}"
+          ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="EndCustomer_0" StaticName="if57368e4bcf46f2b9219b212cc09b7a"
+          Name="if57368e4bcf46f2b9219b212cc09b7a" ID="{6d37b728-cbda-47d7-bc04-07214b040159}"
+          ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" />
+        <Field Type="Note" DisplayName="ProjectPLOwnership_0"
+          StaticName="h4fd617e322d47a19b2ab1cd6eeddbd3" Name="h4fd617e322d47a19b2ab1cd6eeddbd3"
+          ID="{a31244f1-ddc3-4b9f-8a1c-5ed40f310a3d}" ShowInViewForms="FALSE" Required="FALSE"
+          Hidden="TRUE" CanToggleHidden="TRUE" SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" />
+        <Field Type="Note" DisplayName="AlstomProduct_0"
+          StaticName="e8462a2dee3f49bd9cbcc3d2836739a8" Name="e8462a2dee3f49bd9cbcc3d2836739a8"
+          ID="{8d87ff7b-d0f0-45cc-86a6-79f93419fc91}" ShowInViewForms="FALSE" Required="FALSE"
+          CanToggleHidden="TRUE" SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" Hidden="TRUE" />
+        <Field Type="Note" DisplayName="PBS_0" StaticName="b7428419b41846fb99ec3ba983dae58c"
+          Name="b7428419b41846fb99ec3ba983dae58c" ID="{f93c2d15-9403-4434-b498-3f4993469814}"
+          ShowInViewForms="FALSE" Required="FALSE" CanToggleHidden="TRUE"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" Hidden="TRUE" />
+        <Field Type="Choice" DisplayName="SBS" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{9f4c0b01-8db9-4010-8ceb-f375c7e7c7ac}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="SBS" Name="SBS"
+          CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Bogie</CHOICE>
+            <CHOICE>HV apparatus</CHOICE>
+            <CHOICE>Main transformer</CHOICE>
+            <CHOICE>Traction case</CHOICE>
+            <CHOICE>Braking resistor</CHOICE>
+            <CHOICE>Motor cooling</CHOICE>
+            <CHOICE>Traction motor</CHOICE>
+            <CHOICE>Energy measurement system</CHOICE>
+            <CHOICE>Auxiliary case MV</CHOICE>
+            <CHOICE>Battery charger</CHOICE>
+            <CHOICE>Auxiliary cooling</CHOICE>
+            <CHOICE>Fuel cell power pack</CHOICE>
+            <CHOICE>Fuel cell chopper</CHOICE>
+            <CHOICE>Compressed hydrogen storage system</CHOICE>
+            <CHOICE>Compressed hydrogen storage system control electronics</CHOICE>
+            <CHOICE>Hydrogen distribution system</CHOICE>
+            <CHOICE>Power pack</CHOICE>
+            <CHOICE>Power pack controls</CHOICE>
+            <CHOICE>Exhaust treatment</CHOICE>
+            <CHOICE>Batteries starter</CHOICE>
+            <CHOICE>High voltage generator</CHOICE>
+            <CHOICE>Power pack cooling system</CHOICE>
+            <CHOICE>Fuel system, fuel tank</CHOICE>
+            <CHOICE>Equiped batteries box</CHOICE>
+            <CHOICE>Pantograph</CHOICE>
+            <CHOICE>Pantograph command module</CHOICE>
+            <CHOICE>Pantograph tilt</CHOICE>
+            <CHOICE>Brake control</CHOICE>
+            <CHOICE>Brake auxiliary system</CHOICE>
+            <CHOICE>Wheel slide protection</CHOICE>
+            <CHOICE>Braking system HMI</CHOICE>
+            <CHOICE>Energy storage module</CHOICE>
+            <CHOICE>ESS power converter</CHOICE>
+            <CHOICE>ESS monitoring system</CHOICE>
+            <CHOICE>ESS control electronics</CHOICE>
+            <CHOICE>Water &amp; sanitary system</CHOICE>
+            <CHOICE>Toilet technical components</CHOICE>
+            <CHOICE>Washroom</CHOICE>
+            <CHOICE>Bar office</CHOICE>
+            <CHOICE>Catering system</CHOICE>
+            <CHOICE>Catering module</CHOICE>
+            <CHOICE>Passenger equipped ceiling</CHOICE>
+            <CHOICE>Technical compartment air distribution</CHOICE>
+            <CHOICE>Bed</CHOICE>
+            <CHOICE>Room partition wall</CHOICE>
+            <CHOICE>Table</CHOICE>
+            <CHOICE>Handles &amp; handrails</CHOICE>
+            <CHOICE>Specific arrangement</CHOICE>
+            <CHOICE>Side lining</CHOICE>
+            <CHOICE>Platform lining</CHOICE>
+            <CHOICE>Room paneling</CHOICE>
+            <CHOICE>End wall paneling</CHOICE>
+            <CHOICE>Side lining add-on</CHOICE>
+            <CHOICE>Technical compartment lighting ceiling</CHOICE>
+            <CHOICE>Passenger access doors</CHOICE>
+            <CHOICE>Passenger internal doors</CHOICE>
+            <CHOICE>Gangway doors</CHOICE>
+            <CHOICE>Service doors</CHOICE>
+            <CHOICE>Accessibility</CHOICE>
+            <CHOICE>Lifting</CHOICE>
+            <CHOICE>External entrance</CHOICE>
+            <CHOICE>Train crew doors</CHOICE>
+            <CHOICE>Technical compartment doors</CHOICE>
+            <CHOICE>Detrainment doors</CHOICE>
+            <CHOICE>Passenger HVAC unit</CHOICE>
+            <CHOICE>Cabin HVAC unit</CHOICE>
+            <CHOICE>HVAC control</CHOICE>
+            <CHOICE>Auxiliary heating system</CHOICE>
+            <CHOICE>Crew seats</CHOICE>
+            <CHOICE>Passenger seats</CHOICE>
+            <CHOICE>Passenger windows</CHOICE>
+            <CHOICE>Emergency items</CHOICE>
+            <CHOICE>Fire extinguishers</CHOICE>
+            <CHOICE>Gangways</CHOICE>
+            <CHOICE>Hydraulic production &amp; treatment</CHOICE>
+            <CHOICE>Hydraulic storage</CHOICE>
+            <CHOICE>Main compressed air generation and treatment</CHOICE>
+            <CHOICE>Auxiliary compressed air generation and treatment</CHOICE>
+            <CHOICE>Main air tank</CHOICE>
+            <CHOICE>Suspension air tank</CHOICE>
+            <CHOICE>Pneumatic distribution - vehicle</CHOICE>
+            <CHOICE>Pneumatic panel - vehicle</CHOICE>
+            <CHOICE>Pneumatic distribution - intercar</CHOICE>
+            <CHOICE>Hydraulic distribution - vehicle</CHOICE>
+            <CHOICE>Hydraulic panel - vehicle</CHOICE>
+            <CHOICE>Hydraulic distribution - intercar</CHOICE>
+            <CHOICE>HV distribution - vehicle</CHOICE>
+            <CHOICE>MV distribution - vehicle</CHOICE>
+            <CHOICE>LV distribution - vehicle</CHOICE>
+            <CHOICE>HV distribution - intercar</CHOICE>
+            <CHOICE>MV distribution - intercar</CHOICE>
+            <CHOICE>LV distribution - intercar</CHOICE>
+            <CHOICE>Cable guiding systems</CHOICE>
+            <CHOICE>Equipotential</CHOICE>
+            <CHOICE>MV cubicles</CHOICE>
+            <CHOICE>LV cubicles</CHOICE>
+            <CHOICE>Electrical junction box</CHOICE>
+            <CHOICE>Electrical plugs</CHOICE>
+            <CHOICE>Fire &amp; smoke detection system</CHOICE>
+            <CHOICE>Automatic extinguishing system</CHOICE>
+            <CHOICE>Driver console</CHOICE>
+            <CHOICE>Master controller</CHOICE>
+            <CHOICE>Vigilance electrical components</CHOICE>
+            <CHOICE>Remote control</CHOICE>
+            <CHOICE>Bogie acceleration measurement</CHOICE>
+            <CHOICE>Hotbox measurement</CHOICE>
+            <CHOICE>Bogie monitoring</CHOICE>
+            <CHOICE>Tilting control</CHOICE>
+            <CHOICE>Public address module</CHOICE>
+            <CHOICE>On-board crew communication</CHOICE>
+            <CHOICE>Passenger information system</CHOICE>
+            <CHOICE>Passenger alarm system</CHOICE>
+            <CHOICE>CCTV system</CHOICE>
+            <CHOICE>Ticketing system</CHOICE>
+            <CHOICE>Internet on board</CHOICE>
+            <CHOICE>Passenger counting device</CHOICE>
+            <CHOICE>Train-to-ground radio communication for information system</CHOICE>
+            <CHOICE>Signalling</CHOICE>
+            <CHOICE>Diagnostics &amp; recording system</CHOICE>
+            <CHOICE>Vigilance</CHOICE>
+            <CHOICE>Signalling speed sensors &amp; antennas</CHOICE>
+            <CHOICE>Train-to-ground radio communication for signaling</CHOICE>
+            <CHOICE>TCMS hardware</CHOICE>
+            <CHOICE>Badge reader</CHOICE>
+            <CHOICE>Driver controls screens</CHOICE>
+            <CHOICE>Train-to-ground radio communication for OMS/AMM</CHOICE>
+            <CHOICE>Cabin frame</CHOICE>
+            <CHOICE>Side frame</CHOICE>
+            <CHOICE>Underframe</CHOICE>
+            <CHOICE>Intermediate frame</CHOICE>
+            <CHOICE>Roof frame</CHOICE>
+            <CHOICE>Car end frame</CHOICE>
+            <CHOICE>Structural partitions</CHOICE>
+            <CHOICE>Passive safety devices</CHOICE>
+            <CHOICE>Carbodyshell add on</CHOICE>
+            <CHOICE>Carbodyshell painting</CHOICE>
+            <CHOICE>Carbody to bogie</CHOICE>
+            <CHOICE>Driver seat</CHOICE>
+            <CHOICE>Assistant seat</CHOICE>
+            <CHOICE>Windscreen</CHOICE>
+            <CHOICE>Lateral window</CHOICE>
+            <CHOICE>Cabin floor</CHOICE>
+            <CHOICE>Cabin external doors</CHOICE>
+            <CHOICE>Front end system</CHOICE>
+            <CHOICE>Driver desk unequiped</CHOICE>
+            <CHOICE>Cabin partition wall</CHOICE>
+            <CHOICE>Cabin lining</CHOICE>
+            <CHOICE>Cabin accessories</CHOICE>
+            <CHOICE>Interior accessories</CHOICE>
+            <CHOICE>Cabin safety accessories</CHOICE>
+            <CHOICE>Driver desk lining</CHOICE>
+            <CHOICE>Cabin ceiling</CHOICE>
+            <CHOICE>Cabin air duct</CHOICE>
+            <CHOICE>Horn</CHOICE>
+            <CHOICE>Sanding</CHOICE>
+            <CHOICE>Decorative / protective strips</CHOICE>
+            <CHOICE>Fairings, openings</CHOICE>
+            <CHOICE>Thermal &amp; acoustic insulation</CHOICE>
+            <CHOICE>Supporting elements</CHOICE>
+            <CHOICE>Passenger floor</CHOICE>
+            <CHOICE>Bar floor</CHOICE>
+            <CHOICE>Technical compartment floor</CHOICE>
+            <CHOICE>Stair</CHOICE>
+            <CHOICE>Acoustic chamber</CHOICE>
+            <CHOICE>Consumable</CHOICE>
+            <CHOICE>Wheel flange lubricator</CHOICE>
+            <CHOICE>Operational coupling system</CHOICE>
+            <CHOICE>Semi-permanent coupling system</CHOICE>
+            <CHOICE>Buffer system</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Choice" DisplayName="Confidentiality Level" Required="TRUE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE"
+          Group="DMS" ID="{d0c4b403-7061-4728-ad9a-b5e3734b6333}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ConfidentialityLevel"
+          Name="ConfidentialityLevel" CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Public</CHOICE>
+            <CHOICE>Confidential</CHOICE>
+            <CHOICE>Restricted</CHOICE>
+          </CHOICES>
+          <Default>Restricted</Default>
+        </Field>
+        <Field Type="Choice" DisplayName="Document Type" Required="TRUE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{ab4d4705-10c0-4246-ac2b-1bd90f6fd34c}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="DocumentType"
+          Name="DocumentType" CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Cover sheet (D00021)</CHOICE>
+            <CHOICE>List of documents (D00022)</CHOICE>
+            <CHOICE>List of contents (D00023)</CHOICE>
+            <CHOICE>Main document (D00130)</CHOICE>
+            <CHOICE>Documentation description (D00132)</CHOICE>
+            <CHOICE>Vendor list (D00134)</CHOICE>
+            <CHOICE>Supplier list (D00135)</CHOICE>
+            <CHOICE>Distribution list (D00136)</CHOICE>
+            <CHOICE>Meeting report (D00137)</CHOICE>
+            <CHOICE>Status report (D00138)</CHOICE>
+            <CHOICE>Damage report (D00140)</CHOICE>
+            <CHOICE>Installation report (D00141)</CHOICE>
+            <CHOICE>Commissioning report (D00142)</CHOICE>
+            <CHOICE>Handing over protocol (D00143)</CHOICE>
+            <CHOICE>Letter (D00144)</CHOICE>
+            <CHOICE>Note (D00145)</CHOICE>
+            <CHOICE>Document interchange list (D00024)</CHOICE>
+            <CHOICE>Time sheet (D00146)</CHOICE>
+            <CHOICE>Time schedule (D00025)</CHOICE>
+            <CHOICE>Activity network plan (D00026)</CHOICE>
+            <CHOICE>Resource load diagram (D00027)</CHOICE>
+            <CHOICE>Dispatch specification (D00147)</CHOICE>
+            <CHOICE>Shipping list (D00148)</CHOICE>
+            <CHOICE>Packing list (D00149)</CHOICE>
+            <CHOICE>Airway bill (D00150)</CHOICE>
+            <CHOICE>Bill of lading (D00151)</CHOICE>
+            <CHOICE>Certificate of origin (D00152)</CHOICE>
+            <CHOICE>Site specification for personnel (D00030)</CHOICE>
+            <CHOICE>Change notification (D00153)</CHOICE>
+            <CHOICE>Change request (D00154)</CHOICE>
+            <CHOICE>Escape plan (D00155)</CHOICE>
+            <CHOICE>Emergency instruction (D00156)</CHOICE>
+            <CHOICE>Fire protection plan (D00157)</CHOICE>
+            <CHOICE>Noise protection plan (D00158)</CHOICE>
+            <CHOICE>Inquiry (D00159)</CHOICE>
+            <CHOICE>Calculation sheet (commercial) (D00160)</CHOICE>
+            <CHOICE>Offer (D00161)</CHOICE>
+            <CHOICE>Letter of intent (D00162)</CHOICE>
+            <CHOICE>Letter of acceptance (D00163)</CHOICE>
+            <CHOICE>Approval application (D00164)</CHOICE>
+            <CHOICE>Acceptance/ authorisation (D00165)</CHOICE>
+            <CHOICE>License (D00166)</CHOICE>
+            <CHOICE>Contract (D00167)</CHOICE>
+            <CHOICE>Final acceptance certificate (D00168)</CHOICE>
+            <CHOICE>Terms of delivery (D00169)</CHOICE>
+            <CHOICE>Order (D00171)</CHOICE>
+            <CHOICE>Delivery note (D00172)</CHOICE>
+            <CHOICE>Invoice (D00173)</CHOICE>
+            <CHOICE>Insurance policy (D00174)</CHOICE>
+            <CHOICE>Damage assessment (D00175)</CHOICE>
+            <CHOICE>Certificate of guarantee (D00176)</CHOICE>
+            <CHOICE>Expertise (D00177)</CHOICE>
+            <CHOICE>Inspection instruction (D00183)</CHOICE>
+            <CHOICE>Catalogue (D00187)</CHOICE>
+            <CHOICE>Building regulation (D00190)</CHOICE>
+            <CHOICE>Operation decree (D00191)</CHOICE>
+            <CHOICE>Environmental decree (D00192)</CHOICE>
+            <CHOICE>IEC standard (D00193)</CHOICE>
+            <CHOICE>ISO standard (D00194)</CHOICE>
+            <CHOICE>Development plan (D00225)</CHOICE>
+            <CHOICE>Product list (D00213)</CHOICE>
+            <CHOICE>Product type list (D00214)</CHOICE>
+            <CHOICE>Quality manual (D00078)</CHOICE>
+            <CHOICE>Quality plan (D00079)</CHOICE>
+            <CHOICE>Quality record (D00080)</CHOICE>
+            <CHOICE>Audit plan (D00081)</CHOICE>
+            <CHOICE>Audit report (D00082)</CHOICE>
+            <CHOICE>Quality guideline (D00215)</CHOICE>
+            <CHOICE>Non-conformity report (D00216)</CHOICE>
+            <CHOICE>Corrective and preventive action report (D00217)</CHOICE>
+            <CHOICE>Audit follow-up report (D00218)</CHOICE>
+            <CHOICE>Audit personnel record (D00219)</CHOICE>
+            <CHOICE>Safety study (D00220)</CHOICE>
+            <CHOICE>Risk assessment (D00221)</CHOICE>
+            <CHOICE>Test certificate (D00083)</CHOICE>
+            <CHOICE>Fault report (D00222)</CHOICE>
+            <CHOICE>Cover sheet (D00021)</CHOICE>
+            <CHOICE>List of documents (D00022)</CHOICE>
+            <CHOICE>List of contents (D00023)</CHOICE>
+            <CHOICE>Main document (D00130)</CHOICE>
+            <CHOICE>Documentation description (D00132)</CHOICE>
+            <CHOICE>Distribution list (D00136)</CHOICE>
+            <CHOICE>Meeting report (D00137)</CHOICE>
+            <CHOICE>Status report (D00138)</CHOICE>
+            <CHOICE>Technical report (management) (D00139)</CHOICE>
+            <CHOICE>Damage report (D00140)</CHOICE>
+            <CHOICE>Installation report (D00141)</CHOICE>
+            <CHOICE>Commissioning report (D00142)</CHOICE>
+            <CHOICE>Handing over protocol (D00143)</CHOICE>
+            <CHOICE>Letter (D00144)</CHOICE>
+            <CHOICE>Note (D00145)</CHOICE>
+            <CHOICE>Document interchange list (D00024)</CHOICE>
+            <CHOICE>Storage specification (D00028)</CHOICE>
+            <CHOICE>Site specification for personnel (D00030)</CHOICE>
+            <CHOICE>Change request (D00154)</CHOICE>
+            <CHOICE>Training description (D00031)</CHOICE>
+            <CHOICE>Expertise (D00177)</CHOICE>
+            <CHOICE>Dimension drawing (D00032)</CHOICE>
+            <CHOICE>Material declaration (D00129)</CHOICE>
+            <CHOICE>Data sheet (D00178)</CHOICE>
+            <CHOICE>Structure diagram (D00119)</CHOICE>
+            <CHOICE>System description (D00179)</CHOICE>
+            <CHOICE>Description of designation system (D00180)</CHOICE>
+            <CHOICE>Maintenance instruction (for skilled persons) (D00033)</CHOICE>
+            <CHOICE>Inspection instruction (D00183)</CHOICE>
+            <CHOICE>Technical report (D00185)</CHOICE>
+            <CHOICE>R&amp;D report (D00186)</CHOICE>
+            <CHOICE>Catalogue (D00187)</CHOICE>
+            <CHOICE>Product leaflet (D00188)</CHOICE>
+            <CHOICE>Technical publication (D00189)</CHOICE>
+            <CHOICE>Building regulation (D00190)</CHOICE>
+            <CHOICE>Operation decree (D00191)</CHOICE>
+            <CHOICE>Environmental decree (D00192)</CHOICE>
+            <CHOICE>IEC standard (D00193)</CHOICE>
+            <CHOICE>ISO standard (D00194)</CHOICE>
+            <CHOICE>Requirement specification (D00035)</CHOICE>
+            <CHOICE>Arrangement drawing (site) (D00062)</CHOICE>
+            <CHOICE>Site plan (base document for electrical installation) (D00086)</CHOICE>
+            <CHOICE>Arrangement drawing (building) (D00063)</CHOICE>
+            <CHOICE>Arrangement drawing (equipment) (D00064)</CHOICE>
+            <CHOICE>Product type list (D00214)</CHOICE>
+            <CHOICE>Audit report (D00082)</CHOICE>
+            <CHOICE>Batch recipe (D00233)</CHOICE>
+            <CHOICE>Cover sheet (D00021)</CHOICE>
+            <CHOICE>List of documents (D00022)</CHOICE>
+            <CHOICE>List of contents (D00023)</CHOICE>
+            <CHOICE>Main document (D00130)</CHOICE>
+            <CHOICE>Documentation description (D00132)</CHOICE>
+            <CHOICE>Documentation structure diagram (D00133)</CHOICE>
+            <CHOICE>Distribution list (D00136)</CHOICE>
+            <CHOICE>Meeting report (D00137)</CHOICE>
+            <CHOICE>Status report (D00138)</CHOICE>
+            <CHOICE>Technical report (management) (D00139)</CHOICE>
+            <CHOICE>Damage report (D00140)</CHOICE>
+            <CHOICE>Installation report (D00141)</CHOICE>
+            <CHOICE>Commissioning report (D00142)</CHOICE>
+            <CHOICE>Handing over protocol (D00143)</CHOICE>
+            <CHOICE>Letter (D00144)</CHOICE>
+            <CHOICE>Note (D00145)</CHOICE>
+            <CHOICE>Document interchange list (D00024)</CHOICE>
+            <CHOICE>Storage specification (D00028)</CHOICE>
+            <CHOICE>Transport specification (D00029)</CHOICE>
+            <CHOICE>Site specification for personnel (D00030)</CHOICE>
+            <CHOICE>Change request (D00154)</CHOICE>
+            <CHOICE>Noise protection plan (D00158)</CHOICE>
+            <CHOICE>Dimension drawing (D00032)</CHOICE>
+            <CHOICE>Material declaration (D00129)</CHOICE>
+            <CHOICE>Data sheet (D00178)</CHOICE>
+            <CHOICE>Structure diagram (D00119)</CHOICE>
+            <CHOICE>System description (D00179)</CHOICE>
+            <CHOICE>Description of designation system (D00180)</CHOICE>
+            <CHOICE>Transportation instruction (D00120)</CHOICE>
+            <CHOICE>Storage instruction (D00121)</CHOICE>
+            <CHOICE>Installation instruction (D00122)</CHOICE>
+            <CHOICE>Maintenance instruction (for unskilled persons) (D00125)</CHOICE>
+            <CHOICE>Decommissioning instruction (D00126)</CHOICE>
+            <CHOICE>Manufacturing instructions (D00181)</CHOICE>
+            <CHOICE>Inspection instruction (D00183)</CHOICE>
+            <CHOICE>Technical report (D00185)</CHOICE>
+            <CHOICE>Requirement specification (D00035)</CHOICE>
+            <CHOICE>Material specification (D00199)</CHOICE>
+            <CHOICE>Calculation sheet (technical) (D00037)</CHOICE>
+            <CHOICE>Ground plan (D00205)</CHOICE>
+            <CHOICE>Development plan (D00225)</CHOICE>
+            <CHOICE>Excavation plan (D00206)</CHOICE>
+            <CHOICE>Foundation drawing (D00207)</CHOICE>
+            <CHOICE>Reinforcement drawing (D00208)</CHOICE>
+            <CHOICE>Static drawing (D00209)</CHOICE>
+            <CHOICE>Arrangement drawing (site) (D00062)</CHOICE>
+            <CHOICE>Site plan (base document for electrical installation) (D00086)</CHOICE>
+            <CHOICE>Earthing diagram (D00087)</CHOICE>
+            <CHOICE>Arrangement drawing (building) (D00063)</CHOICE>
+            <CHOICE>Building drawing (base document for electrical installation) (D00100)</CHOICE>
+            <CHOICE>Arrangement drawing (equipment) (D00064)</CHOICE>
+            <CHOICE>Assembly drawing (D00101)</CHOICE>
+            <CHOICE>Material list (D00103)</CHOICE>
+            <CHOICE>Parts list (class A) (D00104)</CHOICE>
+            <CHOICE>Spare parts list (D00106)</CHOICE>
+            <CHOICE>Item list (D00212)</CHOICE>
+            <CHOICE>Product list (D00213)</CHOICE>
+            <CHOICE>Product type list (D00214)</CHOICE>
+            <CHOICE>Location list (D00108)</CHOICE>
+            <CHOICE>Declaration of conformity (D00128)</CHOICE>
+            <CHOICE>Test certificate (D00083)</CHOICE>
+            <CHOICE>Material certificate (D00084)</CHOICE>
+            <CHOICE>Test report (D00085)</CHOICE>
+            <CHOICE>Concept drawing (D00223)</CHOICE>
+            <CHOICE>Design drawing (D00224)</CHOICE>
+            <CHOICE>Interface drawing (D00226)</CHOICE>
+            <CHOICE>Exploded-view drawing (D00227)</CHOICE>
+            <CHOICE>3D-drawing (D00228)</CHOICE>
+            <CHOICE>Component drawing (D00131)</CHOICE>
+            <CHOICE>Manufacturing drawing (D00229)</CHOICE>
+            <CHOICE>Drilling plan (D00230)</CHOICE>
+            <CHOICE>Welding plan (D00231)</CHOICE>
+            <CHOICE>Layout drawing (D00232)</CHOICE>
+            <CHOICE>Test log (D00111)</CHOICE>
+            <CHOICE>Cover sheet (D00021)</CHOICE>
+            <CHOICE>List of documents (D00022)</CHOICE>
+            <CHOICE>List of contents (D00023)</CHOICE>
+            <CHOICE>Main document (D00130)</CHOICE>
+            <CHOICE>Documentation description (D00132)</CHOICE>
+            <CHOICE>Documentation structure diagram (D00133)</CHOICE>
+            <CHOICE>Distribution list (D00136)</CHOICE>
+            <CHOICE>Meeting report (D00137)</CHOICE>
+            <CHOICE>Status report (D00138)</CHOICE>
+            <CHOICE>Technical report (management) (D00139)</CHOICE>
+            <CHOICE>Damage report (D00140)</CHOICE>
+            <CHOICE>Installation report (D00141)</CHOICE>
+            <CHOICE>Commissioning report (D00142)</CHOICE>
+            <CHOICE>Handing over protocol (D00143)</CHOICE>
+            <CHOICE>Letter (D00144)</CHOICE>
+            <CHOICE>Note (D00145)</CHOICE>
+            <CHOICE>Document interchange list (D00024)</CHOICE>
+            <CHOICE>Storage specification (D00028)</CHOICE>
+            <CHOICE>Transport specification (D00029)</CHOICE>
+            <CHOICE>Site specification for personnel (D00030)</CHOICE>
+            <CHOICE>Change request (D00154)</CHOICE>
+            <CHOICE>Noise protection plan (D00158)</CHOICE>
+            <CHOICE>Dimension drawing (D00032)</CHOICE>
+            <CHOICE>Material declaration (D00129)</CHOICE>
+            <CHOICE>Data sheet (D00178)</CHOICE>
+            <CHOICE>Structure diagram (D00119)</CHOICE>
+            <CHOICE>System description (D00179)</CHOICE>
+            <CHOICE>Description of designation system (D00180)</CHOICE>
+            <CHOICE>Maintenance instruction (for skilled persons) (D00033)</CHOICE>
+            <CHOICE>Operating instruction (D00034)</CHOICE>
+            <CHOICE>Transportation instruction (D00120)</CHOICE>
+            <CHOICE>Storage instruction (D00121)</CHOICE>
+            <CHOICE>Installation instruction (D00122)</CHOICE>
+            <CHOICE>Commissioning instruction (D00123)</CHOICE>
+            <CHOICE>Fault-finding instruction (D00124)</CHOICE>
+            <CHOICE>Maintenance instruction (for unskilled persons) (D00125)</CHOICE>
+            <CHOICE>Decommissioning instruction (D00126)</CHOICE>
+            <CHOICE>Manufacturing instructions (D00181)</CHOICE>
+            <CHOICE>Inspection instruction (D00183)</CHOICE>
+            <CHOICE>Technical report (D00185)</CHOICE>
+            <CHOICE>Requirement specification (D00035)</CHOICE>
+            <CHOICE>Test specification (D00036)</CHOICE>
+            <CHOICE>Consumer list (D00195)</CHOICE>
+            <CHOICE>Component list of instrumentation and control equipment (D00196)</CHOICE>
+            <CHOICE>Measuring point and criteria list (D00197)</CHOICE>
+            <CHOICE>List of motors and loads (D00198)</CHOICE>
+            <CHOICE>Material specification (D00199)</CHOICE>
+            <CHOICE>Calculation sheet (technical) (D00037)</CHOICE>
+            <CHOICE>Overview diagram (D00038)</CHOICE>
+            <CHOICE>Network map (D00039)</CHOICE>
+            <CHOICE>Block diagram (IEC 61082-1) (D00040)</CHOICE>
+            <CHOICE>Single-line diagram (D00112)</CHOICE>
+            <CHOICE>Topological diagram (of a network) (D00113)</CHOICE>
+            <CHOICE>System diagram (for a network) (D00114)</CHOICE>
+            <CHOICE>System operational diagram (of a network) (D00115)</CHOICE>
+            <CHOICE>Three-phase system diagram (of a network) (D00116)</CHOICE>
+            <CHOICE>Voltage map (for a network) (D00117)</CHOICE>
+            <CHOICE>Piping and instrument diagram (P&amp;ID) (D00043)</CHOICE>
+            <CHOICE>Screen display layout drawing (D00201)</CHOICE>
+            <CHOICE>Function description (D00045)</CHOICE>
+            <CHOICE>Function diagram (D00046)</CHOICE>
+            <CHOICE>Logic-function diagram (D00047)</CHOICE>
+            <CHOICE>Function chart (D00048)</CHOICE>
+            <CHOICE>Equivalent-circuit diagram (D00049)</CHOICE>
+            <CHOICE>Sequence chart (D00050)</CHOICE>
+            <CHOICE>Time sequence chart (D00051)</CHOICE>
+            <CHOICE>Signal list (D00052)</CHOICE>
+            <CHOICE>Signal property list (D00118)</CHOICE>
+            <CHOICE>Setting list (D00202)</CHOICE>
+            <CHOICE>Circuit diagram (D00053)</CHOICE>
+            <CHOICE>Terminal-function diagram (D00054)</CHOICE>
+            <CHOICE>Code list (D00056)</CHOICE>
+            <CHOICE>Function description (software) (D00058)</CHOICE>
+            <CHOICE>Program diagram (D00203)</CHOICE>
+            <CHOICE>Design description (D00204)</CHOICE>
+            <CHOICE>Arrangement drawing (site) (D00062)</CHOICE>
+            <CHOICE>Site plan (base document for electrical installation) (D00086)</CHOICE>
+            <CHOICE>Earthing diagram (D00087)</CHOICE>
+            <CHOICE>Installation diagram (site) (D00088)</CHOICE>
+            <CHOICE>Cable routing drawing (site) (D00089)</CHOICE>
+            <CHOICE>Earthing drawing (site) (D00092)</CHOICE>
+            <CHOICE>Earthing plan (site) (D00094)</CHOICE>
+            <CHOICE>Installation drawing (site) (D00096)</CHOICE>
+            <CHOICE>Installation plan (site) (D00098)</CHOICE>
+            <CHOICE>Arrangement drawing (building) (D00063)</CHOICE>
+            <CHOICE>Installation diagram (building) (D00090)</CHOICE>
+            <CHOICE>Cable routing drawing (building) (D00091)</CHOICE>
+            <CHOICE>Earthing drawing (building) (D00093)</CHOICE>
+            <CHOICE>Earthing plan (building) (D00095)</CHOICE>
+            <CHOICE>Installation drawing (building) (D00097)</CHOICE>
+            <CHOICE>Installation plan (building) (D00099)</CHOICE>
+            <CHOICE>Building drawing (base document for electrical installation) (D00100)</CHOICE>
+            <CHOICE>Arrangement drawing (equipment) (D00064)</CHOICE>
+            <CHOICE>Connection diagram (D00057)</CHOICE>
+            <CHOICE>Connection table (D00059)</CHOICE>
+            <CHOICE>Terminal connection diagram (D00065)</CHOICE>
+            <CHOICE>Unit connection diagram (D00066)</CHOICE>
+            <CHOICE>Interconnection diagram (D00067)</CHOICE>
+            <CHOICE>Terminal connection list (D00070)</CHOICE>
+            <CHOICE>Terminal connection table (D00071)</CHOICE>
+            <CHOICE>Unit connection list (D00072)</CHOICE>
+            <CHOICE>Unit connection table (D00073)</CHOICE>
+            <CHOICE>Interconnection list (D00074)</CHOICE>
+            <CHOICE>Interconnection table (D00075)</CHOICE>
+            <CHOICE>Connection diagram (cables) (D00055)</CHOICE>
+            <CHOICE>Connection table (cables) (D00061)</CHOICE>
+            <CHOICE>Interconnection diagram (cables) (D00068)</CHOICE>
+            <CHOICE>Cable diagram (D00069)</CHOICE>
+            <CHOICE>Cable list (D00076)</CHOICE>
+            <CHOICE>Cable table (D00077)</CHOICE>
+            <CHOICE>Cable pulling card (D00210)</CHOICE>
+            <CHOICE>Material list (D00103)</CHOICE>
+            <CHOICE>Parts list (class B) (D00105)</CHOICE>
+            <CHOICE>Spare parts list (D00106)</CHOICE>
+            <CHOICE>Label list (D00107)</CHOICE>
+            <CHOICE>Item list (D00212)</CHOICE>
+            <CHOICE>Product list (D00213)</CHOICE>
+            <CHOICE>Product type list (D00214)</CHOICE>
+            <CHOICE>Function list (D00060)</CHOICE>
+            <CHOICE>Location list (D00108)</CHOICE>
+            <CHOICE>Declaration of conformity (D00128)</CHOICE>
+            <CHOICE>Test certificate (D00083)</CHOICE>
+            <CHOICE>Material certificate (D00084)</CHOICE>
+            <CHOICE>Test report (D00085)</CHOICE>
+            <CHOICE>Test report (software) (D00102)</CHOICE>
+            <CHOICE>Concept drawing (D00223)</CHOICE>
+            <CHOICE>3D-drawing (D00228)</CHOICE>
+            <CHOICE>Component drawing (D00131)</CHOICE>
+            <CHOICE>Batch recipe (D00233)</CHOICE>
+            <CHOICE>Operational log (D00109)</CHOICE>
+            <CHOICE>Maintenance and modification log (D00110)</CHOICE>
+            <CHOICE>Test log (D00111)</CHOICE>
+            <CHOICE>Cover sheet (D00021)</CHOICE>
+            <CHOICE>List of documents (D00022)</CHOICE>
+            <CHOICE>List of contents (D00023)</CHOICE>
+            <CHOICE>Main document (D00130)</CHOICE>
+            <CHOICE>Documentation description (D00132)</CHOICE>
+            <CHOICE>Documentation structure diagram (D00133)</CHOICE>
+            <CHOICE>Distribution list (D00136)</CHOICE>
+            <CHOICE>Meeting report (D00137)</CHOICE>
+            <CHOICE>Status report (D00138)</CHOICE>
+            <CHOICE>Technical report (management) (D00139)</CHOICE>
+            <CHOICE>Damage report (D00140)</CHOICE>
+            <CHOICE>Installation report (D00141)</CHOICE>
+            <CHOICE>Commissioning report (D00142)</CHOICE>
+            <CHOICE>Handing over protocol (D00143)</CHOICE>
+            <CHOICE>Letter (D00144)</CHOICE>
+            <CHOICE>Note (D00145)</CHOICE>
+            <CHOICE>Document interchange list (D00024)</CHOICE>
+            <CHOICE>Storage specification (D00028)</CHOICE>
+            <CHOICE>Transport specification (D00029)</CHOICE>
+            <CHOICE>Site specification for personnel (D00030)</CHOICE>
+            <CHOICE>Change request (D00154)</CHOICE>
+            <CHOICE>Noise protection plan (D00158)</CHOICE>
+            <CHOICE>Dimension drawing (D00032)</CHOICE>
+            <CHOICE>Material declaration (D00129)</CHOICE>
+            <CHOICE>Data sheet (D00178)</CHOICE>
+            <CHOICE>Structure diagram (D00119)</CHOICE>
+            <CHOICE>System description (D00179)</CHOICE>
+            <CHOICE>Description of designation system (D00180)</CHOICE>
+            <CHOICE>Transportation instruction (D00120)</CHOICE>
+            <CHOICE>Storage instruction (D00121)</CHOICE>
+            <CHOICE>Installation instruction (D00122)</CHOICE>
+            <CHOICE>Maintenance instruction (for unskilled persons) (D00125)</CHOICE>
+            <CHOICE>Decommissioning instruction (D00126)</CHOICE>
+            <CHOICE>Manufacturing instructions (D00181)</CHOICE>
+            <CHOICE>Inspection instruction (D00183)</CHOICE>
+            <CHOICE>Technical report (D00185)</CHOICE>
+            <CHOICE>Requirement specification (D00035)</CHOICE>
+            <CHOICE>Material specification (D00199)</CHOICE>
+            <CHOICE>Calculation sheet (technical) (D00037)</CHOICE>
+            <CHOICE>Arrangement drawing (site) (D00062)</CHOICE>
+            <CHOICE>Site plan (base document for electrical installation) (D00086)</CHOICE>
+            <CHOICE>Arrangement drawing (building) (D00063)</CHOICE>
+            <CHOICE>Arrangement drawing (equipment) (D00064)</CHOICE>
+            <CHOICE>Assembly drawing (D00101)</CHOICE>
+            <CHOICE>Piping list (D00211)</CHOICE>
+            <CHOICE>Material list (D00103)</CHOICE>
+            <CHOICE>Parts list (class A) (D00104)</CHOICE>
+            <CHOICE>Spare parts list (D00106)</CHOICE>
+            <CHOICE>Item list (D00212)</CHOICE>
+            <CHOICE>Product list (D00213)</CHOICE>
+            <CHOICE>Product type list (D00214)</CHOICE>
+            <CHOICE>Declaration of conformity (D00128)</CHOICE>
+            <CHOICE>Test certificate (D00083)</CHOICE>
+            <CHOICE>Material certificate (D00084)</CHOICE>
+            <CHOICE>Test report (D00085)</CHOICE>
+            <CHOICE>Concept drawing (D00223)</CHOICE>
+            <CHOICE>Design drawing (D00224)</CHOICE>
+            <CHOICE>3D-drawing (D00228)</CHOICE>
+            <CHOICE>Component drawing (D00131)</CHOICE>
+            <CHOICE>Batch recipe (D00233)</CHOICE>
+            <CHOICE>Test log (D00111)</CHOICE>
+            <CHOICE>Cover sheet (D00021)</CHOICE>
+            <CHOICE>List of documents (D00022)</CHOICE>
+            <CHOICE>List of contents (D00023)</CHOICE>
+            <CHOICE>Main document (D00130)</CHOICE>
+            <CHOICE>Documentation description (D00132)</CHOICE>
+            <CHOICE>Documentation structure diagram (D00133)</CHOICE>
+            <CHOICE>Distribution list (D00136)</CHOICE>
+            <CHOICE>Meeting report (D00137)</CHOICE>
+            <CHOICE>Status report (D00138)</CHOICE>
+            <CHOICE>Technical report (management) (D00139)</CHOICE>
+            <CHOICE>Damage report (D00140)</CHOICE>
+            <CHOICE>Installation report (D00141)</CHOICE>
+            <CHOICE>Commissioning report (D00142)</CHOICE>
+            <CHOICE>Letter (D00144)</CHOICE>
+            <CHOICE>Note (D00145)</CHOICE>
+            <CHOICE>Document interchange list (D00024)</CHOICE>
+            <CHOICE>Storage specification (D00028)</CHOICE>
+            <CHOICE>Transport specification (D00029)</CHOICE>
+            <CHOICE>Site specification for personnel (D00030)</CHOICE>
+            <CHOICE>Change request (D00154)</CHOICE>
+            <CHOICE>Dimension drawing (D00032)</CHOICE>
+            <CHOICE>Material declaration (D00129)</CHOICE>
+            <CHOICE>Data sheet (D00178)</CHOICE>
+            <CHOICE>Structure diagram (D00119)</CHOICE>
+            <CHOICE>System description (D00179)</CHOICE>
+            <CHOICE>Description of designation system (D00180)</CHOICE>
+            <CHOICE>Maintenance instruction (for skilled persons) (D00033)</CHOICE>
+            <CHOICE>Operating instruction (D00034)</CHOICE>
+            <CHOICE>Transportation instruction (D00120)</CHOICE>
+            <CHOICE>Storage instruction (D00121)</CHOICE>
+            <CHOICE>Installation instruction (D00122)</CHOICE>
+            <CHOICE>Commissioning instruction (D00123)</CHOICE>
+            <CHOICE>Fault-finding instruction (D00124)</CHOICE>
+            <CHOICE>Maintenance instruction (for unskilled persons) (D00125)</CHOICE>
+            <CHOICE>Decommissioning instruction (D00126)</CHOICE>
+            <CHOICE>Inspection instruction (D00183)</CHOICE>
+            <CHOICE>Technical report (D00185)</CHOICE>
+            <CHOICE>Requirement specification (D00035)</CHOICE>
+            <CHOICE>Test specification (D00036)</CHOICE>
+            <CHOICE>Measuring point and criteria list (D00197)</CHOICE>
+            <CHOICE>Calculation sheet (technical) (D00037)</CHOICE>
+            <CHOICE>Overview diagram (D00038)</CHOICE>
+            <CHOICE>Block diagram (ISO 10628) (D00041)</CHOICE>
+            <CHOICE>Process flow diagram (D00042)</CHOICE>
+            <CHOICE>Piping and instrument diagram (P&amp;ID) (D00043)</CHOICE>
+            <CHOICE>Utility flow diagram (UFD) (D00044)</CHOICE>
+            <CHOICE>Overview diagram (flow) (D00200)</CHOICE>
+            <CHOICE>Screen display layout drawing (D00201)</CHOICE>
+            <CHOICE>Function description (D00045)</CHOICE>
+            <CHOICE>Function diagram (D00046)</CHOICE>
+            <CHOICE>Logic-function diagram (D00047)</CHOICE>
+            <CHOICE>Function chart (D00048)</CHOICE>
+            <CHOICE>Sequence chart (D00050)</CHOICE>
+            <CHOICE>Time sequence chart (D00051)</CHOICE>
+            <CHOICE>Setting list (D00202)</CHOICE>
+            <CHOICE>Piping list (D00211)</CHOICE>
+            <CHOICE>Material list (D00103)</CHOICE>
+            <CHOICE>Parts list (class B) (D00105)</CHOICE>
+            <CHOICE>Spare parts list (D00106)</CHOICE>
+            <CHOICE>Label list (D00107)</CHOICE>
+            <CHOICE>Product list (D00213)</CHOICE>
+            <CHOICE>Product type list (D00214)</CHOICE>
+            <CHOICE>Function list (D00060)</CHOICE>
+            <CHOICE>Location list (D00108)</CHOICE>
+            <CHOICE>Declaration of conformity (D00128)</CHOICE>
+            <CHOICE>Test certificate (D00083)</CHOICE>
+            <CHOICE>Material certificate (D00084)</CHOICE>
+            <CHOICE>Test report (D00085)</CHOICE>
+            <CHOICE>Test report (software) (D00102)</CHOICE>
+            <CHOICE>Concept drawing (D00223)</CHOICE>
+            <CHOICE>3D-drawing (D00228)</CHOICE>
+            <CHOICE>Component drawing (D00131)</CHOICE>
+            <CHOICE>Batch recipe (D00233)</CHOICE>
+            <CHOICE>Operational log (D00109)</CHOICE>
+            <CHOICE>Maintenance and modification log (D00110)</CHOICE>
+            <CHOICE>Test log (D00111)</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="Alstom Reference" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{9c65dd07-27c4-465c-ad5a-bfa3d5282fd4}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="AlstomReference"
+          Name="AlstomReference" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Supplier Reference" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{c1c1080a-b1d8-4747-b7d3-215340124ed8}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="SupplierReference"
+          Name="SupplierReference" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="MoC ID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{6a645c0a-8444-43cb-bc0f-e22d8e10ebd4}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="MoCID" Name="MoCID"
+          CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field DisplayName="Safety Criticity" Type="Boolean" Required="FALSE"
+          ID="{d038830b-42d1-45b9-aece-797329e2a8d4}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="SafetyCriticity"
+          Name="SafetyCriticity" Group="DMS" CustomFormatter="" EnforceUniqueValues="FALSE"
+          Indexed="FALSE">
+          <Default>0</Default>
+        </Field>
+        <Field Type="Text" DisplayName="Supplier Revision" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{f543b80e-9235-45d3-b193-f8c9cb14323e}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="SupplierRevision"
+          Name="SupplierRevision" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Name="CustomernameFinal" FromBaseType="FALSE" Type="Text"
+          DisplayName="Customer name (final)" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{2754cb0f-d06a-4faf-8e17-c2286bfb889b}"
+          StaticName="CustomernameFinal" SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}"
+          CustomFormatter="">
+          <Default>{parameter:EndCustomerLabels}</Default>
+        </Field>
+        <Field Type="Text" DisplayName="Failure ID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{4e3a7111-8267-41d8-b1ce-36da3a798214}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="FailureID" Name="FailureID"
+          CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Choice" DisplayName="OBS" Required="TRUE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{c6f0be11-cf90-4000-9ba4-32f5207a6c8a}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="IssuingEntity"
+          Name="IssuingEntity" CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>WP0_Project Management</CHOICE>
+            <CHOICE>WP1_1_Train level Development Mgt</CHOICE>
+            <CHOICE>WP1_2_Train Performance</CHOICE>
+            <CHOICE>WP1_3_Train architecture</CHOICE>
+            <CHOICE>WP1_4_Design for Operations</CHOICE>
+            <CHOICE>WP2_Train Indus delivery</CHOICE>
+            <CHOICE>WP3_CBC</CHOICE>
+            <CHOICE>WP4_BOG</CHOICE>
+            <CHOICE>WP5_PWT</CHOICE>
+            <CHOICE>WP6_LOB</CHOICE>
+            <CHOICE>WP7_EFD</CHOICE>
+            <CHOICE>WP8_C&amp;IS</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="Location ID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{17cd9012-14e2-40ae-9b13-590426b419c4}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="LocationID"
+          Name="LocationID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="DateTime" DisplayName="Validation Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{05399a12-80e1-49c6-a466-e9eba7b06ce2}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ValidationDate"
+          Name="ValidationDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Name="CustomerMilestone" FromBaseType="FALSE" Type="Choice"
+          DisplayName="Customer Milestone" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{20035c13-5e38-4e95-8276-b7cc43286f89}" StaticName="CustomerMilestone"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}">
+          <Default></Default>
+          <CHOICES>
+            <CHOICE>Enter Choice #1</CHOICE>
+            <CHOICE>Enter Choice #2</CHOICE>
+            <CHOICE>Enter Choice #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Choice" Name="Projectattr6" DisplayName="Project attr 6"
+          ID="{ee786c14-d7ca-49b4-9456-159169833a0a}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr6"
+          AllowDeletion="TRUE" CanToggleHidden="TRUE" Hidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="TaxonomyFieldType" DisplayName="PBS" List="{{listid:TaxonomyHiddenList}}"
+          WebId="{siteid}" ShowField="Term1033" Required="TRUE" EnforceUniqueValues="FALSE"
+          Group="DMS" ID="{b7428419-b418-46fb-99ec-3ba983dae58c}" SourceID="{{siteid}}"
+          StaticName="PBS" Name="PBS" Mult="FALSE" AllowDeletion="TRUE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:DOC4A:PBS}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  {f93c2d15-9403-4434-b498-3f4993469814}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsEnhancedImageTaggingEnabled</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy,
+                  Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q14="http://www.w3.org/2001/XMLSchema" p4:type="q14:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q15="http://www.w3.org/2001/XMLSchema" p4:type="q15:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Note" DisplayName="Alstom Part Numbers" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE"
+          Group="DMS" ID="{419b691b-106b-4866-957c-ffb0a30a6502}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="AlstomPartNumbers"
+          Name="AlstomPartNumbers" CustomFormatter="" RestrictedMode="TRUE"
+          RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE"
+          UnlimitedLengthInDocumentLibrary="FALSE"></Field>
+        <Field Type="User" DisplayName="Approved By" List="UserInfo" Required="FALSE"
+          EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly"
+          UserSelectionScope="0" Group="DMS" ID="{b574971d-df75-487c-ab8b-984b5547a4ae}"
+          SourceID="{{siteid}}" StaticName="Approvedby" Name="Approvedby" AllowDeletion="TRUE" />
+        <Field Type="Text" DisplayName="Maintenance Plan ID" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{e547ed1d-ba8d-45ad-8d18-5db8e3dbe69b}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="MaintenancePlanID"
+          Name="MaintenancePlanID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Choice" DisplayName="Document Status" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE"
+          Group="DMS" ID="{b07e221e-ce18-4d15-9838-7c8438529949}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="DocumentStatus"
+          Name="DocumentStatus" CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Draft</CHOICE>
+            <CHOICE>Under Review</CHOICE>
+            <CHOICE>Under Validation</CHOICE>
+            <CHOICE>Applicable</CHOICE>
+            <CHOICE>Obsolete</CHOICE>
+          </CHOICES>
+          <Default>Draft</Default>
+        </Field>
+        <Field Type="DateTime" DisplayName="Effective Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{9c8a701e-2456-42ea-9622-aa4967495047}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="EffectiveDate"
+          Name="EffectiveDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="DateTime" DisplayName="Expiry Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{d3840220-9970-4d5d-87af-e5b43731df1b}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ExpiryDate"
+          Name="ExpiryDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Requirement ID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{bffde420-aaac-4440-a7b2-7a572d7eeb94}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="RequirementID"
+          Name="RequirementID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Line Number" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{6473d622-166d-49a1-b46d-95c4a4f03922}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="LineNumber"
+          Name="LineNumber" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Boolean" DisplayName="Contractual" EnforceUniqueValues="FALSE" Indexed="FALSE"
+          Group="DMS" ID="{dd20b524-2cd6-4d6b-bb74-b9982c752253}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Contractual"
+          Name="Contractual" AllowDeletion="TRUE">
+          <Default>0</Default>
+        </Field>
+        <Field Type="DateTime" DisplayName="Customer Response Expected Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{eafa7f25-8392-48c3-a08a-6fa6d645c5de}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}"
+          StaticName="CustomerResponseExpectedDate" Name="CustomerResponseExpectedDate"
+          CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="FlowID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{ef670a2b-3b60-41e2-97a5-cdb198cb6674}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="FlowID" Name="FlowID"></Field>
+        <Field Type="Text" DisplayName="Item/Material ID" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{7e9bdb2c-b203-4cd4-8996-f92961de742e}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="MaterialID"
+          Name="MaterialID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field DisplayName="Linked to Requirements DB" Type="Boolean" Required="FALSE"
+          ID="{3cb1df2c-f678-4f43-8491-c9032461db33}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="LinkedtoRequirementsDB"
+          Name="LinkedtoRequirementsDB" Group="DMS" CustomFormatter="" EnforceUniqueValues="FALSE"
+          Indexed="FALSE">
+          <Default>0</Default>
+        </Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Product"
+          List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033"
+          Required="FALSE" EnforceUniqueValues="FALSE" Group="DMS"
+          ID="{e8462a2d-ee3f-49bd-9cbc-c3d2836739a8}" SourceID="{{siteid}}"
+          StaticName="AlstomProduct" Name="AlstomProduct" Mult="TRUE" Sortable="FALSE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  {termsetid:DOC4A:AlstomProduct}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  {8d87ff7b-d0f0-45cc-86a6-79f93419fc91}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsEnhancedImageTaggingEnabled</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy,
+                  Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q14="http://www.w3.org/2001/XMLSchema" p4:type="q14:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q15="http://www.w3.org/2001/XMLSchema" p4:type="q15:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Choice" DisplayName="MoC Status" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{539ae42d-d9f6-4a25-8f46-4398969e4865}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="MoCStatus" Name="MoCStatus"
+          CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Enter Choice #1</CHOICE>
+            <CHOICE>Enter Choice #2</CHOICE>
+            <CHOICE>Enter Choice #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="Prj Alias" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{ed7d3c2f-9f90-4166-979d-a0dada385755}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ProjectAlias1"
+          Name="ProjectAlias1" CustomFormatter="">
+          <Default></Default>
+        </Field>
+        <Field Type="Choice" DisplayName="Prj Type" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{5abecb32-0965-4990-a5b5-27f9dbc2c8f9}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ProjectType"
+          Name="ProjectType" CustomFormatter="">
+          <CHOICES>
+            <CHOICE>Tender</CHOICE>
+            <CHOICE>Contract</CHOICE>
+            <CHOICE>R&amp;D</CHOICE>
+            <CHOICE>Reflib</CHOICE>
+          </CHOICES>
+          <Default></Default>
+        </Field>
+        <Field Name="SupplierName" FromBaseType="FALSE" Type="Choice" DisplayName="Supplier Name"
+          Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown"
+          FillInChoice="FALSE" Group="DMS" ID="{e1fbac33-42e2-43bc-a91d-859865b02cee}"
+          StaticName="SupplierName" SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}"
+          CustomFormatter="">
+          <CHOICES>
+            <CHOICE>Supplier #1</CHOICE>
+            <CHOICE>Supplier #2</CHOICE>
+            <CHOICE>Supplier #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Choice" DisplayName="DBS" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{f376f134-2a84-4ef1-901d-b7a1af1b7491}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="DBS" Name="DBS"
+          CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Administrative documents (AA)</CHOICE>
+            <CHOICE>Lists (regarding documents) (AB)</CHOICE>
+            <CHOICE>Explanatory documents (regarding documents) (AC)</CHOICE>
+            <CHOICE>Free for User (AZ)</CHOICE>
+            <CHOICE>Registers (BA)</CHOICE>
+            <CHOICE>Reports (BB)</CHOICE>
+            <CHOICE>Correspondence (BC)</CHOICE>
+            <CHOICE>Project control documents (BD)</CHOICE>
+            <CHOICE>Resource planning documents (BE)</CHOICE>
+            <CHOICE>Dispatch storage and transport documents(BF)</CHOICE>
+            <CHOICE>Site planning and organization documents(BG)</CHOICE>
+            <CHOICE>Documents regarding changes (BH)</CHOICE>
+            <CHOICE>Security documents (BS)</CHOICE>
+            <CHOICE>Training specific documents (BT)</CHOICE>
+            <CHOICE>Free for User (BZ)</CHOICE>
+            <CHOICE>Inquiry calculations and other docuemnts(CA)</CHOICE>
+            <CHOICE>Approval documents (CB)</CHOICE>
+            <CHOICE>Contractual documents (CC)</CHOICE>
+            <CHOICE>Order and delivery documents (CD)</CHOICE>
+            <CHOICE>Invoice documents (CE)</CHOICE>
+            <CHOICE>Insurance documents (CF)</CHOICE>
+            <CHOICE>Warranty documents (CG)</CHOICE>
+            <CHOICE>Expertises (CH)</CHOICE>
+            <CHOICE>Free for User (CZ)</CHOICE>
+            <CHOICE>Data sheets (DA)</CHOICE>
+            <CHOICE>Explanatory documents (DB)</CHOICE>
+            <CHOICE>Instructions and manuals (DC)</CHOICE>
+            <CHOICE>Technical reports (DD)</CHOICE>
+            <CHOICE>Catalogues and advertising documents (DE)</CHOICE>
+            <CHOICE>Technical publications (DF)</CHOICE>
+            <CHOICE>Free for User (DZ)</CHOICE>
+            <CHOICE>Legal requirements document (EA)</CHOICE>
+            <CHOICE>Standards and regulations (EB)</CHOICE>
+            <CHOICE>Technical specifications and requirements (EC)</CHOICE>
+            <CHOICE>Dimensioning documents (ED)</CHOICE>
+            <CHOICE>Free for User (EZ)</CHOICE>
+            <CHOICE>Function overview documents (FA)</CHOICE>
+            <CHOICE>Flow diagrams (FB)</CHOICE>
+            <CHOICE>HMI-layout documents (FC)</CHOICE>
+            <CHOICE>Function descriptions (FE)</CHOICE>
+            <CHOICE>Function diagrams and charts (FF)</CHOICE>
+            <CHOICE>Signal descriptions (FP)</CHOICE>
+            <CHOICE>Setting value documents (FQ)</CHOICE>
+            <CHOICE>Circuitry documents (FS)</CHOICE>
+            <CHOICE>Software specific documents (FT)</CHOICE>
+            <CHOICE>Free for User (FZ)</CHOICE>
+            <CHOICE>Exploitation and survey documents (LA)</CHOICE>
+            <CHOICE>Earthwork and foundation work documents(LB)</CHOICE>
+            <CHOICE>Building carcass documents (LC)</CHOICE>
+            <CHOICE>On-site location documents (LD)</CHOICE>
+            <CHOICE>In-building location documents (LH)</CHOICE>
+            <CHOICE>In/on-equipment location documents (LU)</CHOICE>
+            <CHOICE>Free for User (LZ)</CHOICE>
+            <CHOICE>Connection documents (MA)</CHOICE>
+            <CHOICE>Cabling or piping documents (MB)</CHOICE>
+            <CHOICE>Free for User (MZ)</CHOICE>
+            <CHOICE>Material lists (PA)</CHOICE>
+            <CHOICE>Parts lists (PB)</CHOICE>
+            <CHOICE>Item lists (PC)</CHOICE>
+            <CHOICE>Product type lists (PD)</CHOICE>
+            <CHOICE>Function lists (PF)</CHOICE>
+            <CHOICE>Location lists (PL)</CHOICE>
+            <CHOICE>Free for User (PZ)</CHOICE>
+            <CHOICE>Quality management documents (QA)</CHOICE>
+            <CHOICE>Safety describing documents (QB)</CHOICE>
+            <CHOICE>Quality verifying documents (QC)</CHOICE>
+            <CHOICE>Free for User (QZ)</CHOICE>
+            <CHOICE>Planning drawings (TA)</CHOICE>
+            <CHOICE>Construction drawings (TB)</CHOICE>
+            <CHOICE>Manufacturing and erection drawings (TC)</CHOICE>
+            <CHOICE>Arrangement drawings (TL)</CHOICE>
+            <CHOICE>Free for User (TZ)</CHOICE>
+            <CHOICE>Set point documents (WA)</CHOICE>
+            <CHOICE>Logbooks (WT)</CHOICE>
+            <CHOICE>Free for User (WZ)</CHOICE>
+            <CHOICE>Administrative documents (AA)</CHOICE>
+            <CHOICE>Lists (regarding documents) (AB)</CHOICE>
+            <CHOICE>Explanatory documents (regarding documents) (AC)</CHOICE>
+            <CHOICE>Free for User (AZ)</CHOICE>
+            <CHOICE>Registers (BA)</CHOICE>
+            <CHOICE>Reports (BB)</CHOICE>
+            <CHOICE>Correspondence (BC)</CHOICE>
+            <CHOICE>Project control documents (BD)</CHOICE>
+            <CHOICE>Resource planning documents (BE)</CHOICE>
+            <CHOICE>Dispatch storage and transport documents(BF)</CHOICE>
+            <CHOICE>Site planning and organization documents(BG)</CHOICE>
+            <CHOICE>Documents regarding changes (BH)</CHOICE>
+            <CHOICE>Security documents (BS)</CHOICE>
+            <CHOICE>Training specific documents (BT)</CHOICE>
+            <CHOICE>Free for User (BZ)</CHOICE>
+            <CHOICE>Inquiry calculations and other documents(CA)</CHOICE>
+            <CHOICE>Approval documents (CB)</CHOICE>
+            <CHOICE>Contractual documents (CC)</CHOICE>
+            <CHOICE>Order and delivery documents (CD)</CHOICE>
+            <CHOICE>Invoice documents (CE)</CHOICE>
+            <CHOICE>Insurance documents (CF)</CHOICE>
+            <CHOICE>Warranty documents (CG)</CHOICE>
+            <CHOICE>Expertises (CH)</CHOICE>
+            <CHOICE>Free for User (CZ)</CHOICE>
+            <CHOICE>Data sheets (DA)</CHOICE>
+            <CHOICE>Explanatory documents (DB)</CHOICE>
+            <CHOICE>Instructions and manuals (DC)</CHOICE>
+            <CHOICE>Technical reports (DD)</CHOICE>
+            <CHOICE>Catalogues and advertising documents (DE)</CHOICE>
+            <CHOICE>Technical publications (DF)</CHOICE>
+            <CHOICE>Free for User (DZ)</CHOICE>
+            <CHOICE>Legal requirements document (EA)</CHOICE>
+            <CHOICE>Standards and regulations (EB)</CHOICE>
+            <CHOICE>Technical specifications and requirements (EC)</CHOICE>
+            <CHOICE>Dimensioning documents (ED)</CHOICE>
+            <CHOICE>Free for User (EZ)</CHOICE>
+            <CHOICE>Function overview documents (FA)</CHOICE>
+            <CHOICE>Flow diagrams (FB)</CHOICE>
+            <CHOICE>HMI-layout documents (FC)</CHOICE>
+            <CHOICE>Function descriptions (FE)</CHOICE>
+            <CHOICE>Function diagrams and charts (FF)</CHOICE>
+            <CHOICE>Signal descriptions (FP)</CHOICE>
+            <CHOICE>Setting value documents (FQ)</CHOICE>
+            <CHOICE>Circuitry documents (FS)</CHOICE>
+            <CHOICE>Software specific documents (FT)</CHOICE>
+            <CHOICE>Free for User (FZ)</CHOICE>
+            <CHOICE>Exploitation and survey documents (LA)</CHOICE>
+            <CHOICE>Earthwork and foundation work documents(LB)</CHOICE>
+            <CHOICE>Building carcass documents (LC)</CHOICE>
+            <CHOICE>On-site location documents (LD)</CHOICE>
+            <CHOICE>In-building location documents (LH)</CHOICE>
+            <CHOICE>In/on-equipment location documents (LU)</CHOICE>
+            <CHOICE>Free for User (LZ)</CHOICE>
+            <CHOICE>Connection documents (MA)</CHOICE>
+            <CHOICE>Cabling or piping documents (MB)</CHOICE>
+            <CHOICE>Free for User (MZ)</CHOICE>
+            <CHOICE>Material lists (PA)</CHOICE>
+            <CHOICE>Parts lists (PB)</CHOICE>
+            <CHOICE>Item lists (PC)</CHOICE>
+            <CHOICE>Product type lists (PD)</CHOICE>
+            <CHOICE>Function lists (PF)</CHOICE>
+            <CHOICE>Location lists (PL)</CHOICE>
+            <CHOICE>Free for User (PZ)</CHOICE>
+            <CHOICE>Quality management documents (QA)</CHOICE>
+            <CHOICE>Safety describing documents (QB)</CHOICE>
+            <CHOICE>Quality verifying documents (QC)</CHOICE>
+            <CHOICE>Free for User (QZ)</CHOICE>
+            <CHOICE>Planning drawings (TA)</CHOICE>
+            <CHOICE>Construction drawings (TB)</CHOICE>
+            <CHOICE>Manufacturing and erection drawings (TC)</CHOICE>
+            <CHOICE>Arrangement drawings (TL)</CHOICE>
+            <CHOICE>Free for User (TZ)</CHOICE>
+            <CHOICE>Set point documents (WA)</CHOICE>
+            <CHOICE>Logbooks (WT)</CHOICE>
+            <CHOICE>Free for User (WZ)</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Name="ProjectLeadingPL" FromBaseType="FALSE" Type="Text"
+          DisplayName="Main Product line" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{c07a2836-6d59-4ff7-865c-8b4319a273ad}"
+          StaticName="ProjectLeadingPL" SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}"></Field>
+        <Field Type="Boolean" DisplayName="Old/migrated project" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Group="DMS" ID="{9116963a-730e-4a5f-8a41-cad9818db072}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="OldOrMigratedProject"
+          Name="OldOrMigratedProject" CustomFormatter="" Required="FALSE">
+          <Default>0</Default>
+        </Field>
+        <Field Type="Text" DisplayName="Prj Code" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{4aec193d-f4c3-4ab3-bf1e-bcea4c76bedd}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ProjectCode"
+          Name="ProjectCode" CustomFormatter="">
+          <Default></Default>
+        </Field>
+        <Field Type="Note" DisplayName="CancellationReason" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE"
+          Group="DMS" ID="{6746ae3e-a7d8-48d3-94ca-8163f0d9bb5f}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="CancellationReason"
+          Name="CancellationReason"></Field>
+        <Field DisplayName="Document Language" Type="Choice" Required="TRUE"
+          ID="{04932240-352a-499e-92b2-510ea725d130}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="DocumentLanguage"
+          Name="DocumentLanguage" Group="DMS"
+          CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Choice 1&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-field-fontSizeSmall sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Choice 2&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-field-fontSizeSmall sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Choice 3&quot;]},&quot;sp-css-backgroundColor-BgGold sp-field-fontSizeSmall sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}},&quot;txtContent&quot;:&quot;@currentField&quot;}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}"
+          EnforceUniqueValues="FALSE" FillInChoice="FALSE" Format="Dropdown" Indexed="FALSE"
+          AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Afrikaans</CHOICE>
+            <CHOICE>Albanian</CHOICE>
+            <CHOICE>Arabic</CHOICE>
+            <CHOICE>Basque</CHOICE>
+            <CHOICE>Belarusian</CHOICE>
+            <CHOICE>Bulgarian</CHOICE>
+            <CHOICE>Catalan</CHOICE>
+            <CHOICE>Chinese</CHOICE>
+            <CHOICE>Croatian</CHOICE>
+            <CHOICE>Czech</CHOICE>
+            <CHOICE>Danish</CHOICE>
+            <CHOICE>Dutch</CHOICE>
+            <CHOICE>English</CHOICE>
+            <CHOICE>Estonian</CHOICE>
+            <CHOICE>Faeroese</CHOICE>
+            <CHOICE>Farsi</CHOICE>
+            <CHOICE>Finnish</CHOICE>
+            <CHOICE>French</CHOICE>
+            <CHOICE>Gaelic</CHOICE>
+            <CHOICE>German</CHOICE>
+            <CHOICE>Greek</CHOICE>
+            <CHOICE>Hebrew</CHOICE>
+            <CHOICE>Hindi</CHOICE>
+            <CHOICE>Hungarian</CHOICE>
+            <CHOICE>Icelandic</CHOICE>
+            <CHOICE>Indonesian</CHOICE>
+            <CHOICE>Irish</CHOICE>
+            <CHOICE>Italian</CHOICE>
+            <CHOICE>Japanese</CHOICE>
+            <CHOICE>Korean</CHOICE>
+            <CHOICE>Kurdish</CHOICE>
+            <CHOICE>Latvian</CHOICE>
+            <CHOICE>Lithuanian</CHOICE>
+            <CHOICE>Macedonian</CHOICE>
+            <CHOICE>Malayalam</CHOICE>
+            <CHOICE>Malaysian</CHOICE>
+            <CHOICE>Maltese</CHOICE>
+            <CHOICE>Norwegian</CHOICE>
+            <CHOICE>Polish</CHOICE>
+            <CHOICE>Portuguese</CHOICE>
+            <CHOICE>Punjabi</CHOICE>
+            <CHOICE>Rhaeto-Romanic</CHOICE>
+            <CHOICE>Romanian</CHOICE>
+            <CHOICE>Russian</CHOICE>
+            <CHOICE>Serbian</CHOICE>
+            <CHOICE>Slovak</CHOICE>
+            <CHOICE>Slovenian</CHOICE>
+            <CHOICE>Sorbian</CHOICE>
+            <CHOICE>Spanish</CHOICE>
+            <CHOICE>Swedish</CHOICE>
+            <CHOICE>Thai</CHOICE>
+            <CHOICE>Tsonga</CHOICE>
+            <CHOICE>Tswana</CHOICE>
+            <CHOICE>Turkish</CHOICE>
+            <CHOICE>Ukrainian</CHOICE>
+            <CHOICE>Urdu</CHOICE>
+            <CHOICE>Venda</CHOICE>
+            <CHOICE>Vietnamese</CHOICE>
+            <CHOICE>Welsh</CHOICE>
+            <CHOICE>Xhosa</CHOICE>
+            <CHOICE>Yiddish</CHOICE>
+            <CHOICE>Zulu</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Note" DisplayName="BaselineComments" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE"
+          RichTextMode="Compatible" IsolateStyles="TRUE" Sortable="FALSE" Group="DMS"
+          ID="{a90ef641-08ec-4c3e-bd8d-30d46be39643}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="BaselineComments"
+          Name="BaselineComments"></Field>
+        <Field Type="Text" DisplayName="Other Reference" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{522ecd43-2374-442e-b36d-016773ba7d99}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="OtherReference"
+          Name="OtherReference" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Note" DisplayName="SiteURL" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" NumLines="6" RichText="FALSE" RichTextMode="Compatible"
+          IsolateStyles="TRUE" Sortable="FALSE" Group="DMS"
+          ID="{cbbc0644-0385-4f7a-a515-ee215f28fc56}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="SiteURL" Name="SiteURL"
+          CustomFormatter="" RestrictedMode="TRUE" AppendOnly="FALSE"
+          UnlimitedLengthInDocumentLibrary="FALSE"></Field>
+        <Field Name="ProjectContractuallanguage" FromBaseType="FALSE" Type="Choice"
+          DisplayName="Project Contractual Language" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{2990e445-7d2c-42aa-bbf8-53167b6340ac}" StaticName="ProjectContractuallanguage"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" CustomFormatter="">
+          <Default>Afrikaans (af)</Default>
+          <CHOICES>
+            <CHOICE>Afrikaans (af)</CHOICE>
+            <CHOICE>Albanian (sq)</CHOICE>
+            <CHOICE>Arabic (Algeria) (ar-dz)</CHOICE>
+            <CHOICE>Arabic (Bahrain) (ar-bh)</CHOICE>
+            <CHOICE>Arabic (Egypt) (ar-eg)</CHOICE>
+            <CHOICE>Arabic (Iraq) (ar-iq)</CHOICE>
+            <CHOICE>Arabic (Jordan) (ar-jo)</CHOICE>
+            <CHOICE>Arabic (Kuwait) (ar-kw)</CHOICE>
+            <CHOICE>Arabic (Lebanon) (ar-lb)</CHOICE>
+            <CHOICE>Arabic (Libya) (ar-ly)</CHOICE>
+            <CHOICE>Arabic (Morocco) (ar-ma)</CHOICE>
+            <CHOICE>Arabic (Oman) (ar-om)</CHOICE>
+            <CHOICE>Arabic (Qatar) (ar-qa)</CHOICE>
+            <CHOICE>Arabic (Saudi Arabia) (ar-sa)</CHOICE>
+            <CHOICE>Arabic (Syria) (ar-sy)</CHOICE>
+            <CHOICE>Arabic (Tunisia) (ar-tn)</CHOICE>
+            <CHOICE>Arabic (U.A.E.) (ar-ae)</CHOICE>
+            <CHOICE>Arabic (Yemen) (ar-ye)</CHOICE>
+            <CHOICE>Basque (eu)</CHOICE>
+            <CHOICE>Belarusian (be)</CHOICE>
+            <CHOICE>Bulgarian (bg)</CHOICE>
+            <CHOICE>Catalan (ca)</CHOICE>
+            <CHOICE>Chinese (Hong Kong) (zh-hk)</CHOICE>
+            <CHOICE>Chinese (PRC) (zh-cn)</CHOICE>
+            <CHOICE>Chinese (Singapore) (zh-sg)</CHOICE>
+            <CHOICE>Chinese (Taiwan) (zh-tw)</CHOICE>
+            <CHOICE>Croatian (hr)</CHOICE>
+            <CHOICE>Czech (cs)</CHOICE>
+            <CHOICE>Danish (da)</CHOICE>
+            <CHOICE>Dutch (Belgium) (nl-be)</CHOICE>
+            <CHOICE>Dutch (Standard) (nl)</CHOICE>
+            <CHOICE>English (en)</CHOICE>
+            <CHOICE>English (Australia) (en-au)</CHOICE>
+            <CHOICE>English (Belize) (en-bz)</CHOICE>
+            <CHOICE>English (Canada) (en-ca)</CHOICE>
+            <CHOICE>English (Ireland) (en-ie)</CHOICE>
+            <CHOICE>English (Jamaica) (en-jm)</CHOICE>
+            <CHOICE>English (New Zealand) (en-nz)</CHOICE>
+            <CHOICE>English (South Africa) (en-za)</CHOICE>
+            <CHOICE>English (Trinidad) (en-tt)</CHOICE>
+            <CHOICE>English (United Kingdom) (en-gb)</CHOICE>
+            <CHOICE>English (United States) (en-us)</CHOICE>
+            <CHOICE>Estonian (et)</CHOICE>
+            <CHOICE>Faeroese (fo)</CHOICE>
+            <CHOICE>Farsi (fa)</CHOICE>
+            <CHOICE>Finnish (fi)</CHOICE>
+            <CHOICE>French (Belgium) (fr-be)</CHOICE>
+            <CHOICE>French (Canada) (fr-ca)</CHOICE>
+            <CHOICE>French (Luxembourg) (fr-lu)</CHOICE>
+            <CHOICE>French (Standard) (fr)</CHOICE>
+            <CHOICE>French (Switzerland) (fr-ch)</CHOICE>
+            <CHOICE>Gaelic (Scotland) (gd)</CHOICE>
+            <CHOICE>German (Austria) (de-at)</CHOICE>
+            <CHOICE>German (Liechtenstein) (de-li)</CHOICE>
+            <CHOICE>German (Luxembourg) (de-lu)</CHOICE>
+            <CHOICE>German (Standard) (de)</CHOICE>
+            <CHOICE>German (Switzerland) (de-ch)</CHOICE>
+            <CHOICE>Greek (el)</CHOICE>
+            <CHOICE>Hebrew (he)</CHOICE>
+            <CHOICE>Hindi (hi)</CHOICE>
+            <CHOICE>Hungarian (hu)</CHOICE>
+            <CHOICE>Icelandic (is)</CHOICE>
+            <CHOICE>Indonesian (id)</CHOICE>
+            <CHOICE>Irish (ga)</CHOICE>
+            <CHOICE>Italian (Standard) (it)</CHOICE>
+            <CHOICE>Italian (Switzerland) (it-ch)</CHOICE>
+            <CHOICE>Japanese (ja)</CHOICE>
+            <CHOICE>Korean (ko)</CHOICE>
+            <CHOICE>Korean (Johab) (ko)</CHOICE>
+            <CHOICE>Kurdish (ku)</CHOICE>
+            <CHOICE>Latvian (lv)</CHOICE>
+            <CHOICE>Lithuanian (lt)</CHOICE>
+            <CHOICE>Macedonian (FYROM) (mk)</CHOICE>
+            <CHOICE>Malayalam (ml)</CHOICE>
+            <CHOICE>Malaysian (ms)</CHOICE>
+            <CHOICE>Maltese (mt)</CHOICE>
+            <CHOICE>Norwegian (no)</CHOICE>
+            <CHOICE>Norwegian (Bokmål) (nb)</CHOICE>
+            <CHOICE>Norwegian (Nynorsk) (nn)</CHOICE>
+            <CHOICE>Polish (pl)</CHOICE>
+            <CHOICE>Portuguese (Brazil) (pt-br)</CHOICE>
+            <CHOICE>Portuguese (Portugal) (pt)</CHOICE>
+            <CHOICE>Punjabi (pa)</CHOICE>
+            <CHOICE>Rhaeto-Romanic (rm)</CHOICE>
+            <CHOICE>Romanian (ro)</CHOICE>
+            <CHOICE>Romanian (Republic of Moldova) (ro-md)</CHOICE>
+            <CHOICE>Russian (ru)</CHOICE>
+            <CHOICE>Russian (Republic of Moldova) (ru-md)</CHOICE>
+            <CHOICE>Serbian (sr)</CHOICE>
+            <CHOICE>Slovak (sk)</CHOICE>
+            <CHOICE>Slovenian (sl)</CHOICE>
+            <CHOICE>Sorbian (sb)</CHOICE>
+            <CHOICE>Spanish (Argentina) (es-ar)</CHOICE>
+            <CHOICE>Spanish (Bolivia) (es-bo)</CHOICE>
+            <CHOICE>Spanish (Chile) (es-cl)</CHOICE>
+            <CHOICE>Spanish (Colombia) (es-co)</CHOICE>
+            <CHOICE>Spanish (Costa Rica) (es-cr)</CHOICE>
+            <CHOICE>Spanish (Dominican Republic) (es-do)</CHOICE>
+            <CHOICE>Spanish (Ecuador) (es-ec)</CHOICE>
+            <CHOICE>Spanish (El Salvador) (es-sv)</CHOICE>
+            <CHOICE>Spanish (Guatemala) (es-gt)</CHOICE>
+            <CHOICE>Spanish (Honduras) (es-hn)</CHOICE>
+            <CHOICE>Spanish (Mexico) (es-mx)</CHOICE>
+            <CHOICE>Spanish (Nicaragua) (es-ni)</CHOICE>
+            <CHOICE>Spanish (Panama) (es-pa)</CHOICE>
+            <CHOICE>Spanish (Paraguay) (es-py)</CHOICE>
+            <CHOICE>Spanish (Peru) (es-pe)</CHOICE>
+            <CHOICE>Spanish (Puerto Rico) (es-pr)</CHOICE>
+            <CHOICE>Spanish (Spain) (es)</CHOICE>
+            <CHOICE>Spanish (Uruguay) (es-uy)</CHOICE>
+            <CHOICE>Spanish (Venezuela) (es-ve)</CHOICE>
+            <CHOICE>Swedish (sv)</CHOICE>
+            <CHOICE>Swedish (Finland) (sv-fi)</CHOICE>
+            <CHOICE>Thai (th)</CHOICE>
+            <CHOICE>Tsonga (ts)</CHOICE>
+            <CHOICE>Tswana (tn)</CHOICE>
+            <CHOICE>Turkish (tr)</CHOICE>
+            <CHOICE>Ukrainian (uk)</CHOICE>
+            <CHOICE>Urdu (ur)</CHOICE>
+            <CHOICE>Venda (ve)</CHOICE>
+            <CHOICE>Vietnamese (vi)</CHOICE>
+            <CHOICE>Welsh (cy)</CHOICE>
+            <CHOICE>Xhosa (xh)</CHOICE>
+            <CHOICE>Yiddish (ji)</CHOICE>
+            <CHOICE>Zulu (zu)</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Note" DisplayName="Customer Comments" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE"
+          Group="DMS" ID="{9b29154f-4ef7-4e08-af27-dfd3c64cae94}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="CustomerComments"
+          Name="CustomerComments" CustomFormatter="" RestrictedMode="TRUE" RichTextMode="Compatible"
+          IsolateStyles="FALSE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE"
+          AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Change Request ID" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{71139352-0d40-47af-820d-6b7c21bc3e73}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ChangeRequestID"
+          Name="ChangeRequestID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Handover - PBS Level Code" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{40ffec52-99c4-4fa2-a5e2-9e0d5c139fe3}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="HandoverPBSLevelCode"
+          Name="HandoverPBSLevelCode" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Handover - Document Revision" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{2ae02c55-d357-4086-aa6c-726ef1544e5c}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="HandoverDocumentRevision"
+          Name="HandoverDocumentRevision" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Name="TransmittalReference" FromBaseType="FALSE" Type="Text"
+          DisplayName="Transmittal Reference" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{13f10b58-5a13-4530-a758-88dc93f355a2}"
+          StaticName="TransmittalReference" SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}"></Field>
+        <Field Name="CustomernameDirect" FromBaseType="FALSE" Type="Text"
+          DisplayName="Customer name (direct)" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{f97c4059-0e03-4dc0-ab3a-07db4c16336f}"
+          StaticName="CustomernameDirect" SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}">
+          <Default>{parameter:DirectCustomerLabels}</Default>
+        </Field>
+        <Field Type="DateTime" DisplayName="Customer Response Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{b088695a-d0e9-46e6-b4df-019c91b39ae7}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="CustomerResponseDate"
+          Name="CustomerResponseDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="Choice" Name="Projectattr1" DisplayName="Project attr 1"
+          ID="{251e2264-d2c4-497e-ac11-d68325b65a3d}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr1"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="Text" DisplayName="Scope Geography" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{8aa69166-72fc-48bb-ae7a-d25dacd3273a}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ScopeCountry"
+          Name="ScopeCountry" CustomFormatter="">
+          <Default>{parameter:GeographyLabel}</Default>
+        </Field>
+        <Field DisplayName="Customer Revision" Type="Text" Required="FALSE"
+          ID="{63249d6c-18e1-40f5-88df-f6de00f99cc0}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="CustomerRevision"
+          Name="CustomerRevision" Group="DMS" CustomFormatter="" EnforceUniqueValues="FALSE"
+          MaxLength="255" Indexed="FALSE"></Field>
+        <Field Type="Choice" DisplayName="Customer Response Status" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE"
+          Group="DMS" ID="{125d6375-7a47-4e04-ba38-bf12efb6d284}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="CustomerResponseStatus"
+          Name="CustomerResponseStatus" CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Accepted for information</CHOICE>
+            <CHOICE>Approved without remark</CHOICE>
+            <CHOICE>Approved with remarks</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="User" DisplayName="Validated By" List="UserInfo" Required="FALSE"
+          EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly"
+          UserSelectionScope="0" Group="DMS" ID="{12c3fa76-aeeb-4ab2-a967-0dee7ec86da0}"
+          SourceID="{{siteid}}" StaticName="Validatedby" Name="Validatedby" AllowDeletion="TRUE" />
+        <Field Type="Text" DisplayName="Customer Response Reference" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{d3899278-d946-4e56-9698-413ece7c3b83}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="CustomerResponseReference"
+          Name="CustomerResponseReference" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Incident ID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{e544ec78-f239-4bb1-bb90-9412337092ab}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="IncidentID"
+          Name="IncidentID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Inspection ID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{2c263779-a047-45f2-8214-2025036edaab}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="InspectionID"
+          Name="InspectionID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Change From No" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{64719679-8068-4efe-9943-cab11773ea1e}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ChangeFromNumber"
+          Name="ChangeFromNumber" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Choice" Name="Projectattr5" DisplayName="Project attr 5"
+          ID="{5809fd7c-b6c8-42ae-9e4a-caa202190960}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr5"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="ProjectPLOwnership"
+          List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033"
+          Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="DMS"
+          ID="{14fd617e-322d-47a1-9b2a-b1cd6eeddbd3}" SourceID="{{siteid}}"
+          StaticName="ProjectPLOwnership" Name="ProjectPLOwnership">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:DOC4A:PLOwnership}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  {a31244f1-ddc3-4b9f-8a1c-5ed40f310a3d}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsEnhancedImageTaggingEnabled</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy,
+                  Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q14="http://www.w3.org/2001/XMLSchema" p4:type="q14:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q15="http://www.w3.org/2001/XMLSchema" p4:type="q15:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Choice" DisplayName="Workflow Status" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE"
+          Group="DMS" ID="{9db4bc7e-5339-4e0f-ac80-4ab382e538e5}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="WorkflowStatus"
+          Name="WorkflowStatus" CustomFormatter="" AllowDeletion="TRUE">
+          <Default>Enter Choice #1</Default>
+          <CHOICES>
+            <CHOICE>Enter Choice #1</CHOICE>
+            <CHOICE>Enter Choice #2</CHOICE>
+            <CHOICE>Enter Choice #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="BaselineParentID" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{851f107f-c8fd-4dca-b2fb-2a342d984db6}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="BaselineParentID"
+          Name="BaselineParentID"></Field>
+        <Field Type="User" DisplayName="Verified By" List="UserInfo" Required="FALSE"
+          EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly"
+          UserSelectionScope="0" Group="DMS" ID="{78a15683-4a72-4f72-9763-0dc942bf8fca}"
+          SourceID="{{siteid}}" StaticName="Verifiedby" Name="Verifiedby" AllowDeletion="TRUE" />
+        <Field Type="Choice" Name="Projectattr8" DisplayName="Project attr 8"
+          ID="{492be684-0b98-4ab3-8f71-6c1abd9ed628}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr8"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="Choice" DisplayName="WBS" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{19baf287-f0a4-4d1e-8463-8d86fb8bc207}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="WBS" Name="WBS"
+          CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Enter Choice #1</CHOICE>
+            <CHOICE>Enter Choice #2</CHOICE>
+            <CHOICE>Enter Choice #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="Handover – Document File name" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{98a5d88d-6aad-4562-8fcd-759cbbd5f2bd}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="HandoverDocumentFilename"
+          Name="HandoverDocumentFilename" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="End Customer"
+          List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033"
+          Required="FALSE" EnforceUniqueValues="FALSE" Mult="TRUE" Sortable="FALSE" Group="DMS"
+          ID="{2f57368e-4bcf-46f2-b921-9b212cc09b7a}" SourceID="{{siteid}}" StaticName="EndCustomer"
+          Name="EndCustomer">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:DOC4A:Customers}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  {6d37b728-cbda-47d7-bc04-07214b040159}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsEnhancedImageTaggingEnabled</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy,
+                  Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q14="http://www.w3.org/2001/XMLSchema" p4:type="q14:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q15="http://www.w3.org/2001/XMLSchema" p4:type="q15:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Text" DisplayName="Job Plan/Tasklist ID" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{9ce03a93-535e-438c-9784-1095798fd6a2}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="JobPlanID" Name="JobPlanID"
+          CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="BaselineVersion" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{8d356a94-4fd7-4fc1-9d09-ef900607c04b}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="BaselineVersion"
+          Name="BaselineVersion"></Field>
+        <Field Type="DateTime" DisplayName="Transmittal Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{a518a095-ad3a-4066-ad12-684ddf385c0c}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="TransmittalDate"
+          Name="TransmittalDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="TaxonomyFieldType" DisplayName="ABS" List="{{listid:TaxonomyHiddenList}}"
+          WebId="{siteid}" ShowField="Term1033" Required="TRUE" EnforceUniqueValues="FALSE"
+          Mult="FALSE" Group="DMS" ID="{75a1eb95-73fb-4634-a4f8-40f34bb0574e}" SourceID="{{siteid}}"
+          StaticName="ABS" Name="ABS" AllowDeletion="TRUE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:DOC4A:ABS}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  {7c856ad7-914c-40b1-b17f-3dcaf6e67d54}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsEnhancedImageTaggingEnabled</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy,
+                  Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q14="http://www.w3.org/2001/XMLSchema" p4:type="q14:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q15="http://www.w3.org/2001/XMLSchema" p4:type="q15:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Choice" Name="Projectattr4" DisplayName="Project attr 4"
+          ID="{5e9b9a97-d1bf-4a64-b7ea-7e649d74bbb5}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr4"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="Boolean" DisplayName="IsLatest" EnforceUniqueValues="FALSE" Indexed="FALSE"
+          Group="DMS" ID="{3614d298-2a0f-48cd-afdd-3047a6d1e0c4}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="IsLatest" Name="IsLatest">
+          <Default>1</Default>
+        </Field>
+        <Field Type="Text" DisplayName="Replaced By" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{33ede599-b368-4f4c-b63d-2e948f82744e}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ReplacedBy"
+          Name="ReplacedBy" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="TaxonomyFieldType" DisplayName="PL Ownership"
+          List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033"
+          ID="{5522119e-4287-4dc7-8b23-656c0391ab96}" SourceID="{{siteid}}" StaticName="PLOwnership"
+          Name="PLOwnership" Group="DMS" CustomFormatter="" EnforceUniqueValues="FALSE"
+          Required="TRUE" Mult="FALSE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:DOC4A:PLOwnership}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  {20b681e0-9e5b-4d17-9209-786e9755ba60}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsEnhancedImageTaggingEnabled</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy,
+                  Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q14="http://www.w3.org/2001/XMLSchema" p4:type="q14:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q15="http://www.w3.org/2001/XMLSchema" p4:type="q15:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="Text" DisplayName="Handover - Document title" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{9b50b49f-88e4-4838-9790-9d9e0d419a6a}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="HandoverDocumentTitle"
+          Name="HandoverDocumentTitle" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Product Name" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{f1b019a0-c1a8-40b1-9661-5b99779d5bf8}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ProductName"
+          Name="ProductName" CustomFormatter="">
+          <Default>{parameter:ProductLabel}</Default>
+        </Field>
+        <Field Type="Text" DisplayName="CR ID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{aea7f3a0-5774-4d4c-9f4b-e3a902c446e4}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="CRID" Name="CRID"></Field>
+        <Field Type="Choice" DisplayName="Submission Category" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE"
+          Group="DMS" ID="{087c90a1-ba3e-4684-a5ce-dfc53b40bd06}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="SubmissionCategory"
+          Name="SubmissionCategory" CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Internal</CHOICE>
+            <CHOICE>For Approval</CHOICE>
+            <CHOICE>For Information</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="Handover - Document classification" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{2b2afea8-ce4b-4dd3-8298-ce30edb8d66b}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}"
+          StaticName="HandoverDocumentClassification" Name="HandoverDocumentClassification"
+          CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Permit to Work ID" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{e67c0cb0-308d-4efe-b9cc-2b2cd0b403b9}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="PermitToWorkID"
+          Name="PermitToWorkID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Handover - Document code" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{fabaa4b3-98f1-4bb5-abc9-e57ad4332939}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="HandoverDocumentCode"
+          Name="HandoverDocumentCode" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Choice" Name="Projectattr7" DisplayName="Project attr 7"
+          ID="{ca1e96b4-4f9d-4839-9a9d-252309b5eab1}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr7"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="Choice" Name="Projectattr10" DisplayName="Project attr 10"
+          ID="{ddb7b2b5-c0a0-4869-af40-4fb8ac333733}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr10"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="Boolean" DisplayName="Active" EnforceUniqueValues="FALSE" Indexed="FALSE"
+          Group="DMS" ID="{be5b81b6-a561-44c2-bd8f-dccc0494d063}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ActiveProject"
+          Name="ActiveProject" CustomFormatter="" Required="FALSE">
+          <Default>1</Default>
+        </Field>
+        <Field Name="BaselineStatus" FromBaseType="FALSE" Type="Text" DisplayName="BaselineStatus"
+          Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{ab7819b8-4049-4190-a082-33f48516686a}" StaticName="BaselineStatus"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}"></Field>
+        <Field Type="DateTime" DisplayName="Actual Submission Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{57a5dab8-1bfc-4a2b-82cc-b48739949276}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ActualSubmissionDate"
+          Name="ActualSubmissionDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Hazard ID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{80028eba-4a90-4fc7-9985-bdce8fc88c96}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="HazardID" Name="HazardID"
+          CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="TaxonomyFieldTypeMulti" DisplayName="Direct Customer"
+          List="{{listid:TaxonomyHiddenList}}" WebId="{siteid}" ShowField="Term1033"
+          Required="FALSE" EnforceUniqueValues="FALSE" Group="DMS"
+          ID="{3bd7b1bd-2d1c-4be0-a34e-7bd99d047db9}" SourceID="{{siteid}}"
+          StaticName="DirectCustomer" Name="DirectCustomer" Mult="TRUE" Sortable="FALSE">
+          <Default></Default>
+          <Customization>
+            <ArrayOfProperty>
+              <Property>
+                <Name>SspId</Name>
+                <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+              </Property>
+              <Property>
+                <Name>GroupId</Name>
+              </Property>
+              <Property>
+                <Name>TermSetId</Name>
+                <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:DOC4A:Customers}</Value>
+              </Property>
+              <Property>
+                <Name>AnchorId</Name>
+                <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  00000000-0000-0000-0000-000000000000</Value>
+              </Property>
+              <Property>
+                <Name>UserCreated</Name>
+                <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>Open</Name>
+                <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TextField</Name>
+                <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  {cd33c426-6bdc-4014-9429-7218aa7d0b9a}</Value>
+              </Property>
+              <Property>
+                <Name>IsPathRendered</Name>
+                <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsKeyword</Name>
+                <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>TargetTemplate</Name>
+              </Property>
+              <Property>
+                <Name>CreateValuesInEditForm</Name>
+                <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsDocTagsEnabled</Name>
+                <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>IsEnhancedImageTaggingEnabled</Name>
+                <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+              </Property>
+              <Property>
+                <Name>FilterAssemblyStrongName</Name>
+                <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy,
+                  Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+              </Property>
+              <Property>
+                <Name>FilterClassName</Name>
+                <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+                  Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+              </Property>
+              <Property>
+                <Name>FilterMethodName</Name>
+                <Value xmlns:q14="http://www.w3.org/2001/XMLSchema" p4:type="q14:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+              </Property>
+              <Property>
+                <Name>FilterJavascriptProperty</Name>
+                <Value xmlns:q15="http://www.w3.org/2001/XMLSchema" p4:type="q15:string"
+                  xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+              </Property>
+            </ArrayOfProperty>
+          </Customization>
+        </Field>
+        <Field Type="URL" DisplayName="External URL" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Hyperlink" Group="DMS" ID="{db32ddbd-2d65-4aa1-a582-925a722f9b47}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ExternalURL"
+          Name="ExternalURL" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="DateTime" DisplayName="Verification Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{7f1ac9be-a138-4599-b652-1ae5004af093}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="VerificationDate"
+          Name="VerificationDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Revision" Required="TRUE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{f001a4c1-ab76-4811-9a40-3e81ab1b6cf5}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ProjectRevision"
+          Name="ProjectRevision" CustomFormatter="" AllowDeletion="TRUE">
+          <Default>A</Default>
+        </Field>
+        <Field Type="Text" DisplayName="Asset/Equipment ID" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{9e7764c2-e8bc-4016-bf6d-94db28513e12}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="AlstomAssetID"
+          Name="AlstomAssetID" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="DateTime" DisplayName="Approval Cycle Launch Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{8ef53dc4-ccff-45ff-9038-a478783c3c4b}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ApprovalCycleLaunchDate"
+          Name="ApprovalCycleLaunchDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="Choice" DisplayName="WorkflowType" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{58be06c8-7fbd-4db6-8435-0745acc4e3fb}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="WorkflowType"
+          Name="WorkflowType">
+          <Default>Proofreading</Default>
+          <CHOICES>
+            <CHOICE>Proofreading</CHOICE>
+            <CHOICE>AVVA</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="EnvironmentDetails" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{efc80ec9-437f-411c-8440-0ec2cdc1c244}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="EnvironmentDetails"
+          Name="EnvironmentDetails"></Field>
+        <Field Type="Text" DisplayName="Change To No" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{4fbe42cc-95b9-433d-9cc0-4bd3d45e910e}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ChangeToNumber"
+          Name="ChangeToNumber" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Name="GRMilestone" FromBaseType="FALSE" Type="Choice" DisplayName="GR Milestone"
+          Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown"
+          FillInChoice="FALSE" Group="DMS" ID="{7a4f85cd-7eae-42b9-914f-a7137a32137d}"
+          StaticName="GRMilestone" SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}"
+          CustomFormatter="">
+          <CHOICES>
+            <CHOICE>BOR - Business Opportunity Review</CHOICE>
+            <CHOICE>CGR - Critical Gate Review</CHOICE>
+            <CHOICE>CGR - Critical Gate Review for first train</CHOICE>
+            <CHOICE>CGR - Critical Gate Review for full train</CHOICE>
+            <CHOICE>DGR - Demobilisation Gate Review</CHOICE>
+            <CHOICE>DR - Design Review</CHOICE>
+            <CHOICE>EOP1 - End of Project: First Provisional Acceptance</CHOICE>
+            <CHOICE>EOP2 - End of Project: Last Provisional Acceptance</CHOICE>
+            <CHOICE>EWP - End of Warranty Phase</CHOICE>
+            <CHOICE>FAI - First Article Review</CHOICE>
+            <CHOICE>FAR - First Assembly Review</CHOICE>
+            <CHOICE>FAT - Factory Acceptance Test</CHOICE>
+            <CHOICE>FEI - First Equipement Inspection</CHOICE>
+            <CHOICE>FGR - Feasibility Gate Review</CHOICE>
+            <CHOICE>FIQ - First Industrial Quality</CHOICE>
+            <CHOICE>FQA - Final Qualification Acceptance</CHOICE>
+            <CHOICE>FTGR - First Train Gate Reveiw</CHOICE>
+            <CHOICE>FTIQA - Fisrt Train Initial Quality Approval</CHOICE>
+            <CHOICE>GFI - Go For Installation Gate</CHOICE>
+            <CHOICE>GFV - Go For Internal Validation</CHOICE>
+            <CHOICE>GOCATALOG - Go Catalog</CHOICE>
+            <CHOICE>GODESIGN - Go Design</CHOICE>
+            <CHOICE>GOORDER - Go Order</CHOICE>
+            <CHOICE>GOSERIAL - Go Serial</CHOICE>
+            <CHOICE>GPS - Go Pre-Serial</CHOICE>
+            <CHOICE>GPV - Go For Validation</CHOICE>
+            <CHOICE>GR - Gate Review</CHOICE>
+            <CHOICE>GR_DFQ - Gate Review DFQ Process</CHOICE>
+            <CHOICE>GR_SQA</CHOICE>
+            <CHOICE>GSR - Go Serial Review</CHOICE>
+            <CHOICE>HGR - Hand Back Gate Review</CHOICE>
+            <CHOICE>IGR - Investigation Gate Review</CHOICE>
+            <CHOICE>INTFAI - Internal FAI</CHOICE>
+            <CHOICE>IQA - Initial Quality Review</CHOICE>
+            <CHOICE>IQR - Internal Qualification Review</CHOICE>
+            <CHOICE>IR10 - Internal Review 10</CHOICE>
+            <CHOICE>IR20 - Internal Review 20</CHOICE>
+            <CHOICE>IR30 - Internal Review 30</CHOICE>
+            <CHOICE>IR40 - Internal Review 40</CHOICE>
+            <CHOICE>IR50 - Internal Review 50</CHOICE>
+            <CHOICE>LGR - Launch Gate Review</CHOICE>
+            <CHOICE>MGR - Mobilisation Gate Review</CHOICE>
+            <CHOICE>NTP - Notice to Proceed</CHOICE>
+            <CHOICE>OLR - Oerhaul Launch Review</CHOICE>
+            <CHOICE>OPR - Overhaul Prototype Review</CHOICE>
+            <CHOICE>OSR - Overhaul Go for Serial</CHOICE>
+            <CHOICE>PGR - Preliminary Gate Review</CHOICE>
+            <CHOICE>PQA - Project Quality Approval</CHOICE>
+            <CHOICE>PROJ - Project Start / End</CHOICE>
+            <CHOICE>PSR - Project Stabilisation Review</CHOICE>
+            <CHOICE>QCDP - QCDP Review Meeting</CHOICE>
+            <CHOICE>RGR - Readliness Gate Review</CHOICE>
+            <CHOICE>SA - Safety Authorization</CHOICE>
+            <CHOICE>SPB - Submitted Bid Presentation</CHOICE>
+            <CHOICE>SGR - Specification Gate Review</CHOICE>
+            <CHOICE>SIQ - Serial Industrial Quality</CHOICE>
+            <CHOICE>SOR - Supplier Order Review</CHOICE>
+            <CHOICE>TDR - Tender Design Review</CHOICE>
+            <CHOICE>TGR - Tender Gate Review</CHOICE>
+            <CHOICE>TLW - Tender Launch Workshop</CHOICE>
+            <CHOICE>TRM - Tender Review Meeting</CHOICE>
+            <CHOICE>TTG - Tender Transfer Gate</CHOICE>
+            <CHOICE>TTM - Tender Transfer Meeting</CHOICE>
+            <CHOICE>VGR - Validation Gate Review</CHOICE>
+            <CHOICE>WLA - Win Loss Analysis</CHOICE>
+            <CHOICE>WNG - Win No Go</CHOICE>
+            <CHOICE>WRM - Winning Roadmap Review</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="BaselineChildID" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{6d5d96cf-ada2-48f4-9dbd-e6aa77bd116e}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="BaselineChildID"
+          Name="BaselineChildID"></Field>
+        <Field Type="Choice" Name="Projectattr3" DisplayName="Project attr 3"
+          ID="{99b1f3cf-ec28-4b93-abb4-5d932136aab3}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr3"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="Text" DisplayName="Code" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{4e39f3d0-4da3-44df-a02b-765714a2b950}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Code" Name="Code"></Field>
+        <Field Type="Text" DisplayName="Reference" Required="TRUE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{45a7a6d2-84de-4e2f-b1dc-4ed7ce47fdb0}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ProjectReference"
+          Name="ProjectReference" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Note" DisplayName="ProductBreakdownStructure_0"
+          StaticName="p1a031f0cba84ff7956c3ac02cf76d91" Name="p1a031f0cba84ff7956c3ac02cf76d91"
+          ID="{e84683d3-08d4-4464-864f-5384720ca354}" ShowInViewForms="FALSE" Required="FALSE"
+          CanToggleHidden="TRUE" SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" Hidden="TRUE" />
+        <Field Type="UserMulti" DisplayName="Author(s)" List="UserInfo" Required="FALSE"
+          EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly"
+          UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" Group="DMS"
+          ID="{caef94d7-6253-4a26-a957-6eafbbfa7889}" SourceID="{{siteid}}" StaticName="Authors"
+          Name="Authors" AllowDeletion="TRUE" />
+        <Field Type="Text" DisplayName="PrevTaskId" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{7e0ca1d8-39d8-4a54-8003-80506cc306c3}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="PrevTaskId"
+          Name="PrevTaskId"></Field>
+        <Field Type="Choice" Name="Projectattr9" DisplayName="Project attr 9"
+          ID="{cb269dd9-00c6-4a8c-ab4b-b0c4c1a9cc71}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr9"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="Choice" DisplayName="Handover - Document Status" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE"
+          Group="DMS" ID="{915f63da-8834-48de-8f1c-28a83c1e93a1}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="HandoverDocumentStatus"
+          Name="HandoverDocumentStatus" CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Enter Choice #1</CHOICE>
+            <CHOICE>Enter Choice #2</CHOICE>
+            <CHOICE>Enter Choice #3</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="DateTime" DisplayName="Reforecast Submission Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{f0540adc-7d24-4c02-afa7-634707170925}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ReforecastSubmissionDate"
+          Name="ReforecastSubmissionDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="Choice" Name="Projectattr2" DisplayName="Project attr 2"
+          ID="{49b8b2dc-40be-4c88-8374-8fa69aeb070c}" Group="DMS" Required="FALSE"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="Projectattr2"
+          AllowDeletion="TRUE" Hidden="TRUE" CanToggleHidden="TRUE">
+          <CHOICES />
+        </Field>
+        <Field Type="Text" DisplayName="DocumentID" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{6c5f2ce7-41b4-47b0-8f57-1d517acc3886}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="DocumentID"
+          Name="DocumentID"></Field>
+        <Field Type="DateTime" DisplayName="Approval Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{244571e7-c66c-4d22-8829-ca4aa153d867}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ApprovalDate"
+          Name="ApprovalDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+        <Field Type="Choice" DisplayName="FBS" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="DMS"
+          ID="{36144fe8-0bfe-4485-abcb-32a05da08471}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="FBS" Name="FBS"
+          CustomFormatter="" AllowDeletion="TRUE">
+          <CHOICES>
+            <CHOICE>Carry and protect passengers, train crew and load (B )</CHOICE>
+            <CHOICE>Arrange interior space (BB )</CHOICE>
+            <CHOICE>Provide floor and flooring (BBB )</CHOICE>
+            <CHOICE>Provide roof and roofing (BBC )</CHOICE>
+            <CHOICE>Provide partitioning (BBD )</CHOICE>
+            <CHOICE>Provide lining and panelling (BBE )</CHOICE>
+            <CHOICE>Provide acoustic/thermal insulation (BBF )</CHOICE>
+            <CHOICE>Provide luggage storage space in the vehicle (BBG )</CHOICE>
+            <CHOICE>Carry and secure accompanying object (BBH )</CHOICE>
+            <CHOICE>Provide access to upper levels and user zones (BBJ )</CHOICE>
+            <CHOICE>Carry and enclose the load (BC )</CHOICE>
+            <CHOICE>Fasten equipment / load (BCB )</CHOICE>
+            <CHOICE>Enclose the load (BCC )</CHOICE>
+            <CHOICE>Carry and Protect the load (BCD )</CHOICE>
+            <CHOICE>Protect installed equipment / components (BCE )</CHOICE>
+            <CHOICE>Protect in case of crash (BD )</CHOICE>
+            <CHOICE>Absorb crash energy (BDB )</CHOICE>
+            <CHOICE>Protect driver, crew and passengers inside their compartments (BDC )</CHOICE>
+            <CHOICE>Limit deceleration (BDD )</CHOICE>
+            <CHOICE>Prevent vehicle override (BDE )</CHOICE>
+            <CHOICE>Protect against fire (BE )</CHOICE>
+            <CHOICE>Manage / Provide smoke detection (BEB )</CHOICE>
+            <CHOICE>Manage / Provide fire detection (BEC )</CHOICE>
+            <CHOICE>Manage signalling of fire (BED )</CHOICE>
+            <CHOICE>Manage / Provide fire extinguishment (BEE )</CHOICE>
+            <CHOICE>Provide appropriate conditions to passenger, train crew and load (C )</CHOICE>
+            <CHOICE>Provide safe and comfortable sitting, lying and standing positions (CB )</CHOICE>
+            <CHOICE>Provide support for standing (CBB )</CHOICE>
+            <CHOICE>Provide seating possibilities (CBC )</CHOICE>
+            <CHOICE>Provide external view (CC )</CHOICE>
+            <CHOICE>Ensure outside passenger view (CCB )</CHOICE>
+            <CHOICE>Provide external view for train operation (CCC )</CHOICE>
+            <CHOICE>Provide interior lighting (CD )</CHOICE>
+            <CHOICE>Provide workplace lighting (CDB )</CHOICE>
+            <CHOICE>Provide common interior lighting (CDC )</CHOICE>
+            <CHOICE>Provide emergency lighting (CDD )</CHOICE>
+            <CHOICE>Provide special/individual lighting (CDE )</CHOICE>
+            <CHOICE>Provide proper climate (CE )</CHOICE>
+            <CHOICE>Manage HVAC mode (CEB )</CHOICE>
+            <CHOICE>Supply the desired temperature (CEC )</CHOICE>
+            <CHOICE>Supply the desired air flow (CED )</CHOICE>
+            <CHOICE>Supply the desired humidity (CEE )</CHOICE>
+            <CHOICE>Supply clean fresh air (CEF )</CHOICE>
+            <CHOICE>Protect against pressure waves (CEG )</CHOICE>
+            <CHOICE>Signal inside and outside temperature (CEH )</CHOICE>
+            <CHOICE>Provide public address, passenger information, intercommunication and
+              entertainment (CF )</CHOICE>
+            <CHOICE>Manage priority of information and announcements (CFB )</CHOICE>
+            <CHOICE>Provide Public Address (CFC )</CHOICE>
+            <CHOICE>Manage emergency alarm from passengers (CFD )</CHOICE>
+            <CHOICE>Provide passenger information (CFE )</CHOICE>
+            <CHOICE>Provide intercom (CFF )</CHOICE>
+            <CHOICE>Provide seat reservation (CFG )</CHOICE>
+            <CHOICE>Provide and support multimedia for passenger entertainment (CFH )</CHOICE>
+            <CHOICE>Support and provide external multimedia communication (CFJ )</CHOICE>
+            <CHOICE>Provide surveillance (for passenger or load) (CG )</CHOICE>
+            <CHOICE>Manage surveillance sources (CGB )</CHOICE>
+            <CHOICE>Collect surveillance information (CGC )</CHOICE>
+            <CHOICE>Analyse surveillance functions (CGD )</CHOICE>
+            <CHOICE>Display surveillance information (CGE )</CHOICE>
+            <CHOICE>Record surveillance information (CGF )</CHOICE>
+            <CHOICE>Provide sanitary services (CH )</CHOICE>
+            <CHOICE>Manage sanitary system (CHB )</CHOICE>
+            <CHOICE>Provide fresh water (CHC )</CHOICE>
+            <CHOICE>Collect and dispose waste water (CHD )</CHOICE>
+            <CHOICE>Collect and dispose grey water (CHE )</CHOICE>
+            <CHOICE>Provide antifreeze protection (CHG )</CHOICE>
+            <CHOICE>Provide hygiene (CHH )</CHOICE>
+            <CHOICE>Provide catering (CJ )</CHOICE>
+            <CHOICE>Provide proper environment for catering (CJB )</CHOICE>
+            <CHOICE>Store drinks and food (CJC )</CHOICE>
+            <CHOICE>Provide marketing, service and payment facilities (CJD )</CHOICE>
+            <CHOICE>Prepare drinks and food (CJE )</CHOICE>
+            <CHOICE>Serve drinks and food (CJF )</CHOICE>
+            <CHOICE>Provide additional service related functions (CK )</CHOICE>
+            <CHOICE>Provide ticketing (CKB )</CHOICE>
+            <CHOICE>Provide miscellaneous service functions (CKC )</CHOICE>
+            <CHOICE>Count passengers (CKD )</CHOICE>
+            <CHOICE>Provide ride comfort (CL )</CHOICE>
+            <CHOICE>Control carbody x (CLB )</CHOICE>
+            <CHOICE>Control carbody y (CLC )</CHOICE>
+            <CHOICE>Provide access and loading (D )</CHOICE>
+            <CHOICE>Provide external access (DB )</CHOICE>
+            <CHOICE>Release external doors (DBB )</CHOICE>
+            <CHOICE>Open external doors (DBC )</CHOICE>
+            <CHOICE>Close external doors (DBD )</CHOICE>
+            <CHOICE>Manage door system upon obstacle (DBE )</CHOICE>
+            <CHOICE>Lock external doors (DBF )</CHOICE>
+            <CHOICE>Unlock external doors (DBG )</CHOICE>
+            <CHOICE>Enable selective external door opening (DBH )</CHOICE>
+            <CHOICE>Provide entrance lighting (DBJ )</CHOICE>
+            <CHOICE>Isolate external doors (DBK )</CHOICE>
+            <CHOICE>Signal all external door closed and locked state (DBL )</CHOICE>
+            <CHOICE>Signal external door status change/open/close (DBM )</CHOICE>
+            <CHOICE>Enable external door opening in emergency (DBN )</CHOICE>
+            <CHOICE>Reduce the gap between vehicle and platform (DBP )</CHOICE>
+            <CHOICE>Ensure passenger access by external doors for people with reduced mobility (DBQ
+              )</CHOICE>
+            <CHOICE>Provide access for driver and crew (DBR )</CHOICE>
+            <CHOICE>Provide access by special emergency exits (DBS )</CHOICE>
+            <CHOICE>Provide access by internal doors (DC )</CHOICE>
+            <CHOICE>Detect internal door opening request (DCB )</CHOICE>
+            <CHOICE>Detect obstacle in internal door (DCC )</CHOICE>
+            <CHOICE>Close internal door automatically (DCD )</CHOICE>
+            <CHOICE>Open internal door (automatically) (DCE )</CHOICE>
+            <CHOICE>Ensure driver and crew access in the cab (DCF )</CHOICE>
+            <CHOICE>Isolate Internal door (DCG )</CHOICE>
+            <CHOICE>Ensure goods loading and unloading (DD )</CHOICE>
+            <CHOICE>Permit goods loading and unloading (DDB )</CHOICE>
+            <CHOICE>Provide proper conditions for loading/unloading (DDC )</CHOICE>
+            <CHOICE>Connect vehicles and/or consists (E )</CHOICE>
+            <CHOICE>Enable coupling and uncoupling (EB )</CHOICE>
+            <CHOICE>Manage coupling (EBB )</CHOICE>
+            <CHOICE>Manage uncoupling (EBC )</CHOICE>
+            <CHOICE>Transmit forces via coupler (EBD )</CHOICE>
+            <CHOICE>Connect signals, utilities and power service lines (EBE )</CHOICE>
+            <CHOICE>Ensure adequate reaction on unintended uncoupling (EBF )</CHOICE>
+            <CHOICE>Allow intercar passenger and goods circulation (EC )</CHOICE>
+            <CHOICE>Provide shelter from exterior conditions during transfer (ECB )</CHOICE>
+            <CHOICE>Enable transition (ECC )</CHOICE>
+            <CHOICE>Manage intercar circulation (ECD )</CHOICE>
+            <CHOICE>Provide energy (F )</CHOICE>
+            <CHOICE>Provide electrical energy for traction (FB )</CHOICE>
+            <CHOICE>Manage electrical energy for traction (FBB )</CHOICE>
+            <CHOICE>Acquire energy demand for traction system (FBC )</CHOICE>
+            <CHOICE>Generate electrical energy for traction on board (FBD )</CHOICE>
+            <CHOICE>Collect electrical energy for traction (FBE )</CHOICE>
+            <CHOICE>Transform electrical energy for traction (FBF )</CHOICE>
+            <CHOICE>Distribute electrical energy for traction (FBG )</CHOICE>
+            <CHOICE>Store electrical energy onboard for traction (FBH )</CHOICE>
+            <CHOICE>Dissipate losses of electrical traction energy provision (FBJ )</CHOICE>
+            <CHOICE>Provide electrical energy for auxiliaries (FC )</CHOICE>
+            <CHOICE>Manage electrical auxiliary energy provisioning (FCB )</CHOICE>
+            <CHOICE>Adapt electrical auxiliary energy provisioning according to load (FCC )</CHOICE>
+            <CHOICE>Generate electrical energy for auxiliaries on board (FCD )</CHOICE>
+            <CHOICE>Transform electrical energy to auxiliary energy (FCF )</CHOICE>
+            <CHOICE>Distribute electrical auxiliary energy (FCG )</CHOICE>
+            <CHOICE>Store electrical auxiliary energy (FCH )</CHOICE>
+            <CHOICE>Dissipate losses of electrical auxiliary energy provision (FCJ )</CHOICE>
+            <CHOICE>Provide fluid energy for traction (FD )</CHOICE>
+            <CHOICE>Manage fluid energy for traction (FDB )</CHOICE>
+            <CHOICE>Acquire fluid energy demand for traction system (FDC )</CHOICE>
+            <CHOICE>Generate fluid energy for traction (FDD )</CHOICE>
+            <CHOICE>Collect fluid energy for traction (FDE )</CHOICE>
+            <CHOICE>Store fluid energy for traction (FDF )</CHOICE>
+            <CHOICE>Transform fluid energy for traction (FDG )</CHOICE>
+            <CHOICE>Distribute fluid energy for traction (FDH )</CHOICE>
+            <CHOICE>Dissipate losses of fluid traction energy provision (FDJ )</CHOICE>
+            <CHOICE>Provide fluid energy for auxiliaries (FE )</CHOICE>
+            <CHOICE>Manage fluid energy for auxiliaries (FEB )</CHOICE>
+            <CHOICE>Generate fluid energy for auxiliaries (FEC )</CHOICE>
+            <CHOICE>Collect fluid energy for auxiliaries (FED )</CHOICE>
+            <CHOICE>Store fluid energy for auxiliaries (FEE )</CHOICE>
+            <CHOICE>Transform fluid energy for auxiliaries (FEF )</CHOICE>
+            <CHOICE>Distribute fluid energy for auxiliaries (FEG )</CHOICE>
+            <CHOICE>Dissipate losses of fluid auxiliary energy provision (FEH )</CHOICE>
+            <CHOICE>Provide mechanical energy for traction (FF )</CHOICE>
+            <CHOICE>Manage mechanical energy for traction (FFB )</CHOICE>
+            <CHOICE>Acquire mechanical energy demand for traction system (FFC )</CHOICE>
+            <CHOICE>Generate mechanical energy for traction (FFD )</CHOICE>
+            <CHOICE>Transform mechanical energy for traction (FFE )</CHOICE>
+            <CHOICE>Distribute mechanical energy for traction (FFF )</CHOICE>
+            <CHOICE>Dissipate losses of mechanical traction energy provision (FFG )</CHOICE>
+            <CHOICE>Provide mechanical energy for auxiliaries (FG )</CHOICE>
+            <CHOICE>Manage mechanical energy for auxiliaries (FGB )</CHOICE>
+            <CHOICE>Generate mechanical energy for auxiliaries (FGC )</CHOICE>
+            <CHOICE>Transform mechanical energy for auxiliaries (FGD )</CHOICE>
+            <CHOICE>Distribute mechanical energy for auxiliaries (FGE )</CHOICE>
+            <CHOICE>Dissipate losses of mechanical auxiliary energy provision (FGF )</CHOICE>
+            <CHOICE>Provide chemical energy for traction (FH )</CHOICE>
+            <CHOICE>Manage chemical energy for traction (FHB )</CHOICE>
+            <CHOICE>Acquire chemical energy demand for traction system (FHC )</CHOICE>
+            <CHOICE>Store chemical energy for traction (FHD )</CHOICE>
+            <CHOICE>Collect chemical energy for traction (FHE )</CHOICE>
+            <CHOICE>Distribute chemical energy for traction (FHF )</CHOICE>
+            <CHOICE>Provide chemical energy for auxiliaries (FJ )</CHOICE>
+            <CHOICE>Manage chemical energy for auxiliaries (FJB )</CHOICE>
+            <CHOICE>Store chemical energy for auxiliaries (FJC )</CHOICE>
+            <CHOICE>Collect chemical energy for auxiliaries (FJD )</CHOICE>
+            <CHOICE>Distribute chemical energy for auxiliaries (FJE )</CHOICE>
+            <CHOICE>Accelerate, maintain speed, brake and stop (G )</CHOICE>
+            <CHOICE>Provide acceleration (GB )</CHOICE>
+            <CHOICE>Configure propulsion system (GBB )</CHOICE>
+            <CHOICE>Acquire propulsion demand (GBC )</CHOICE>
+            <CHOICE>Manage traction system within mode (GBD )</CHOICE>
+            <CHOICE>Provide demand for energy supply (GBE )</CHOICE>
+            <CHOICE>Control wheel slipping (GBF )</CHOICE>
+            <CHOICE>Generate tractive effort (GBG )</CHOICE>
+            <CHOICE>Reuse braking energy (GBH )</CHOICE>
+            <CHOICE>Provide deceleration and keep the train at standstill (GC )</CHOICE>
+            <CHOICE>Configure brake system (GCB )</CHOICE>
+            <CHOICE>Acquire brake demand (GCC )</CHOICE>
+            <CHOICE>Prioritise brake demand and select braking mode (GCD )</CHOICE>
+            <CHOICE>Allocate braking effort (GCE )</CHOICE>
+            <CHOICE>Handle braking due to train configuration, brake mode and brake demand (GCF )</CHOICE>
+            <CHOICE>Apply and release braking forces (GCG )</CHOICE>
+            <CHOICE>Provide Wheel Slide Protection (GCH )</CHOICE>
+            <CHOICE>Improve adhesion (GD )</CHOICE>
+            <CHOICE>Manage sanding (GDB )</CHOICE>
+            <CHOICE>Condition the wheel surface (GDC )</CHOICE>
+            <CHOICE>Provide train communication, monitoring and control (H )</CHOICE>
+            <CHOICE>Keep the train staff informed (HB )</CHOICE>
+            <CHOICE>Manage information access (HBB )</CHOICE>
+            <CHOICE>Acquire information to be displayed (HBC )</CHOICE>
+            <CHOICE>Ensure display of information (HBD )</CHOICE>
+            <CHOICE>Provide operation relevant information (HBE )</CHOICE>
+            <CHOICE>Provide trainwide communication (HC )</CHOICE>
+            <CHOICE>Inaugurate train network (HCB )</CHOICE>
+            <CHOICE>Manage train network operation (HCC )</CHOICE>
+            <CHOICE>Manage train modes (HD )</CHOICE>
+            <CHOICE>Manage operation mode (HDB )</CHOICE>
+            <CHOICE>Manage shut down mode (HDC )</CHOICE>
+            <CHOICE>Manage switched on mode (HDD )</CHOICE>
+            <CHOICE>Manage service retention mode (HDE )</CHOICE>
+            <CHOICE>Manage in service mode (HDF )</CHOICE>
+            <CHOICE>Manage driving mode (HDG )</CHOICE>
+            <CHOICE>Manage energy saving mode (HDH )</CHOICE>
+            <CHOICE>Manage battery protection mode (HDJ )</CHOICE>
+            <CHOICE>Allow proper control (HE )</CHOICE>
+            <CHOICE>Manage cab control (HEB )</CHOICE>
+            <CHOICE>Manage propulsion and brake demand (HEC )</CHOICE>
+            <CHOICE>Manage energy supply (HED )</CHOICE>
+            <CHOICE>Manage appropriate and safe conditions (HEE )</CHOICE>
+            <CHOICE>Manage access and loading (HEF )</CHOICE>
+            <CHOICE>Manage connecting of vehicles (HEG )</CHOICE>
+            <CHOICE>Manage control of the train parameters (HEH )</CHOICE>
+            <CHOICE>Manage integration of the vehicle in the complete railway system (HEJ )</CHOICE>
+            <CHOICE>Manage checks before train departure (HF )</CHOICE>
+            <CHOICE>Manage automatic test (HFB )</CHOICE>
+            <CHOICE>Manage manual test (HFC )</CHOICE>
+            <CHOICE>Manage test results (HFD )</CHOICE>
+            <CHOICE>Provide diagnostics (HG )</CHOICE>
+            <CHOICE>Initiate diagnostics (HGB )</CHOICE>
+            <CHOICE>Store diagnostic data (HGC )</CHOICE>
+            <CHOICE>Access diagnostics data (HGD )</CHOICE>
+            <CHOICE>Process diagnostic data (HGE )</CHOICE>
+            <CHOICE>Assist troubleshooting (HH )</CHOICE>
+            <CHOICE>Manage events according to their priority (HHB )</CHOICE>
+            <CHOICE>Allow detailed event analysis (HHC )</CHOICE>
+            <CHOICE>Provide guidance to the driver to continue the mission (HHD )</CHOICE>
+            <CHOICE>Manage troubleshooting text (HHE )</CHOICE>
+            <CHOICE>Manage statistical analysis (HHF )</CHOICE>
+            <CHOICE>Control driver activity (HJ )</CHOICE>
+            <CHOICE>Configure parameters of Control driver activity device (HJB )</CHOICE>
+            <CHOICE>Provide test of Control driver activity before departure (HJC )</CHOICE>
+            <CHOICE>Isolate driver activity device (HJD )</CHOICE>
+            <CHOICE>Provide juridical data recording (HK )</CHOICE>
+            <CHOICE>Support and guide the train on the track (J )</CHOICE>
+            <CHOICE>Guide the train (JB )</CHOICE>
+            <CHOICE>Manage bogie stability (JBB )</CHOICE>
+            <CHOICE>Provide derailment information (JBC )</CHOICE>
+            <CHOICE>Monitor obstacles within track (JBD )</CHOICE>
+            <CHOICE>Remove obstacle on the track (JBE )</CHOICE>
+            <CHOICE>Lubricate wheel flange (JBF )</CHOICE>
+            <CHOICE>Ride at specified track conditions (JBG )</CHOICE>
+            <CHOICE>Monitor wheelset bearing status (JBH )</CHOICE>
+            <CHOICE>Monitor gearbox status (JBJ )</CHOICE>
+            <CHOICE>Provide a suspension diagnostic (JBK )</CHOICE>
+            <CHOICE>Enable rail gauge switching (JBL )</CHOICE>
+            <CHOICE>Prevent derailment (JBM )</CHOICE>
+            <CHOICE>Provide Detection of Non Rotating Axle (JBN )</CHOICE>
+            <CHOICE>Transmit forces (JC )</CHOICE>
+            <CHOICE>Transmit longitudinal forces (JCB )</CHOICE>
+            <CHOICE>Transmit transversal forces (JCC )</CHOICE>
+            <CHOICE>Support vertical dynamic and static load (JCD )</CHOICE>
+            <CHOICE>Transmit traction and brake effort (JCE )</CHOICE>
+            <CHOICE>Limit acceleration (JD )</CHOICE>
+            <CHOICE>Limit acceleration (JDB )</CHOICE>
+            <CHOICE>Limit jerk (JDC )</CHOICE>
+            <CHOICE>Keep vehicle inside gauge envelope (JE )</CHOICE>
+            <CHOICE>Limit roll and sway (JEB )</CHOICE>
+            <CHOICE>Limit lateral movement (JEC )</CHOICE>
+            <CHOICE>Limit vertical movement (JED )</CHOICE>
+            <CHOICE>Integrate the vehicle into the complete system railway (K )</CHOICE>
+            <CHOICE>Indicate the presence of the vehicle to others (KB )</CHOICE>
+            <CHOICE>Indicate presence by acoustic means (KBB )</CHOICE>
+            <CHOICE>Indicate presence by reflective optic means (KBC )</CHOICE>
+            <CHOICE>Indicate the presence by external lights (KBD )</CHOICE>
+            <CHOICE>Provide identification (KC )</CHOICE>
+            <CHOICE>Provide identification by optic Labelling (e.g. Car_No.). (KCB )</CHOICE>
+            <CHOICE>Provide identification by electronic elements (e.g. RFID) (KCC )</CHOICE>
+            <CHOICE>Provide operational communication and train/ground data transmission (KD )</CHOICE>
+            <CHOICE>Ensure data interface to trackside signalling system (KDB )</CHOICE>
+            <CHOICE>Provide train to ground communication (KDC )</CHOICE>
+            <CHOICE>Provide ground to train communication (KDD )</CHOICE>
+            <CHOICE>Antitheft alarm (from outside) (KDE )</CHOICE>
+            <CHOICE>Provide Automatic Train Control (ATC) (KE )</CHOICE>
+            <CHOICE>Provide Automatic Train Protection (ATP) (KEB )</CHOICE>
+            <CHOICE>Provide Automatic Train Operation (ATO) (KEC )</CHOICE>
+            <CHOICE>Ensure proper route selection and route signalling (KF )</CHOICE>
+            <CHOICE>Switch route (KFB )</CHOICE>
+            <CHOICE>Control signals (KFC )</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Text" DisplayName="Other Revision" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{9425abe8-28b1-44d8-ba5a-91b5d3531061}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="OtherRevision"
+          Name="OtherRevision" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Text" DisplayName="Folio Number" Required="FALSE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{7f85bfe9-b872-4806-af7c-94a31a6c6c4e}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="FolioNumber"
+          Name="FolioNumber" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="Boolean" DisplayName="IsDelegatedTask" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" Group="DMS" ID="{fd184bf0-e4a1-467e-99f8-9b57eea80637}"
+          SourceID="{73ae4bae-5c7d-4bf6-b600-a3e059583a02}" StaticName="IsDelegatedTask"
+          Name="IsDelegatedTask">
+          <Default>0</Default>
+        </Field>
+        <Field Type="Text" DisplayName="Prj Name" Required="TRUE" EnforceUniqueValues="FALSE"
+          Indexed="FALSE" MaxLength="255" Group="DMS" ID="{858f4ff2-83d2-45cd-ba4a-e8f63b9c8738}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ProjectName"
+          Name="ProjectName" CustomFormatter="">
+          <Default></Default>
+        </Field>
+        <Field Type="Text" DisplayName="Replacement For" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="DMS"
+          ID="{b92064fa-716e-485a-a8b0-3b4ea909c90d}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="ReplacementFor"
+          Name="ReplacementFor" CustomFormatter="" AllowDeletion="TRUE"></Field>
+        <Field Type="DateTime" DisplayName="Planned Submission Date" Required="FALSE"
+          EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" Group="DMS"
+          FriendlyDisplayFormat="Disabled" ID="{2b1bbefe-0daf-464e-8261-15a2b8c69e33}"
+          SourceID="{f0b16692-fbec-4148-a7f1-b0e1f7b97ddf}" StaticName="PlannedSubmissionDate"
+          Name="PlannedSubmissionDate" CustomFormatter="" CalType="0" AllowDeletion="TRUE"></Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType DisplayFormClientSideComponentId="d71b7328-47d9-4cf3-ab95-3c3f4ae7641d"
+          DisplayFormClientSideComponentProperties=""
+          NewFormClientSideComponentId="d71b7328-47d9-4cf3-ab95-3c3f4ae7641d"
+          NewFormClientSideComponentProperties=""
+          EditFormClientSideComponentId="d71b7328-47d9-4cf3-ab95-3c3f4ae7641d"
+          EditFormClientSideComponentProperties="" ID="0x0100B5FD10A125A25E4B943387A70E5BE5D0"
+          Name="Baseline" Description="" Group="DMS" NewFormUrl="" EditFormUrl="" DisplayFormUrl=""
+          UpdateChildren="true">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="a90ef641-08ec-4c3e-bd8d-30d46be39643" Name="BaselineComments"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="ab7819b8-4049-4190-a082-33f48516686a" Name="BaselineStatus"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8d356a94-4fd7-4fc1-9d09-ef900607c04b" Name="BaselineVersion"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="4e39f3d0-4da3-44df-a02b-765714a2b950" Name="Code"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="aea7f3a0-5774-4d4c-9f4b-e3a902c446e4" Name="CRID"
+              UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId=""
+          DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties=""
+          EditFormClientSideComponentId="" EditFormClientSideComponentProperties=""
+          ID="0x0101001E991B1623BDFD4BB52821D67A2C29B1" Name="Rendition Document"
+          Description="Create a new document." Group="DMS" NewFormUrl="" EditFormUrl=""
+          DisplayFormUrl="" UpdateChildren="true">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By"
+              UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId=""
+          DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties=""
+          EditFormClientSideComponentId="" EditFormClientSideComponentProperties=""
+          ID="0x0101002A7F1562542CE54B98FE1AA6F49342E1" Name="Translation Document"
+          Description="Create a new document." Group="DMS" NewFormUrl="" EditFormUrl=""
+          DisplayFormUrl="" UpdateChildren="true">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="04932240-352a-499e-92b2-510ea725d130" Name="DocumentLanguage"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="dd20b524-2cd6-4d6b-bb74-b9982c752253" Name="Contractual"
+              Required="true" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId=""
+          DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties=""
+          EditFormClientSideComponentId="" EditFormClientSideComponentProperties=""
+          ID="0x010100A81E9300A359D34E8F69B3F892DB64A1" Name="Comments Document"
+          Description="Create a new document." Group="DMS" NewFormUrl="" EditFormUrl=""
+          DisplayFormUrl="" UpdateChildren="true">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By"
+              UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId=""
+          DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties=""
+          EditFormClientSideComponentId="" EditFormClientSideComponentProperties=""
+          ID="0x010100DB0B41B9684542439774BE5B1D130C1D" Name="Appendix"
+          Description="Create a new document." Group="DMS" NewFormUrl="" EditFormUrl=""
+          DisplayFormUrl="" UpdateChildren="true">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By"
+              UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId=""
+          DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties=""
+          EditFormClientSideComponentId="" EditFormClientSideComponentProperties=""
+          ID="0x010100E0A0DF7BA0770847845D57B6354C874F" Name="Native Document"
+          Description="Create a new document." Group="DMS" NewFormUrl="" EditFormUrl=""
+          DisplayFormUrl="" UpdateChildren="true">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By"
+              UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId="6b7ba0ae-02e8-49a0-8761-eca276b8c3fb"
+          DisplayFormClientSideComponentProperties="{parameter:DocumentFormProperties}"
+          NewFormClientSideComponentId="6b7ba0ae-02e8-49a0-8761-eca276b8c3fb"
+          NewFormClientSideComponentProperties="{parameter:DocumentFormProperties}"
+          EditFormClientSideComponentId="6b7ba0ae-02e8-49a0-8761-eca276b8c3fb"
+          EditFormClientSideComponentProperties="{parameter:DocumentFormProperties}"
+          ID="0x0120D5200010BA2408052EEF418E580CFAEB67F318" Name="Technical Document" Description=""
+          Group="DMS" NewFormUrl="_layouts/15/SPListForm.aspx?PageType=8"
+          EditFormUrl="_layouts/15/SPListForm.aspx?PageType=6"
+          DisplayFormUrl="_layouts/15/SPListForm.aspx?PageType=4" UpdateChildren="true">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="45a7a6d2-84de-4e2f-b1dc-4ed7ce47fdb0" Name="ProjectReference"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f001a4c1-ab76-4811-9a40-3e81ab1b6cf5" Name="ProjectRevision"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="5522119e-4287-4dc7-8b23-656c0391ab96" Name="PLOwnership"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="ab4d4705-10c0-4246-ac2b-1bd90f6fd34c" Name="DocumentType"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="04932240-352a-499e-92b2-510ea725d130" Name="DocumentLanguage"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="75a1eb95-73fb-4634-a4f8-40f34bb0574e" Name="ABS" Required="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="b7428419-b418-46fb-99ec-3ba983dae58c" Name="PBS" Required="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="087c90a1-ba3e-4684-a5ce-dfc53b40bd06" Name="SubmissionCategory"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="2b1bbefe-0daf-464e-8261-15a2b8c69e33" Name="PlannedSubmissionDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="c6f0be11-cf90-4000-9ba4-32f5207a6c8a" Name="IssuingEntity"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="d0c4b403-7061-4728-ad9a-b5e3734b6333" Name="ConfidentialityLevel"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="7a4f85cd-7eae-42b9-914f-a7137a32137d" Name="GRMilestone"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="caef94d7-6253-4a26-a957-6eafbbfa7889" Name="Authors"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="52578fc3-1f01-4f4d-b016-94ccbcf428cf" Name="_Comments"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="19baf287-f0a4-4d1e-8463-8d86fb8bc207" Name="WBS" UpdateChildren="true" />
+            <pnp:FieldRef ID="f376f134-2a84-4ef1-901d-b7a1af1b7491" Name="DBS" UpdateChildren="true" />
+            <pnp:FieldRef ID="36144fe8-0bfe-4485-abcb-32a05da08471" Name="FBS" UpdateChildren="true" />
+            <pnp:FieldRef ID="9f4c0b01-8db9-4010-8ceb-f375c7e7c7ac" Name="SBS" UpdateChildren="true" />
+            <pnp:FieldRef ID="3cb1df2c-f678-4f43-8491-c9032461db33" Name="LinkedtoRequirementsDB"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="dd20b524-2cd6-4d6b-bb74-b9982c752253" Name="Contractual"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="bffde420-aaac-4440-a7b2-7a572d7eeb94" Name="RequirementID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="71139352-0d40-47af-820d-6b7c21bc3e73" Name="ChangeRequestID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="e1fbac33-42e2-43bc-a91d-859865b02cee" Name="SupplierName"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="c1c1080a-b1d8-4747-b7d3-215340124ed8" Name="SupplierReference"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="f543b80e-9235-45d3-b193-f8c9cb14323e" Name="SupplierRevision"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="522ecd43-2374-442e-b36d-016773ba7d99" Name="OtherReference"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="9425abe8-28b1-44d8-ba5a-91b5d3531061" Name="OtherRevision"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="63249d6c-18e1-40f5-88df-f6de00f99cc0" Name="CustomerRevision"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="b66e9b50-a28e-469b-b1a0-af0e45486874" Name="Keywords"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="7f85bfe9-b872-4806-af7c-94a31a6c6c4e" Name="FolioNumber"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="419b691b-106b-4866-957c-ffb0a30a6502" Name="AlstomPartNumbers"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="db32ddbd-2d65-4aa1-a582-925a722f9b47" Name="ExternalURL"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="251e2264-d2c4-497e-ac11-d68325b65a3d" Name="Projectattr1"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="49b8b2dc-40be-4c88-8374-8fa69aeb070c" Name="Projectattr2"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="99b1f3cf-ec28-4b93-abb4-5d932136aab3" Name="Projectattr3"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="5e9b9a97-d1bf-4a64-b7ea-7e649d74bbb5" Name="Projectattr4"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="5809fd7c-b6c8-42ae-9e4a-caa202190960" Name="Projectattr5"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="ee786c14-d7ca-49b4-9456-159169833a0a" Name="Projectattr6"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="ca1e96b4-4f9d-4839-9a9d-252309b5eab1" Name="Projectattr7"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="492be684-0b98-4ab3-8f71-6c1abd9ed628" Name="Projectattr8"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="cb269dd9-00c6-4a8c-ab4b-b0c4c1a9cc71" Name="Projectattr9"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="ddb7b2b5-c0a0-4869-af40-4fb8ac333733" Name="Projectattr10"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="6473d622-166d-49a1-b46d-95c4a4f03922" Name="LineNumber"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="539ae42d-d9f6-4a25-8f46-4398969e4865" Name="MoCStatus"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="9e7764c2-e8bc-4016-bf6d-94db28513e12" Name="AlstomAssetID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="7e9bdb2c-b203-4cd4-8996-f92961de742e" Name="MaterialID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="17cd9012-14e2-40ae-9b13-590426b419c4" Name="LocationID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="9ce03a93-535e-438c-9784-1095798fd6a2" Name="JobPlanID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="2c263779-a047-45f2-8214-2025036edaab" Name="InspectionID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="4e3a7111-8267-41d8-b1ce-36da3a798214" Name="FailureID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="e547ed1d-ba8d-45ad-8d18-5db8e3dbe69b" Name="MaintenancePlanID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="80028eba-4a90-4fc7-9985-bdce8fc88c96" Name="HazardID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="e67c0cb0-308d-4efe-b9cc-2b2cd0b403b9" Name="PermitToWorkID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="6a645c0a-8444-43cb-bc0f-e22d8e10ebd4" Name="MoCID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="e544ec78-f239-4bb1-bb90-9412337092ab" Name="IncidentID"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="2b2afea8-ce4b-4dd3-8298-ce30edb8d66b"
+              Name="HandoverDocumentClassification" UpdateChildren="true" />
+            <pnp:FieldRef ID="9b50b49f-88e4-4838-9790-9d9e0d419a6a" Name="HandoverDocumentTitle"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="fabaa4b3-98f1-4bb5-abc9-e57ad4332939" Name="HandoverDocumentCode"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="98a5d88d-6aad-4562-8fcd-759cbbd5f2bd" Name="HandoverDocumentFilename"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="40ffec52-99c4-4fa2-a5e2-9e0d5c139fe3" Name="HandoverPBSLevelCode"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="915f63da-8834-48de-8f1c-28a83c1e93a1" Name="HandoverDocumentStatus"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="2ae02c55-d357-4086-aa6c-726ef1544e5c" Name="HandoverDocumentRevision"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="eafa7f25-8392-48c3-a08a-6fa6d645c5de"
+              Name="CustomerResponseExpectedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="d3899278-d946-4e56-9698-413ece7c3b83" Name="CustomerResponseReference"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="b088695a-d0e9-46e6-b4df-019c91b39ae7" Name="CustomerResponseDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="125d6375-7a47-4e04-ba38-bf12efb6d284" Name="CustomerResponseStatus"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="f0540adc-7d24-4c02-afa7-634707170925" Name="ReforecastSubmissionDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="57a5dab8-1bfc-4a2b-82cc-b48739949276" Name="ActualSubmissionDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="13f10b58-5a13-4530-a758-88dc93f355a2" Name="TransmittalReference"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="a518a095-ad3a-4066-ad12-684ddf385c0c" Name="TransmittalDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8ef53dc4-ccff-45ff-9038-a478783c3c4b" Name="ApprovalCycleLaunchDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="78a15683-4a72-4f72-9763-0dc942bf8fca" Name="Verifiedby"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="7f1ac9be-a138-4599-b652-1ae5004af093" Name="VerificationDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="12c3fa76-aeeb-4ab2-a967-0dee7ec86da0" Name="Validatedby"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="05399a12-80e1-49c6-a466-e9eba7b06ce2" Name="ValidationDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="b574971d-df75-487c-ab8b-984b5547a4ae" Name="Approvedby"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="244571e7-c66c-4d22-8829-ca4aa153d867" Name="ApprovalDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="9c8a701e-2456-42ea-9622-aa4967495047" Name="EffectiveDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="d3840220-9970-4d5d-87af-e5b43731df1b" Name="ExpiryDate"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="64719679-8068-4efe-9943-cab11773ea1e" Name="ChangeFromNumber"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="4fbe42cc-95b9-433d-9cc0-4bd3d45e910e" Name="ChangeToNumber"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="d038830b-42d1-45b9-aece-797329e2a8d4" Name="SafetyCriticity"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="9c65dd07-27c4-465c-ad5a-bfa3d5282fd4" Name="AlstomReference"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="20035c13-5e38-4e95-8276-b7cc43286f89" Name="CustomerMilestone"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="b07e221e-ce18-4d15-9838-7c8438529949" Name="DocumentStatus"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="9db4bc7e-5339-4e0f-ac80-4ab382e538e5" Name="WorkflowStatus"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8aa69166-72fc-48bb-ae7a-d25dacd3273a" Name="ScopeCountry"
+              Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f97c4059-0e03-4dc0-ab3a-07db4c16336f" Name="CustomernameDirect"
+              Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="2754cb0f-d06a-4faf-8e17-c2286bfb889b" Name="CustomernameFinal"
+              Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f1b019a0-c1a8-40b1-9661-5b99779d5bf8" Name="ProductName" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="ed7d3c2f-9f90-4166-979d-a0dada385755" Name="ProjectAlias1"
+              Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="858f4ff2-83d2-45cd-ba4a-e8f63b9c8738" Name="ProjectName"
+              Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="4aec193d-f4c3-4ab3-bf1e-bcea4c76bedd" Name="ProjectCode"
+              Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="9b29154f-4ef7-4e08-af27-dfd3c64cae94" Name="CustomerComments"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="b92064fa-716e-485a-a8b0-3b4ea909c90d" Name="ReplacementFor"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="33ede599-b368-4f4c-b63d-2e948f82744e" Name="ReplacedBy"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="7c856ad7-914c-40b1-b17f-3dcaf6e67d54"
+              Name="n5a1eb9573fb4634a4f840f34bb0574e" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b824e17e-a1b3-426e-aecf-f0184d900485" Name="ItemChildCount"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="f3b0adf9-c1a2-4b02-920d-943fba4b3611" Name="TaxCatchAll" Hidden="true"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="20b681e0-9e5b-4d17-9209-786e9755ba60"
+              Name="l522119e42874dc78b23656c0391ab96" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef"
+              Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8f6b6dd8-9357-4019-8172-966fcd502ed2" Name="TaxCatchAllLabel"
+              Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="f93c2d15-9403-4434-b498-3f4993469814"
+              Name="b7428419b41846fb99ec3ba983dae58c" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="cbb92da4-fd46-4c7d-af6c-3128c2a5576e" Name="Description"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="474a2c62-8ebd-45f1-a281-2581086a3203" Name="AuthorReviewedBy"
+              UpdateChildren="true" />
+            <pnp:FieldRef ID="8097810a-5c0f-4c4c-9c1a-acc75ba73694" Name="AuthorReviewedDate"
+              UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentSetTemplate UpdateChildren="true">
+            <pnp:AllowedContentTypes>
+              <pnp:AllowedContentType ContentTypeID="0x010100E0A0DF7BA0770847845D57B6354C874F" />
+              <pnp:AllowedContentType ContentTypeID="0x010100A81E9300A359D34E8F69B3F892DB64A1" />
+              <pnp:AllowedContentType ContentTypeID="0x0101002A7F1562542CE54B98FE1AA6F49342E1" />
+              <pnp:AllowedContentType ContentTypeID="0x0101001E991B1623BDFD4BB52821D67A2C29B1" />
+              <pnp:AllowedContentType ContentTypeID="0x010100DB0B41B9684542439774BE5B1D130C1D" />
+            </pnp:AllowedContentTypes>
+            <pnp:XmlDocuments>
+              <XmlDocument
+                NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepageview">
+                <wpv:WelcomePageView
+                  xmlns:wpv="http://schemas.microsoft.com/office/documentsets/welcomepageview"
+                  ViewId="{viewid:Draft,Compact}" />
+              </XmlDocument>
+            </pnp:XmlDocuments>
+          </pnp:DocumentSetTemplate>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Header Layout="Compact" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

@@ -1,0 +1,100 @@
+.WorkflowsPanel {
+  color: inherit;
+  :global(.ms-link:hover) {
+    text-decoration: none;
+  }
+}
+
+.TimelineContainer {
+  position: relative;
+}
+
+.TimelineTitle {
+  color: rgb(214, 47, 32); /*"[theme: themeLighterAlt, default: #D62F20]";*/
+  font-weight: 500;
+  font-style: italic;
+}
+
+.hide{
+  display:none;
+}
+
+.ViewHistorylineTitle {
+  color: rgb(214, 47, 32); /*"[theme: themeLighterAlt, default: #D62F20]";*/
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+button.TimelineTitle {
+  font-size: 12px;
+}
+
+.ErrorMessage {
+  font-style: italic;
+  font-weight: lighter;
+  color: "[theme: alert, default: #red]";
+}
+
+.cancelWorkflow {
+  float: right;
+  button {
+    margin-top: 100px;
+    width: 200px;
+    float: right;
+    margin-right: 25px;
+  }
+}
+.DialogContainer {
+  display: "flex";
+  flex-flow: "column nowrap";
+  align-items: "stretch";
+  width: 70%;
+  height: 50%;
+}
+.headerContainer{
+  
+  align-items: center;
+  background-color: #163350d6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 22px;
+}
+.Panel {
+  :global(.ms-Panel-commands) {
+    background-color: #324455;
+    padding: 7px 0px 7px 0px;
+    //margin-bottom: 10px;
+    color: white;
+    margin-top:2px;
+  }
+  :global(.ms-Panel-main) {
+    width: 1030px;
+  }
+  :global(.ms-Panel-header) {
+    align-self: center;
+  }
+  :global(.ms-Panel-content) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  :global(.ms-Panel-headerText) {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: unset;
+    text-transform: uppercase;
+  }
+  :global(.ms-Panel-closeButton) {
+    color: white;
+    &:hover {
+      background-color: #445a6e;
+    }
+  }
+  :global(.ms-Spinner) {
+    margin-top: 20px;
+    justify-content: left;
+  }
+}

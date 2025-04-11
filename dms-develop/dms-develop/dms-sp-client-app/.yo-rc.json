@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "18.20.3",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.19.0",
+    "libraryName": "dms-sp-client-app",
+    "libraryId": "b5c07139-9e25-4a5a-b425-308123f10150",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "dms-sp-client-app",
+    "solutionShortDescription": "dms-sp-client-app description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ListViewCommandSet"
+  }
+}

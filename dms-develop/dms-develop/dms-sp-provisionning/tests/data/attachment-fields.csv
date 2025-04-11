@@ -1,0 +1,3 @@
+﻿ContentType,Field,Title,Order,FieldType,Required,SiteColHidden,FieldLinkHidden
+Translation Document,DocumentLanguage,Document Language,,Choice,Yes,,
+Translation Document,Contractual,Contractual,,Boolean,Yes,,

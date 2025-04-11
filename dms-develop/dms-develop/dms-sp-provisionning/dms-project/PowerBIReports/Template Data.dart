@@ -1,0 +1,26 @@
+let
+    Source = Table.Combine({#"Applicable Documents", Draft, #"Previous Versions"}),
+    #"Added Index" = Table.AddIndexColumn(Source, "Sl.No", 1, 1, Int64.Type),
+    #"Duplicated Column" = Table.DuplicateColumn(#"Added Index", "Created", "Created - Copy"),
+    #"Renamed Columns" = Table.RenameColumns(#"Duplicated Column",{{"Created - Copy", "Revision Date"}}),
+    #"Duplicated Column1" = Table.DuplicateColumn(#"Renamed Columns", "Revision Date", "Revision Date - Copy"),
+    #"Renamed Columns1" = Table.RenameColumns(#"Duplicated Column1",{{"Revision Date - Copy", "Author Date"}}),
+    #"Duplicated Column2" = Table.DuplicateColumn(#"Renamed Columns1", "Author", "Author - Copy"),
+    #"Renamed Columns2" = Table.RenameColumns(#"Duplicated Column2",{{"Author - Copy", "Creation User"}}),
+    #"Duplicated Column3" = Table.DuplicateColumn(#"Renamed Columns2", "IssuingEntity", "IssuingEntity - Copy"),
+    #"Renamed Columns3" = Table.RenameColumns(#"Duplicated Column3",{{"IssuingEntity - Copy", "OBS"}}),
+    #"Added Custom" = Table.AddColumn(#"Renamed Columns3", "Customer Milestone Date", each ""),
+    #"Added Custom1" = Table.AddColumn(#"Added Custom", "Payment Milestone", each ""),
+    #"Added Custom2" = Table.AddColumn(#"Added Custom1", "Penalties Applicable", each ""),
+    #"Added Custom3" = Table.AddColumn(#"Added Custom2", "Issuing Metier", each ""),
+    #"Added Custom4" = Table.AddColumn(#"Added Custom3", "Issuing Entity (Originator)", each ""),
+    #"Added Custom5" = Table.AddColumn(#"Added Custom4", "Technology Transfer", each ""),
+    #"Added Custom6" = Table.AddColumn(#"Added Custom5", "Partner Response expected Date", each ""),
+    #"Added Custom7" = Table.AddColumn(#"Added Custom6", "Partner Response Date", each ""),
+    #"Added Custom8" = Table.AddColumn(#"Added Custom7", "Partner Response Status", each ""),
+    #"Added Custom9" = Table.AddColumn(#"Added Custom8", "Partner Response Reference", each ""),
+    #"Added Custom10" = Table.AddColumn(#"Added Custom9", "Physical Progress Status (%)", each ""),
+    #"Added Custom11" = Table.AddColumn(#"Added Custom10", "Invoicing Done", each ""),
+    #"Renamed Columns4" = Table.RenameColumns(#"Added Custom11",{{"AlstomReference", "Alstom Reference"},{"CustomerResponseDate", "Customer Response Date"},{"Created", "Creation Date"}, {"Modified", "Change Date"},{"ProjectReference", "Project Reference"}, {"ProjectRevision", "Project Revision"}, {"DocumentStatus", "Document Status"}, {"CustomerMilestone", "Customer Milestone"}, {"PLOwnership", "PL Ownership"}, {"ConfidentialityLevel", "Confidentiality Level"}, {"DocumentLanguage", "Document Language"}, {"Contractual", "CDL"}, {"OtherReference", "Other Reference"}, {"SupplierRevision", "Supplier Revision"}, {"SupplierReference", "Supplier Reference"}, {"SupplierName", "Supplier Name"}, {"OtherRevision", "Other Revision"}, {"Latest Revision", "Latest Revision"}, {"Has Related Files", "Has Related Files"}, {"SubmissionCategory", "Submission Category"}, {"PlannedSubmissionDate", "Planned Submission Date"}, {"GRMilestone", "Alstom GR Milestone"}, {"DocumentType", "Document Type"}, {"CustomerResponseExpectedDate", "Customer Response Expected Date"}, {"CustomerResponseReference", "Customer Response Reference"}, {"CustomerResponseStatus", "Customer Response Status"}, {"ReforecastSubmissionDate", "Reforecast Submission Date"}, {"ActualSubmissionDate", "Actual Submission Date"}, {"TransmittalReference", "Transmittal Reference"}, {"VerificationDate", "Verification Date"}, {"ValidationDate", "Validation Date"}, {"ApprovalDate", "Approval Date"}, {"CustomerComments", "Comments"}})
+in
+    #"Renamed Columns4"

@@ -1,0 +1,227 @@
+[
+  {
+    "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+    "slotSetting": false,
+    "value": "1a9c5cc5-14a1-4e18-b983-0be631391de8"
+  },
+  {
+    "name": "APPLICABLE_DOCS_LIB_NAME",
+    "slotSetting": false,
+    "value": "ApplicableDocuments"
+  },
+  {
+    "name": "AzureWebJobsStorage",
+    "slotSetting": false,
+    "value": "DefaultEndpointsProtocol=https;AccountName=labdmsuatfnappdocpostpro;AccountKey=SE11B5nCtdy0eg5xnUnKQPmdGgNLDqkCPHDtBR4przGwPAoIILmu+1dHj2smcmTvQb9tkpoaBwXf+ASt1ZDi/w==;EndpointSuffix=core.windows.net"
+  },
+  {
+    "name": "CERTIFICATE_NAME",
+    "slotSetting": false,
+    "value": "DMSDEV"
+  },
+  {
+    "name": "CHANGE_TOKEN_STORAGE_CONNECTION_STRING",
+    "slotSetting": false,
+    "value": "DefaultEndpointsProtocol=https;AccountName=dmssauatstate;AccountKey=Kx7if3rMUShQr+lVUlfR53a/TQyC02v5h0Gx+0qQQoLwHCKEaqRXjRsDm9fXSCoUwQ6NEHuUV45i+AStb325JA==;EndpointSuffix=core.windows.net"
+  },
+  {
+    "name": "CHANGE_TOKEN_TABLE_NAME",
+    "slotSetting": false,
+    "value": "ChangeToken"
+  },
+  {
+    "name": "CLIENT_ID",
+    "slotSetting": false,
+    "value": "5558567f-a32f-417c-a15c-3e57b67f887e"
+  },
+  {
+    "name": "CONFIDENTIAL_VALUE",
+    "slotSetting": false,
+    "value": "Confidential"
+  },
+  {
+    "name": "dmsdev1_SERVICEBUS",
+    "slotSetting": false,
+    "value": "Endpoint=sb://dmsuat.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=s3Cjcjq8J4rj+SfuW+MThIj99XQC8jolS+ASbLXwoS0="
+  },
+  {
+    "name": "DOC_SET_CONTENT_TYPE_ID",
+    "slotSetting": false,
+    "value": "0x0120D5200010BA2408052EEF418E580CFAEB67F318"
+  },
+  {
+    "name": "DOC_STATUS_EXCEL_COLUMN",
+    "slotSetting": false,
+    "value": "Document Status *"
+  },
+  {
+    "name": "DRAFT_DOCS_LIB_NAME",
+    "slotSetting": false,
+    "value": "Draft"
+  },
+  {
+    "name": "FUNCTIONS_EXTENSION_VERSION",
+    "slotSetting": false,
+    "value": "~4"
+  },
+  {
+    "name": "FUNCTIONS_WORKER_RUNTIME",
+    "slotSetting": false,
+    "value": "node"
+  },
+  {
+    "name": "IMPORT_DOCUMENT_ATTACHMENT_FIELD",
+    "slotSetting": false,
+    "value": "Attachments;Content type;Translation language"
+  },
+  {
+    "name": "IMPORT_DOCUMENT_KEY_FIELDS",
+    "slotSetting": false,
+    "value": "{\"DML\":[\"Project Reference\", \"Project Revision *\"], \"MIDraft\":[\"Reference *\",\"Revision *\"], \"MIApplicable\":[\"Reference *\",\"Revision *\"]}"
+  },
+  {
+    "name": "IMPORT_FIELDS_MAP",
+    "slotSetting": false,
+    "value": "{\"OBS *\": {\"name\": \"IssuingEntity\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"ABS *\": {\"name\": \"ABS\",\"type\": \"TaxonomyFieldType\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true},\"transform\": {\"regex\": \"&\",\"replace\": \"\"}},\"PBS *\": {\"name\": \"PBS\",\"type\": \"TaxonomyFieldType\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true},\"transform\": {\"regex\": \"&\",\"replace\": \"\"}},\"SBS\": {\"name\": \"SBS\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"FBS\": {\"name\": \"FBS\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"WBS\": {\"name\": \"WBS\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"DBS\": {\"name\": \"DBS\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Project Reference\": {\"name\": \"ProjectReference\",\"type\": \"Text\",\"required\": {\"DML\": true,\"MIDraft\": false,\"MIApplicable\": false}},\"Reference *\": {\"name\": \"ProjectReference\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Project Revision *\": {\"name\": \"ProjectRevision\",\"type\": \"Text\",\"required\": {\"DML\": true,\"MIDraft\": false,\"MIApplicable\": false}},\"Revision *\": {\"name\": \"ProjectRevision\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Title*\": {\"name\": \"Title\",\"type\": \"Text\",\"required\": {\"DML\": true,\"MIDraft\": false,\"MIApplicable\": false}},\"Title *\": {\"name\": \"Title\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Revision Date\": {\"name\": \"Created\",\"type\": \"DateTime\",\"required\": {\"DML\": true,\"MIDraft\": false,\"MIApplicable\": false}},\"Revision Date *\": {\"name\": \"Created\",\"type\": \"DateTime\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Document Status *\": {\"name\": \"DocumentStatus\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Document Type *\": {\"name\": \"DocumentType\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"PL Ownership *\": {\"name\": \"PLOwnership\",\"type\": \"TaxonomyFieldType\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true},\"transform\": {\"regex\": \"&\",\"replace\": \"\"}},\"Confidentiality Level *\": {\"name\": \"ConfidentialityLevel\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Document Language *\": {\"name\": \"DocumentLanguage\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Other Reference\": {\"name\": \"OtherReference\",\"type\": \"Text\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Other Revision\": {\"name\": \"OtherRevision\",\"type\": \"Text\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Supplier Reference\": {\"name\": \"SupplierReference\",\"type\": \"Text\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Supplier Revision\": {\"name\": \"SupplierRevision\",\"type\": \"Text\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"CDL (Yes/No)\": {\"name\": \"Contractual\",\"type\": \"Boolean\",\"required\": {\"DML\": true,\"MIDraft\": false,\"MIApplicable\": false}},\"Submission Category\": {\"name\": \"SubmissionCategory\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Actual Submission Date\": {\"name\": \"ActualSubmissionDate\",\"type\": \"DateTime\",\"required\": {\"DML\": true,\"MIDraft\": false,\"MIApplicable\": false}},\"Planned Submission Date\": {\"name\": \"PlannedSubmissionDate\",\"type\": \"DateTime\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Reforecast Submission Date\": {\"name\": \"ReforecastSubmissionDate\",\"type\": \"DateTime\",\"required\": {\"DML\": true,\"MIDraft\": false,\"MIApplicable\": false}},\"Alstom GR Milestone\": {\"name\": \"GRMilestone\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": true,\"MIApplicable\": true}},\"Customer Milestone\": {\"name\": \"CustomerMilestone\",\"type\": \"Choice\",\"required\": {\"DML\": true,\"MIDraft\": false,\"MIApplicable\": false}},\"Author(s)\": {\"name\": \"Authors\",\"type\": \"UserMulti\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Comments\": {\"name\": \"_Comments\",\"type\": \"Note\",\"required\": {\"DML\": false,\"MIDraft\": false,\"MIApplicable\": false}},\"Comment(s)\": {\"name\": \"_Comments\",\"type\": \"Note\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Linked to Requirement DB\": {\"name\": \"LinkedtoRequirementsDB\",\"type\": \"Boolean\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Contractual\": {\"name\": \"Contractual\",\"type\": \"Boolean\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Requirement ID\": {\"name\": \"RequirementID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Change Request ID\": {\"name\": \"ChangeRequestID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Customer Revision\": {\"name\": \"CustomerRevision\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Supplier name\": {\"name\": \"SupplierName\",\"type\": \"Choice\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Keywords\": {\"name\": \"Keywords\",\"type\": \"Note\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Folio Number\": {\"name\": \"FolioNumber\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Alstom Part Numbers\": {\"name\": \"AlstomPartNumbers\",\"type\": \"Note\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"External URL\": {\"name\": \"ExternalURL\",\"type\": \"URL\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Line Number\": {\"name\": \"LineNumber\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"MoC Status\": {\"name\": \"MoCStatus\",\"type\": \"Choice\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Asset/Equipment ID\": {\"name\": \"AlstomAssetID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Location ID\": {\"name\": \"LocationID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Job Plan/Tasklist ID\": {\"name\": \"JobPlanID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Inspection ID\": {\"name\": \"InspectionID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Failure ID\": {\"name\": \"FailureID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Maintenance Plan ID\": {\"name\": \"MaintenancePlanID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Hazard ID\": {\"name\": \"HazardID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Permit to Work ID\": {\"name\": \"PermitToWorkID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"MoC ID\": {\"name\": \"MoCID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Incident ID\": {\"name\": \"IncidentID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Handover - Document classification\": {\"name\": \"HandoverDocumentClassification\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Handover - Document title\": {\"name\": \"HandoverDocumentTitle\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Handover - Document code\": {\"name\": \"HandoverDocumentCode\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Handover - Document File name\": {\"name\": \"HandoverDocumentFilename\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Handover - PBS Level Code\": {\"name\": \"HandoverPBSLevelCode\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Handover - Document Status\": {\"name\": \"HandoverDocumentStatus\",\"type\": \"Choice\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Handover - Document Revision\": {\"name\": \"HandoverDocumentRevision\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Effective date\": {\"name\": \"EffectiveDate\",\"type\": \"DateTime\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Expiry Date\": {\"name\": \"ExpiryDate\",\"type\": \"DateTime\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Replacement for\": {\"name\": \"ReplacementFor\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Replaced by\": {\"name\": \"ReplacedBy\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Change From No\": {\"name\": \"ChangeFromNumber\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Change To No\": {\"name\": \"ChangeToNumber\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Safety criticity\": {\"name\": \"SafetyCriticity\",\"type\": \"Boolean\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Item/Material ID\": {\"name\": \"MaterialID\",\"type\": \"Text\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Attachments\": {\"name\": \"\",\"type\": \"\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Content type\": {\"name\": \"ContentType\",\"type\": \"ContentType\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}},\"Translation language\": {\"name\": \"DocumentLanguage\",\"type\": \"Choice\",\"required\": {\"DML\": false,\"MIDraft\": true,\"MIApplicable\": true}}}"
+  },
+  {
+    "name": "IMPORT_JOB_TABLE_NAME",
+    "slotSetting": false,
+    "value": "importJobs"
+  },
+  {
+    "name": "IS_LOCAL_ENVIRONMENT",
+    "slotSetting": false,
+    "value": "false"
+  },
+  {
+    "name": "KEY_VAULT_URL",
+    "slotSetting": false,
+    "value": "https://kv-dms3.vault.azure.net/"
+  },
+  {
+    "name": "MASS_IMPORT_SUBSCRIPTION_NAME",
+    "slotSetting": false,
+    "value": "newImportJob"
+  },
+  {
+    "name": "MASS_IMPORT_TABLE_CONNECTION_STRING",
+    "slotSetting": false,
+    "value": "DefaultEndpointsProtocol=https;AccountName=dmssauatstate;AccountKey=Kx7if3rMUShQr+lVUlfR53a/TQyC02v5h0Gx+0qQQoLwHCKEaqRXjRsDm9fXSCoUwQ6NEHuUV45i+AStb325JA==;EndpointSuffix=core.windows.net"
+  },
+  {
+    "name": "MASS_IMPORT_TOPIC_NAME",
+    "slotSetting": false,
+    "value": "massimportevents"
+  },
+  {
+    "name": "MAX_ATTEMPTS",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "MESSAGE_INCLUDED_FIELDS",
+    "slotSetting": false,
+    "value": "ABS,AlstomReference,AlstomRevision,ConfidentialityLevel,DocumentStatus,PBS,IssuingEntity,ProjectReference,FileRef,_dlc_DocId"
+  },
+  {
+    "name": "MESSAGE_PROMOTED_FIELDS",
+    "slotSetting": false,
+    "value": "IssuingEntity"
+  },
+  {
+    "name": "MESSAGE_PROMOTED_TAXONOMY_FIELDS",
+    "slotSetting": false,
+    "value": "ABS,PBS"
+  },
+  {
+    "name": "NEW_MASS_IMPORT_SUBJECT",
+    "slotSetting": false,
+    "value": "newDml"
+  },
+  {
+    "name": "OLD_REVISIONS_DOCS_LIB_NAME",
+    "slotSetting": false,
+    "value": "PreviousVersions"
+  },
+  {
+    "name": "PERMISSIONS_LIST_NAME",
+    "slotSetting": false,
+    "value": "PermissionsConfigurations"
+  },
+  {
+    "name": "PNP_LOG_LEVEL",
+    "slotSetting": false,
+    "value": "1"
+  },
+  {
+    "name": "PROJECT_UPDATE_REQ_ROLE",
+    "slotSetting": false,
+    "value": "Project Administrator"
+  },
+  {
+    "name": "PROJECT_UPDATE_REQ_WEB_PERM",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "PROPERTY_BAG_DATA",
+    "slotSetting": false,
+    "value": "dms_proj_code"
+  },
+  {
+    "name": "REFERENCE_ID_TABLE_NAME",
+    "slotSetting": false,
+    "value": "AlstomReference"
+  },
+  {
+    "name": "SERVICE_BUS_CONNECTION_STRING",
+    "slotSetting": false,
+    "value": "Endpoint=sb://dmsuat.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=s3Cjcjq8J4rj+SfuW+MThIj99XQC8jolS+ASbLXwoS0="
+  },
+  {
+    "name": "SERVICE_BUS_DML_TOPIC_NAME",
+    "slotSetting": false,
+    "value": "massimportevents"
+  },
+  {
+    "name": "SERVICE_BUS_TOPIC_NAME",
+    "slotSetting": false,
+    "value": "baseline"
+  },
+  {
+    "name": "SERVICE_BUS_TOPIC_NAME_AUTO_CLASSIFY",
+    "slotSetting": false,
+    "value": "documentchanges"
+  },
+  {
+    "name": "TENANT_ID",
+    "slotSetting": false,
+    "value": "456e1d59-fb6a-46dc-b2e6-f1b37b6d29fb"
+  },
+  {
+    "name": "TENANT_NAME",
+    "slotSetting": false,
+    "value": "alstomgrouppp"
+  },
+  {
+    "name": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
+    "slotSetting": false,
+    "value": "DefaultEndpointsProtocol=https;AccountName=labdmsuatfnappdocpostpro;AccountKey=SE11B5nCtdy0eg5xnUnKQPmdGgNLDqkCPHDtBR4przGwPAoIILmu+1dHj2smcmTvQb9tkpoaBwXf+ASt1ZDi/w==;EndpointSuffix=core.windows.net"
+  },
+  {
+    "name": "WEBSITE_CONTENTSHARE",
+    "slotSetting": false,
+    "value": "lab-dms-uat-fnapp-doc-post-processingef80c7"
+  },
+  {
+    "name": "WEBSITE_NODE_DEFAULT_VERSION",
+    "slotSetting": false,
+    "value": "~18"
+  },
+  {
+    "name": "WEBSITE_RUN_FROM_PACKAGE",
+    "slotSetting": false,
+    "value": "1"
+  }
+]

@@ -1,0 +1,42 @@
+.notificationDialog{
+    div:global(.ms-Dialog-main){
+        max-width: 480px;
+    }
+}
+.notificationMessage{
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.notificationsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+}
+.notificationDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    font-size: small;
+}
+.operationMessage{
+    visibility: visible;
+}
+.success{
+    color: green;
+    font-size: x-large;
+}
+.error{
+    color: red;
+    font-size: x-large;
+}
+.detailsContainer{
+    margin-left: 32px;
+}

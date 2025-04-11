@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="DmlCustomUiChangesApplicationCustomizer"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="52b65bd3-bcfb-4ff1-8fff-4b30436f24e5"
+        ClientSideComponentProperties=""
+        >
+    </CustomAction>
+</Elements>

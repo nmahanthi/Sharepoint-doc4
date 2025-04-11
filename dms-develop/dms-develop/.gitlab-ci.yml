@@ -1,0 +1,97 @@
+stages:
+  - test
+  - build
+  - deploy
+
+test_spfx:
+  stage: test
+  image: node:18
+  allow_failure: true
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - dms-sp-client-app/.npm/
+  rules:
+    -  if: $CI_PIPELINE_SOURCE == "merge_request_event"
+       changes:
+        - dms-sp-client-app/src/*
+  script:
+    - cd dms-sp-client-app
+    - npm ci --cache .npm --prefer-offline
+    - npm install
+    - ./node_modules/.bin/gulp bundle --ship
+    - ./node_modules/.bin/gulp package-solution --ship
+
+build_spfx_int:
+  stage: build
+  image: node:18
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - dms-sp-client-app/.npm/
+  rules:
+    - changes:
+        - dms-sp-client-app/src/*
+      if: $CI_COMMIT_BRANCH == "develop"
+  script:
+    - cd dms-sp-client-app
+    - npm ci --cache .npm --prefer-offline
+    - npm install
+    - ./node_modules/.bin/gulp bundle --debug
+    - ./node_modules/.bin/gulp package-solution --ship
+  artifacts:
+    paths:
+      - dms-sp-client-app/sharepoint/solution/dms-sp-client-app.sppkg
+
+build_spfx_uat:
+  stage: build
+  image: node:18
+  cache:
+    key: $CI_COMMIT_REF_SLUG
+    paths:
+      - dms-sp-client-app/.npm/
+  rules:
+    - changes:
+        - dms-sp-client-app/src/*
+      if: $CI_COMMIT_BRANCH == "uat"
+  script:
+    - cd dms-sp-client-app
+    - npm ci --cache .npm --prefer-offline
+    - npm install
+    - ./node_modules/.bin/gulp bundle --debug
+    - ./node_modules/.bin/gulp package-solution --ship
+  artifacts:
+    paths:
+      - dms-sp-client-app/sharepoint/solution/dms-sp-client-app.sppkg
+
+deploy_spfx_int:
+  tags:
+    - doc4a
+  stage: deploy
+  needs:
+    - build_spfx_int
+  environment:
+    name: integration
+    url: $URL_INT
+  rules:
+    - changes:
+        - dms-sp-client-app/src/*
+      if: $CI_COMMIT_BRANCH == "develop"
+  script:
+    - pwsh -File dms-sp-client-app/scripts/Invoke-Push2Site.ps1 -SiteUrl "$URL_INT" -ClientId "$CLIENT_ID" -ClientSecret "$CLIENT_SECRET" -PackagePath "dms-sp-client-app/sharepoint/solution/dms-sp-client-app.sppkg" -IsSiteScoped:$true
+
+deploy_spfx_uat:
+  tags:
+    - doc4a
+  stage: deploy
+  needs:
+    - build_spfx_uat
+  environment:
+    name: uat
+    url: $URL_UAT
+  rules:
+    - changes:
+        - dms-sp-client-app/src/*
+      if: $CI_COMMIT_BRANCH == "uat"
+  script:
+    - pwsh -File dms-sp-client-app/scripts/Invoke-Push2Site.ps1 -SiteUrl "$URL_UAT" -ClientId "$CLIENT_ID" -ClientSecret "$CLIENT_SECRET" -PackagePath "dms-sp-client-app/sharepoint/solution/dms-sp-client-app.sppkg" -IsSiteScoped:$false

@@ -1,0 +1,13 @@
+﻿Field,Title,FieldType
+ProjectCode,Prj Code,Text
+ProjectName,Prj Name,Text
+ProjectAlias1,Prj Alias,Text
+ActiveProject,Active,Boolean
+ProjectType,Prj Type,Choice
+ProjectLeadingPL,Main Product line,Text
+AlstomProduct,Product,TaxonomyFieldTypeMulti
+ProjectPLOwnership,Project PL Ownership,TaxonomyFieldTypeMulti
+DirectCustomer,Direct Customer,MultiChoice
+EndCustomer,End Customer,MultiChoice
+ProjectContractuallanguage,Project Contractual language,Choice
+OldOrMigratedProject,Old/migrated project,Boolean

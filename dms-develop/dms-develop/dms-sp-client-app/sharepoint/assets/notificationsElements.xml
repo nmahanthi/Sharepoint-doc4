@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="NotificationsApplicationCustomizer"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="f5273e19-9824-4667-8d2f-6b83a02a2654"
+        ClientSideComponentProperties=""
+        >
+    </CustomAction>
+</Elements>

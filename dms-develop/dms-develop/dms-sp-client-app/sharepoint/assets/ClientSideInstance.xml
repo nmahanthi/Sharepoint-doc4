@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="CreateRevision"
+        Location="ClientSideExtension.ListViewCommandSet.ContextMenu"
+        ListTemplateId="100"
+        Properties="{&quot;DraftListTitle&quot;:&quot;Draft&quot;,&quot;PermissionListTitle&quot;:&quot;PermissionsConfigurations&quot;,&quot;ContentTypeName&quot;:&quot;Technical Document&quot;,&quot;ApplicableListTitle&quot;:&quot;Applicable Documents&quot;}"
+        ComponentId="6b73759a-ebeb-482a-97cd-8e2f52b0eca5" />
+</Elements>

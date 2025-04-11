@@ -1,0 +1,33 @@
+define([], function() {
+  return {
+    "Title": "DmsApplicationActionsFieldCustomizer",
+    "MainMenuIcon": "F12DevTools",
+    "LoadingText": "Loading",
+    "LoadingIcon": "ProgressRingDots",
+    "LoadingIconColor": "Blue",
+    "ErrorText": "Error in loading menu",
+    "ErrorIcon": "ErrorBadge",
+    "ErrorIconColor": "Red",
+    "EditText": "Edit Metadata",
+    "EditIcon": "EditNote",
+    "EditIconColor": "Blue",
+    "CreateRevisionText": "Request Revision",
+    "CreateRevisionIcon": "Documentation",
+    "CreateRevisionIconColor": "Blue",
+    "ValidateText": "Validate Document",
+    "ValidateIcon": "DocumentApproval",
+    "ValidateIconColor": "Blue",
+    "WFDetailText": "Workflow Details",
+    "WFDetailIcon": "Workflow",
+    "WFDetailIconColor": "Blue",
+    "RevisionDetailText": "360° View",
+    "RevisionDetailIcon": "Video360Generic",
+    "RevisionDetailIconColor": "Blue",
+    "ProofreadingText": "Proofreading",
+    "ProofreadingIcon": "OfficeChat",
+    "ProofreadingIconColor": "Blue",
+    "AVVAText": "AVVA",
+    "AVVAIcon": "HighlightMappedShapes",
+    "AVVAIconColor": "Blue"
+  }
+});

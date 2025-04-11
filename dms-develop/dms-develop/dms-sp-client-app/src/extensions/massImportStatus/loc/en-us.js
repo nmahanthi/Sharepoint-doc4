@@ -1,0 +1,26 @@
+define([], function() {
+  return {
+    "StartImport": "Start Import",
+    "MIApplicable": "MI Applicable",
+    "MIDraft": "MI Draft",
+    "DML": "DML",
+    "DisabledTooltip":"This action is disabled as the selected file does not have the appropriate template.",
+    "ErrorStartingImport": "Error starting import",
+    "MIApplicableOperation": "Start applicable documents import",
+    "MIDraftOperation": "Start draft documents import",
+    "DMLOperation": "Start DML document creation",
+    "Filter": "Filter:",
+    "Requested": "Requested",
+    "Queued": "Queued",
+    "Processing": "Processing",
+    "JobDetails": "Job Details",
+    "UpdateJobErrorMessage": "An error occurred resetting the file status. Please try again later.",
+    "UpdateJobError":"Reset File Status",
+    "ErrorGettingStatus": "An error occurred while retrieving the job status. Please try again later.",
+    "ResetIdError": "An error occurred while resetting the file status. It is recommended to delete the file and start with a new one.",
+    "TimeoutError": "The operation has timed out. Please try again later.",
+    "OperationSuccessful": "The operation was completed successfuly.",
+    "OperationFailed": "The operation failed. Please try again later.",
+    "UpdateStatusFailed": "The job was queued successfully, but the status update failed. The satus will be updated in a moment.",
+  }
+});

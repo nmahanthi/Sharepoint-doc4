@@ -1,0 +1,157 @@
+[
+  {
+    "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+    "slotSetting": false,
+    "value": "6c36f1ad-b68e-4a6a-86f7-5e9768de588c"
+  },
+  {
+    "name": "APPLICABLE_DOCS_LIB_NAME",
+    "slotSetting": false,
+    "value": "ApplicableDocuments"
+  },
+  {
+    "name": "AzureWebJobsFeatureFlags",
+    "slotSetting": false,
+    "value": "EnableWorkerIndexing"
+  },
+  {
+    "name": "AzureWebJobsStorage",
+    "slotSetting": false,
+    "value": "DefaultEndpointsProtocol=https;AccountName=labdmsuatfnappupdaterefe;AccountKey=W0P+fa8AWSiHouzlfH8O0QX09b+Q7s7/y397NMhqcuyqPDvLTGyZg15Cpo3fWfIUg+QPGyo5iSOa+ASt74pvtw==;EndpointSuffix=core.windows.net"
+  },
+  {
+    "name": "CERTIFICATE_NAME",
+    "slotSetting": false,
+    "value": "DMSDEV"
+  },
+  {
+    "name": "CLIENT_ID",
+    "slotSetting": false,
+    "value": "5558567f-a32f-417c-a15c-3e57b67f887e"
+  },
+  {
+    "name": "DOC_SET_CONTENT_TYPE_ID",
+    "slotSetting": false,
+    "value": "0x0120D5200010BA2408052EEF418E580CFAEB67F318"
+  },
+  {
+    "name": "FUNCTIONS_EXTENSION_VERSION",
+    "slotSetting": false,
+    "value": "~4"
+  },
+  {
+    "name": "FUNCTIONS_WORKER_RUNTIME",
+    "slotSetting": false,
+    "value": "node"
+  },
+  {
+    "name": "IMPORT_DOCUMENT_KEY_FIELDS",
+    "slotSetting": false,
+    "value": "Project Reference; Project Revision"
+  },
+  {
+    "name": "IMPORT_FIELDS_MAP",
+    "slotSetting": false,
+    "value": "{\"OBS\":{\"type\":\"Choice\",\"name\":\"IssuingEntity\"},\"Alstom GR Milestone\":{\"type\":\"Choice\",\"name\":\"GRMilestone\"},\"Supplier Revision\":{\"type\":\"Text\",\"name\":\"SupplierRevision\"},\"Reforecast Submission Date\":{\"type\":\"DateTime\",\"name\":\"ReforecastSubmissionDate\"},\"Other Revision\":{\"type\":\"Text\",\"name\":\"OtherRevision\"},\"Document Language\":{\"type\":\"Choice\",\"name\":\"DocumentLanguage\"},\"Revision Date\":{\"type\":\"DateTime\",\"name\":\"Created\"},\"FBS\":{\"type\":\"Choice\",\"name\":\"FBS\"},\"Document Type\":{\"type\":\"Choice\",\"name\":\"DocumentType\"},\"Planned Submission Date\":{\"type\":\"DateTime\",\"name\":\"PlannedSubmissionDate\"},\"WBS\":{\"type\":\"Choice\",\"name\":\"WBS\"},\"DBS\":{\"type\":\"Choice\",\"name\":\"DBS\"},\"PBS\":{\"type\":\"TaxonomyFieldType\",\"name\":\"PBS\"},\"Supplier Reference\":{\"type\":\"Text\",\"name\":\"SupplierReference\"},\"Project Reference\":{\"type\":\"Text\",\"name\":\"ProjectReference\"},\"Customer Milestone\":{\"type\":\"Choice\",\"name\":\"CustomerMilestone\"},\"Document Title\":{\"type\":\"Text\",\"name\":\"Title\"},\"ABS\":{\"type\":\"TaxonomyFieldType\",\"name\":\"ABS\"},\"SBS\":{\"type\":\"Choice\",\"name\":\"SBS\"},\"Submission Category\":{\"type\":\"Choice\",\"name\":\"SubmissionCategory\"},\"Other Reference\":{\"type\":\"Text\",\"name\":\"OtherReference\"},\"Project Revision\":{\"type\":\"Text\",\"name\":\"ProjectRevision\"}}"
+  },
+  {
+    "name": "IMPORT_JOB_TABLE_NAME",
+    "slotSetting": false,
+    "value": "importJobs"
+  },
+  {
+    "name": "INITIAL_REFERENCE",
+    "slotSetting": false,
+    "value": "DOC0000000000000"
+  },
+  {
+    "name": "IS_LOCAL_ENVIRONMENT",
+    "slotSetting": false,
+    "value": "false"
+  },
+  {
+    "name": "KEY_VAULT_URL",
+    "slotSetting": false,
+    "value": "https://kv-dms3.vault.azure.net/"
+  },
+  {
+    "name": "MASS_IMPORT_TABLE_CONNECTION_STRING",
+    "slotSetting": false,
+    "value": "DefaultEndpointsProtocol=https;AccountName=dmssauatstate;AccountKey=Kx7if3rMUShQr+lVUlfR53a/TQyC02v5h0Gx+0qQQoLwHCKEaqRXjRsDm9fXSCoUwQ6NEHuUV45i+AStb325JA==;EndpointSuffix=core.windows.net"
+  },
+  {
+    "name": "OLD_REVISIONS_DOCS_LIB_NAME",
+    "slotSetting": false,
+    "value": "PreviousVersions"
+  },
+  {
+    "name": "PERMISSIONS_LIST_NAME",
+    "slotSetting": false,
+    "value": "PermissionsConfigurations"
+  },
+  {
+    "name": "PNP_LOG_LEVEL",
+    "slotSetting": false,
+    "value": "99"
+  },
+  {
+    "name": "PROJECT_UPDATE_REQ_ROLE",
+    "slotSetting": false,
+    "value": "Project Administrator"
+  },
+  {
+    "name": "PROJECT_UPDATE_REQ_WEB_PERM",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "PROPERTY_BAG_DATA",
+    "slotSetting": false,
+    "value": "dms_proj_code"
+  },
+  {
+    "name": "REFERENCE_ID_TABLE_NAME",
+    "slotSetting": false,
+    "value": "AlstomReference2"
+  },
+  {
+    "name": "SERVICE_BUS_CONNECTION_STRING",
+    "slotSetting": false,
+    "value": "Endpoint=sb://dmsuat.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=s3Cjcjq8J4rj+SfuW+MThIj99XQC8jolS+ASbLXwoS0="
+  },
+  {
+    "name": "SERVICE_BUS_TOPIC_NAME",
+    "slotSetting": false,
+    "value": "documentchanges"
+  },
+  {
+    "name": "TENANT_ID",
+    "slotSetting": false,
+    "value": "456e1d59-fb6a-46dc-b2e6-f1b37b6d29fb"
+  },
+  {
+    "name": "TENANT_NAME",
+    "slotSetting": false,
+    "value": "alstomgrouppp"
+  },
+  {
+    "name": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
+    "slotSetting": false,
+    "value": "DefaultEndpointsProtocol=https;AccountName=labdmsuatfnappupdaterefe;AccountKey=W0P+fa8AWSiHouzlfH8O0QX09b+Q7s7/y397NMhqcuyqPDvLTGyZg15Cpo3fWfIUg+QPGyo5iSOa+ASt74pvtw==;EndpointSuffix=core.windows.net"
+  },
+  {
+    "name": "WEBSITE_CONTENTSHARE",
+    "slotSetting": false,
+    "value": "lab-dms-uat-fnapp-update-reference7c2f7b"
+  },
+  {
+    "name": "WEBSITE_NODE_DEFAULT_VERSION",
+    "slotSetting": false,
+    "value": "~18"
+  },
+  {
+    "name": "WEBSITE_RUN_FROM_PACKAGE",
+    "slotSetting": false,
+    "value": "1"
+  }
+]

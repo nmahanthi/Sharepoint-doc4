@@ -1,0 +1,140 @@
+{
+    "ExportDocuments": {
+        "baseline": [
+            {
+                "SitePath": "/sites/DOC4A-UAT-2",
+                "ItemId": "72",
+                "Title": "TEST Alban baseline update",
+                "Status": "Frozen",
+                "relatedBaseline": {
+                    "baseline": [
+                        {
+                            "SitePath": "/sites/DOC4A-UAT-2",
+                            "ItemId": "66",
+                            "Title": "Alban Baseline test Jan 2025",
+                            "Status": "Frozen",
+                            "relatedBaseline": {
+                                "baseline": [],
+                                "technical": [
+                                    {
+                                        "DocumentId": "V2K2FYA5T2PQ-646725059-300",
+                                        "SitePath": "/sites/DOC4A-UAT-4",
+                                        "DocumentLink": "/sites/DOC4A-UAT-4/ApplicableDocuments/WP0_Project Management/Commissioning C000/Signaling and Controlling 2/4ST-RTP-0001-A",
+                                        "Status": "Applicable",
+                                        "ProjcectReference": "4ST-RTP-0001",
+                                        "ProjcectRevision": "A",
+                                        "FileName": "VDU Test Report-WHTM-Test BLR"
+                                    },
+                                    {
+                                        "DocumentId": "V2K2FYA5T2PQ-646725059-324",
+                                        "SitePath": "/sites/DOC4A-UAT-4",
+                                        "DocumentLink": "/sites/DOC4A-UAT-4/PreviousVersions/WP0_Project Management/Customer Delivery L000/Signaling and Controlling 2/12345-1A",
+                                        "Status": "Applicable",
+                                        "ProjcectReference": "12345",
+                                        "ProjcectRevision": "1A",
+                                        "FileName": "test bahar babaei"
+                                    },
+                                    {
+                                        "DocumentId": "V2K2FYA5T2PQ-646725059-325",
+                                        "SitePath": "/sites/DOC4A-UAT-4",
+                                        "DocumentLink": "/sites/DOC4A-UAT-4/ApplicableDocuments/WP0_Project Management/Customer Delivery L000/Signaling and Controlling 2/12345-1A",
+                                        "Status": "Applicable",
+                                        "ProjcectReference": "12345",
+                                        "ProjcectRevision": "1A",
+                                        "FileName": "test bahar babaei"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "technical": [
+                        {
+                            "DocumentId": "ZDSWAADAJ6SV-460818489-3942",
+                            "SitePath": "/sites/DOC4A-UAT-2",
+                            "DocumentLink": "/sites/DOC4A-UAT-2/ApplicableDocuments/WP1_4_Design for Operations/Assembly P300/Civil Works 8/CT0001_TEST_0005-A",
+                            "Status": "Applicable",
+                            "ProjcectReference": "CT0001_TEST_0005",
+                            "ProjcectRevision": "A",
+                            "FileName": "Test Document MIA1064"
+                        },
+                        {
+                            "DocumentId": "ZDSWAADAJ6SV-460818489-3904",
+                            "SitePath": "/sites/DOC4A-UAT-2",
+                            "DocumentLink": "/sites/DOC4A-UAT-2/ApplicableDocuments/WP1_4_Design for Operations/Assembly P300/Civil Works 8/HKCT0001_TEST_0001-A",
+                            "Status": "Applicable",
+                            "ProjcectReference": "HKCT0001_TEST_0001",
+                            "ProjcectRevision": "A",
+                            "FileName": "Test Document MIA1060"
+                        },
+                        {
+                            "DocumentId": "ZDSWAADAJ6SV-460818489-3900",
+                            "SitePath": "/sites/DOC4A-UAT-2",
+                            "DocumentLink": "/sites/DOC4A-UAT-2/ApplicableDocuments/WP1_4_Design for Operations/Assembly P300/Civil Works 8/HKCT0001_TEST_0005-A",
+                            "Status": "Applicable",
+                            "ProjcectReference": "HKCT0001_TEST_0005",
+                            "ProjcectRevision": "A",
+                            "FileName": "Test Document MIA1064"
+                        },
+                        {
+                            "DocumentId": "ZDSWAADAJ6SV-460818489-3944",
+                            "SitePath": "/sites/DOC4A-UAT-2",
+                            "DocumentLink": "/sites/DOC4A-UAT-2/ApplicableDocuments/WP1_4_Design for Operations/Assembly P300/Civil Works 8/CT0001_TEST_0003-A",
+                            "Status": "Applicable",
+                            "ProjcectReference": "CT0001_TEST_0003",
+                            "ProjcectRevision": "A",
+                            "FileName": "Test Document MIA1062"
+                        }
+                    ]
+                }
+            }
+        ],
+        "technical": [
+            {
+                "DocumentId": "ZDSWAADAJ6SV-460818489-3363",
+                "SitePath": "/sites/DOC4A-UAT-2",
+                "DocumentLink": "/sites/DOC4A-UAT-2/Draft/VVV-A",
+                "Status": "Applicable",
+                "ProjcectReference": "VVV",
+                "ProjcectRevision": "A",
+                "FileName": "OKTESTKO"
+            },
+            {
+                "DocumentId": "ZDSWAADAJ6SV-460818489-3329",
+                "SitePath": "/sites/DOC4A-UAT-2",
+                "DocumentLink": "/sites/DOC4A-UAT-2/Draft/CTEST_00040-C",
+                "Status": "Applicable",
+                "ProjcectReference": "CTEST_00040",
+                "ProjcectRevision": "C",
+                "FileName": "Test Document MIA1"
+            },
+            {
+                "DocumentId": "ZDSWAADAJ6SV-460818489-3875",
+                "SitePath": "/sites/DOC4A-UAT-2",
+                "DocumentLink": "/sites/DOC4A-UAT-2/ApplicableDocuments/WP0_Project Management/Assembly P300/Civil Works 8/DMLTEST_0036-A",
+                "Status": "Applicable",
+                "ProjcectReference": "DMLTEST_0036",
+                "ProjcectRevision": "A",
+                "FileName": "DML Test Document 36"
+            },
+            {
+                "DocumentId": "ZDSWAADAJ6SV-460818489-3750",
+                "SitePath": "/sites/DOC4A-UAT-2",
+                "DocumentLink": "/sites/DOC4A-UAT-2/Draft/CTEST_00197-A",
+                "Status": "Applicable",
+                "ProjcectReference": "CTEST_00197",
+                "ProjcectRevision": "A",
+                "FileName": "Test Document MIA142"
+            }
+        ]
+    },
+    "UserEmail": "alban.leonard@preprod-alstomgroup.com",
+    "SiteUrl": "/sites/DOC4A-UAT-2",
+    "RootBaseLine": {
+        "ItemId": 73,
+        "SitePath": "/sites/DOC4A-UAT-2",
+        "Title": " - ",
+        "Status": "",
+        "Code": "",
+        "BaselineVersion": ""
+    }
+}

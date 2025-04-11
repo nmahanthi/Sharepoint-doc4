@@ -1,0 +1,13 @@
+{
+    "subscriptionId":"868e1ebc-e002-4ade-86c1-1864eb885a17",
+    "functions":[
+        { "folder": "dms-az-baseline-export", "appName": "lab-dms-int-fnapp-baseline-export" },
+        { "folder": "dms-az-doc-postprocessing", "appName": "dms-az-doc-postprocessing" },
+        { "folder": "dms-az-event-publishing", "appName": "lab-dms-int-fnapp-event-publishing" },
+        { "folder": "dms-az-mass-import", "appName": "lab-dms-int-fnapp-mass-import" },
+        { "folder": "dms-az-update-reference", "appName": "lab-dms-int-fnapp-reference" },
+        { "folder": "dms-az-user-api", "appName": "lab-dms-int-fnapp-user-api" }
+    ],
+    "clientId":"3199c120-c0da-4cfd-9583-84d96e0dc41f",
+    "tenantId":"0d993ad3-fa73-421a-b129-1fe5590103f3"
+}

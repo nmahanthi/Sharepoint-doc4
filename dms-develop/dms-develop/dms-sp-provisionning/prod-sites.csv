@@ -1,0 +1,3 @@
+﻿SiteUrl,Create,Type,Alias,Language,Name,Code,IsActive,EndCustomers,DirectCustomers,PLOwnerships,IsMigrated,Product,ProductLine,Geography,User
+https://alstomgroup.sharepoint.com/sites/DOC4A_CT0001_ProjectTest1,No,R&D,,French,CT0001 - ProjectTest1,CT0001,Yes,SNCF (266726639),SNCF (266726639),RSC;SIG,Yes,Metro Turnkey (PRO-0089),SYS,France,hamza.kachouti-ext@alstomgroup.com
+https://alstomgroup.sharepoint.com/sites/DOC4A_CT0003_ProjectTest3,No,Contract,CT0003 - ProjectTest3,English,CT0003 - ProjectTest3,CT003,Yes,,,SER,Yes,,SER,Italy,hamza.kachouti-ext@alstomgroup.com

@@ -1,0 +1,55 @@
+.WorkflowTimeline {
+    overflow-x: auto;
+    .ContentContainer {
+        white-space: nowrap;
+        width: 100%;
+
+        >div {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .Title {
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .Subtitle {
+            font-size: 9px;
+            font-style: italic;
+            overflow: hidden;
+        }
+    }
+
+    .StatusIconContainer {
+        width: 100%;
+
+        >div {
+            display: inline-block;
+            text-align: center;
+
+            >i {
+                font-size: 20px;
+            }
+        }
+
+        position: relative;
+        z-index: 1;
+        margin-bottom: -17px;
+    }
+}
+
+.CommentsCallout {
+    padding: 10px;
+}
+
+.NoWfMessage {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.ErrorMessage {
+    font-style: italic;
+    font-weight: lighter;
+    color: "[theme: alert, default: #red]";
+}
